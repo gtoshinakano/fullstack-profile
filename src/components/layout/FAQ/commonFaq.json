@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is NFT?",
+    "answer": "Non-Fungible Tokens (NFT) are the part of the Blockchain Technology that allows people to register any assets as Smart Contracts inside a Cryptocurrency's Blockchain. It allows original artists to register a verifiable and attestable piece of information that can prove the authorship of the artwork. [Read this guide](https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq) to understand the concept about NFT technology."
+  },
+  {
+    "question": "How NFT can help artists?",
+    "answer": "An artwork's authorship must be protected by Copyrights so that artists can claim all their rights when needed. NFT Technology has been born to guarantee the rights of an author upon his arts in the Blockchain Network. This means that an author of an NFT will receive Smart Contract pre-programmed royalties every time the art ownership changes."
+  },
+  {
+    "question": "What can I do with an NFT?",
+    "answer": "NFT use cases are limitless, but generally speaking, NFTs can be collected and the ownership can be transferred or sold in the future. To understand it better, imagine that you have a collection of antique Toys. You can buy a toy from someone and be it's owner for a time, and then, years later, the scarcity of the same toy make it more valued in the market so you can sell it and make some profit re-selling it."
+  },
+  {
+    "question": "What is the difference between a NFT Authorship and Ownership?",
+    "answer": "When you buy an NFT, you will become the owner of the Token and you can re-sell it right after you purchase it. It is important to know that ownership and authorship are distinct concepts. The author is who register the asset and sell it for the first time so the artist is both author and the first owner of it. Whoever buy it in the future become the owner but the authorship remains to the artist."
+  },
+  {
+    "question": "Why I can't place a bid for some NFT assets?",
+    "answer": "When you can't place a bid for some asset that means that it's owner is not interested in selling it at that moment and is just collecting it like an Art Collector. "
+  }
+]

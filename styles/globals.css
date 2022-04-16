@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: conic-gradient(
+      from 135deg at 0% 120%,
+      #f8f7fa,
+      #f8f8fb,
+      #f8f9fc,
+      #f9fbfd,
+      #f9fdfe,
+      #fafeff,
+      #fbffff
+    );
+    color: black;
+    overflow-x: hidden;
+  }
+  #__next {
+    overflow: hidden;
+  }
+}
+
+@font-face {
+  font-family: 'big-noodle';
+  src: url('/fonts/big-noodle.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'morganite';
+  src: url('/fonts/morganite.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'newston';
+  src: url('/fonts/newston.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/unicode.futurab-webfont.woff2') format('ttf'),
+       url('/fonts/unicode.futurab-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('/fonts/wask_new-webfont.woff');
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700&family=Pacifico:wght@100;200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,200;0,600;0,700;0,900;1,200;1,600;1,700;1,900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+.footer-bg {
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.primary-btn{
+  background-image: linear-gradient(to bottom, #accbee 0%, #e7f0fd 100%);
+}

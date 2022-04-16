@@ -1,0 +1,80 @@
+{
+  "atom": {
+    "name": "Atom",
+    "src" : "/img/stacks/atom.svg",
+    "css": "",
+    "url": ""
+  },
+  "dreamweaver": {
+    "name": "Adobe Dreamweaver",
+    "src" : "/img/stacks/dreamweaver.png",
+    "css": "",
+    "url": ""
+  },
+  "fireworks": {
+    "name": "Adobe Fireworks",
+    "src" : "/img/stacks/fireworks.png",
+    "css": "",
+    "url": ""
+  },
+  "netbeans": {
+    "name": "NetBeans IDE",
+    "src" : "/img/stacks/netbeans.svg",
+    "css": "",
+    "url": ""
+  },
+  "workbench": {
+    "name": "MySQL Workbench",
+    "src" : "/img/stacks/workbench.png",
+    "css": "",
+    "url": ""
+  },
+  "mysql-front": {
+    "name": "MySQL Front",
+    "src" : "/img/stacks/mysql-front.webp",
+    "css": "",
+    "url": ""
+  },
+  "nodejs": {
+    "name": "Node JS",
+    "src" : "/img/stacks/nodejs.svg",
+    "css": "bg-white",
+    "url": ""
+  },
+  "github": {
+    "name": "GitHub",
+    "src" : "/img/stacks/github.svg",
+    "css": "",
+    "url": ""
+  },
+  "vscode": {
+    "name": "Visual Studio Code",
+    "src" : "/img/stacks/vscode.svg",
+    "css": "",
+    "url": ""
+  },
+  "postman": {
+    "name": "Postman API Platform",
+    "src" : "/img/stacks/postman.svg",
+    "css": "",
+    "url": ""
+  },
+  "figma": {
+    "name": "Figma",
+    "src" : "/img/stacks/figma.svg",
+    "css": "",
+    "url": ""
+  },
+  "illustrator": {
+    "name": "Adobe Illustrator",
+    "src" : "/img/stacks/illustrator.svg",
+    "css": "bg-yellow-300",
+    "url": ""
+  },
+  "xd": {
+    "name": "Adobe XD",
+    "src" : "/img/stacks/xd.svg",
+    "css": "bg-white",
+    "url": ""
+  }
+}
