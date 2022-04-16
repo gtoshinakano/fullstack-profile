@@ -51,12 +51,12 @@ const WideScreen = ({ loading }) => {
   return (
     <section
       ref={heroRef}
-      className={` h-screen min-h-screen bg-blue-200 transform-all  bg-cover
+      className={` h-screen min-h-screen bg-blue-200 transform-all bg-cover
         ${loading
           ? "bg-gradient-to-r from-purple-400 via-purple-300 to-rose-100"
           : "bg-transparent"}`}
       style={{
-        backgroundImage: !loading ? "url('/img/dev/gabriel/hero-light-bg.png')" : ""
+        backgroundImage: !loading ? `url('${prefix}/img/dev/gabriel/hero-light-bg.png')` : ""
       }}
     >
       <div

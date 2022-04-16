@@ -57,7 +57,7 @@ const Mobile = ({ loading }) => {
           ? "bg-gradient-to-r from-purple-400 via-purple-300 to-rose-100"
           : "bg-transparent"}`}
       style={{
-        backgroundImage: !loading ? "url('/img/dev/gabriel/hero-light-bg.png')" : ""
+        backgroundImage: !loading ? `url('${prefix}/img/dev/gabriel/hero-light-bg.png')` : ""
       }}
     >
       <div
