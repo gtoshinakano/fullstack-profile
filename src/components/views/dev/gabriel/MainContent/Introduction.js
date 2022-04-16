@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image"
 import prefix from '@/helpers/prefix';
+import customLoader from "@/helpers/customLoader"
 
 const Introduction = () => {
   return (
@@ -205,7 +206,3 @@ const Introduction = () => {
 }
 
 export default Introduction;
-
-const customLoader = ({ src }) => {
-  return src
-}

@@ -5,6 +5,7 @@ import stacks from "@/data/stacks.json"
 import tools from "@/data/swtools.json"
 import _ from 'lodash'
 import prefix from '@/helpers/prefix';
+import customLoader from "@/helpers/customLoader"
 
 const Jobs = () => {
 
@@ -163,10 +164,6 @@ const Jobs = () => {
 }
 
 export default Jobs;
-
-const customLoader = ({ src }) => {
-  return src
-}
 
 const data = [
   {

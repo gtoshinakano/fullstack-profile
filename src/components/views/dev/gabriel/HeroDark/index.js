@@ -9,6 +9,7 @@ import FuturePartner from "@Views/dev/gabriel/HeroDark/FuturePartner"
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
 import prefix from "@/helpers/prefix"
+import customLoader from "@/helpers/customLoader"
 
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -159,8 +160,4 @@ const Button = ({children, className,isActive, ...rest}) => {
       {children}
     </button>
   )
-}
-
-const customLoader = ({ src }) => {
-  return src
 }

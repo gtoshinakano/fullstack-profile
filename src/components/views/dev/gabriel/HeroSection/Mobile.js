@@ -3,6 +3,7 @@ import Image from "next/image";
 import * as HeroSvg from './HeroSvg';
 import gsap from 'gsap';
 import prefix from '@/helpers/prefix';
+import customLoader from "@/helpers/customLoader"
 
 const Mobile = ({ loading }) => {
 
@@ -145,7 +146,3 @@ const Mobile = ({ loading }) => {
 
 
 export default Mobile
-
-const customLoader = ({ src }) => {
-  return src
-}

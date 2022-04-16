@@ -3,6 +3,7 @@ import Image from "next/image";
 import * as HeroSvg from './HeroSvg';
 import gsap from 'gsap';
 import prefix from '@/helpers/prefix';
+import customLoader from "@/helpers/customLoader"
 
 const WideScreen = ({ loading }) => {
 
@@ -143,7 +144,3 @@ const WideScreen = ({ loading }) => {
 };
 
 export default WideScreen
-
-const customLoader = ({ src }) => {
-  return src
-}
