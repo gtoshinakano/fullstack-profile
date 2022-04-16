@@ -71,6 +71,7 @@ const Herodark = ({isWide}) => {
                 height={549} 
                 layout="intrinsic" 
                 loader={customLoader}
+                unoptimized
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image"
+import prefix from '@/helpers/prefix';
 
 const Introduction = () => {
   return (
@@ -108,7 +109,7 @@ const Introduction = () => {
       <p>That is why the effective composition is only made of 3 elements. I call them the <span className='text-primary'>Attract</span>, <span className='text-primary'>Intrigue</span> and <span className='text-primary'>Act</span> elements. </p>
       <p>Let's see a good example of if:</p>
       <div className='w-full'>
-        <Image src="/img/dev/gabriel/ss-netflix.png" width={1289} height={731} layout={"intrinsic"} />
+        <Image src={`${prefix}/img/dev/gabriel/ss-netflix.png`} width={1289} height={731} layout={"intrinsic"} loader={customLoader} unoptimized />
       </div>
       <ul className='space-y-5 list-decimal list-inside font-normal'>
         <li>You can see a big background that is the grid of covers from available movies and shows (Attract).</li>
@@ -127,7 +128,7 @@ const Introduction = () => {
       <p>So I chose color palettes, randomly applied it to my CSS and the results was always too colorful.</p>
       <p>Look at the first site I made, in 2011:</p>
       <div className='w-full'>
-        <Image src="/img/dev/gabriel/ss-maple.png" width={1289} height={896} layout={"intrinsic"} />
+        <Image src={`${prefix}/img/dev/gabriel/ss-maple.png`} width={1289} height={896} layout={"intrinsic"} loader={customLoader} unoptimized />
       </div>
       <small className='font-thin text-sm mx-auto'>Wow, it brings me many flashbacks.. I remember I made all the rounded corners with CSS background images.</small>
       <p>It's not <span className='text-secondary'>THAT BAD</span> but, can you see all the signs of a bad design here? </p>
@@ -137,7 +138,7 @@ const Introduction = () => {
       <p>And I don't need to mention that the AIA Composition can use this same proportion for their sizes, right?</p>
       <p>Have a look on a good 60-30-10 proportion applied.</p>
       <div className='w-full'>
-        <Image src="/img/dev/gabriel/ss-twitter.png" width={1258} height={711} layout={"intrinsic"} />
+        <Image src={`${prefix}/img/dev/gabriel/ss-twitter.png`} width={1258} height={711} layout={"intrinsic"} loader={customLoader} unoptimized />
       </div>
       <p>You first look at the big element on the left, then your eyes slide to the right where the middle and the small sized elements lie.</p>
       <p>60% blue, 30% white and 10% gray. Attract, Intrigue and call to an Action.</p>
@@ -162,7 +163,7 @@ const Introduction = () => {
       <p>Whatever your business is, it must have a simple purpose and this purpose should be achievable within a few clicks.</p>
       <p>Let's look at an example from a famous Riding App that everyone probably knows: </p>
       <div className='w-full'>
-        <Image src="/img/dev/gabriel/ss-uber.png" width={1218} height={646} layout={"intrinsic"} />
+        <Image src={`${prefix}/img/dev/gabriel/ss-uber.png`} width={1218} height={646} layout={"intrinsic"} loader={customLoader} unoptimized />
       </div>
       <p>Their purpose is clearly expressed. They want to connect private drivers and passengers to a mutual help system, creating a new kind of decentralized economic system.</p>
       <p>And it can be easily achievable just by opening the app on a smartphone and by choosing where you want to go. </p>
@@ -204,3 +205,7 @@ const Introduction = () => {
 }
 
 export default Introduction;
+
+const customLoader = ({ src }) => {
+  return src
+}

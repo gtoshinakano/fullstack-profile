@@ -32,7 +32,7 @@ const GabrielPage = () => {
         ? <HeroSection.WideScreen loading={loading} /> 
         : <HeroSection.Mobile loading={loading} />} */}
       <HeroDark isWide={isWide} />
-      {/* <MainContent /> */}
+      <MainContent />
     </PublicLayout>
   );
 }
