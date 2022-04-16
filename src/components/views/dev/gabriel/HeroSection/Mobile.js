@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from "next/image";
 import * as HeroSvg from './HeroSvg';
 import gsap from 'gsap';
+import prefix from '@/helpers/prefix';
 
 const Mobile = ({ loading }) => {
 
@@ -66,8 +67,8 @@ const Mobile = ({ loading }) => {
           className='absolute w-[200vw] h-auto z-0 transform -translate-x-1/2'
           id="big-mnt-img"
         >
-          <Image priority src="/img/dev/gabriel/mid-mnt-img.png"
-            layout="intrinsic" width={1728} height={881} />
+          <Image priority src={`${prefix}/img/dev/gabriel/mid-mnt-img.png`}
+            layout="intrinsic" width={1728} height={881} loader={customLoader} unoptimized />
         </div>
         <div
           className='absolute w-1/2 h-auto z-10 transform'
@@ -79,50 +80,50 @@ const Mobile = ({ loading }) => {
           className='cloud-right absolute right-0 w-1/3 opacity-70 z-50'
         >
           <div className=''>
-            <Image priority src="/img/dev/gabriel/cloud-mnt-right.png"
-              layout="intrinsic" width={1728} height={919} />
+            <Image priority src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
+              layout="intrinsic" width={1728} height={919} loader={customLoader} unoptimized />
           </div>
         </div>
         <div className='absolute w-[180vw] h-auto z-30  transform -translate-x-1/2'
           id="mid-mnt-img"
         >
-          <Image priority src="/img/dev/gabriel/big-mnt-img.png"
-            layout="intrinsic" width={1728} height={919} />
+          <Image priority src={`${prefix}/img/dev/gabriel/big-mnt-img.png`}
+            layout="intrinsic" width={1728} height={919} loader={customLoader} unoptimized />
         </div>
         <div
           className='cloud-left absolute left-0 w-1/2 opacity-70 z-30'
         >
           <div className=''>
-            <Image priority src="/img/dev/gabriel/cloud-mnt-right.png"
-              layout="intrinsic" width={1988} height={1290} />
+            <Image priority src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
+              layout="intrinsic" width={1988} height={1290} loader={customLoader} unoptimized />
           </div>
         </div>
         <div className='absolute left-0 w-[200vw] h-auto z-40'
           id="sm-mnt-back"
         >
-          <Image priority src="/img/dev/gabriel/sm-mnt-front.png"
-            layout="intrinsic" width={1728} height={584} />
+          <Image priority src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
+            layout="intrinsic" width={1728} height={584} loader={customLoader} unoptimized />
         </div>
         <div
           className='cloud-center absolute left-1/3 w-2/5 opacity-80 z-40'
         >
           <div className=''>
-            <Image priority src="/img/dev/gabriel/cloud-mnt-center.png"
-              layout="intrinsic" width={1499} height={876} />
+            <Image priority src={`${prefix}/img/dev/gabriel/cloud-mnt-center.png`}
+              layout="intrinsic" width={1499} height={876} loader={customLoader} unoptimized />
           </div>
         </div>
         <div className='absolute transform -translate-x-1/2 w-1/2 z-40'
           id="climb-mnt"
         >
-          <Image priority src="/img/dev/gabriel/climb-mnt.png"
-            layout="intrinsic" width={927} height={945} />
+          <Image priority src={`${prefix}/img/dev/gabriel/climb-mnt.png`}
+            layout="intrinsic" width={927} height={945} loader={customLoader} unoptimized />
         </div>
         <div
           className='absolute w-[200vw] h-auto opacity-95 z-50'
           id="sm-mnt-front"
         >
-          <Image priority src="/img/dev/gabriel/sm-mnt-front.png"
-            layout="intrinsic" width={1728} height={584} />
+          <Image priority src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
+            layout="intrinsic" width={1728} height={584} loader={customLoader} unoptimized />
         </div>
         <div
           className='absolute right-0 z-50'
@@ -144,3 +145,7 @@ const Mobile = ({ loading }) => {
 
 
 export default Mobile
+
+const customLoader = ({ src }) => {
+  return src
+}
