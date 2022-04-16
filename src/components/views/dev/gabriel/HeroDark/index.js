@@ -69,6 +69,7 @@ const Herodark = ({isWide}) => {
                 width={569} 
                 height={549} 
                 layout="intrinsic" 
+                loader={customLoader}
               />
             </div>
           </div>
@@ -156,4 +157,8 @@ const Button = ({children, className,isActive, ...rest}) => {
       {children}
     </button>
   )
+}
+
+const customLoader = ({ src }) => {
+  return src
 }
