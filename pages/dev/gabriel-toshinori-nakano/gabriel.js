@@ -28,11 +28,11 @@ const GabrielPage = () => {
 
   return (
     <PublicLayout title="UI/UX Dev. Gabriel Toshinori Nakano - Tokyo">
-      {isWide 
+      {/* {isWide 
         ? <HeroSection.WideScreen loading={loading} /> 
-        : <HeroSection.Mobile loading={loading} />}
+        : <HeroSection.Mobile loading={loading} />} */}
       <HeroDark isWide={isWide} />
-      <MainContent />
+      {/* <MainContent /> */}
     </PublicLayout>
   );
 }

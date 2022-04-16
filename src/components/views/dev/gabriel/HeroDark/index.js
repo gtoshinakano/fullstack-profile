@@ -8,6 +8,7 @@ import Projects from './Projects';
 import FuturePartner from "@Views/dev/gabriel/HeroDark/FuturePartner"
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
+import prefix from "@/helpers/prefix"
 
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +66,7 @@ const Herodark = ({isWide}) => {
           <div id="profile-photo" className='w-full md:w-1/3 lg:pr-16 py-5 my-auto'>
             <div className='w-72 h-72 md:w-60 md:h-60 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 mx-auto my-auto border-white'>
               <Image 
-                src="/img/dev/gabriel/gabriel-photo.png" 
+                src={`${prefix}/img/dev/gabriel/gabriel-photo.png`} 
                 width={569} 
                 height={549} 
                 layout="intrinsic" 
@@ -81,9 +82,9 @@ const Herodark = ({isWide}) => {
               id="mid-container" 
               className={`mx-auto`}
             >
-              {selected === "job" && <Jobs />}
+              {/* {selected === "job" && <Jobs />}
               {selected === "projects" && <Projects />}
-              {selected === "partner" && <FuturePartner />}
+              {selected === "partner" && <FuturePartner />} */}
             </div>
           </div>
         </div>
