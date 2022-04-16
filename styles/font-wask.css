@@ -2,32 +2,32 @@
 
 @font-face {
   font-family: 'wask_new';
-  src: url('/fonts/wask_new_bold_italic-webfont.woff2') format('woff2'),
-    url('/fonts/wask_new_bold_italic-webfont.woff') format('woff');
+  src: url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new_bold_italic-webfont.woff2') format('woff2'),
+    url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new_bold_italic-webfont.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'wask_new';
-  src: url('/fonts/wask_new_bold-webfont.woff2') format('woff2'),
-    url('/fonts/wask_new_bold-webfont.woff') format('woff');
+  src: url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new_bold-webfont.woff2') format('woff2'),
+    url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new_bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'wask_new';
-  src: url('/fonts/wask_new_italic-webfont.woff2') format('woff2'),
-    url('/fonts/wask_new_italic-webfont.woff') format('woff');
+  src: url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new_italic-webfont.woff2') format('woff2'),
+    url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new_italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'wask_new';
-  src: url('/fonts/wask_new-webfont.woff2') format('woff2'),
-    url('/fonts/wask_new-webfont.woff') format('woff');
+  src: url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new-webfont.woff2') format('woff2'),
+    url('https://gtoshinakano.github.io/uiux-profile/fonts/wask_new-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
