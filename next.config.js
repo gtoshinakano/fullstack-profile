@@ -1,5 +1,6 @@
 const isProd = process.env.NODE_ENV === 'production'
+const withNextOptimizedImages = require('next-optimized-images');
 
-module.exports = {
-  assetPrefix: isProd ? '/uiux-profile/' : ''
-}
+module.exports = withNextOptimizedImages({
+  assetPrefix: isProd ? '/uiux-profile/' : '',
+})
