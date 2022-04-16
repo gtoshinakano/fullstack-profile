@@ -11,7 +11,6 @@ const Futurepartner = () => {
 
   useEffect(() => {
     gsap.timeline()
-      .from(container(".icons-rotate"), {x:1500, stagger: 0.05, duration: 0.5, reversed: true})
       .from(container(".should-hide"), {opacity: 0, stagger: 0.05,  duration:0.5}, "<")
   }, []);
 

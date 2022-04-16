@@ -4,6 +4,8 @@ import data from "@/data/toshi-projects.json"
 import Image from 'next/image';
 import gsap from 'gsap'
 import _ from 'lodash'
+import prefix from '@/helpers/prefix';
+import customLoader from '@/helpers/customLoader';
 
 const Projects = () => {
 
@@ -103,7 +105,7 @@ const Projects = () => {
                     {item.stacks.map((stack, ind) => (
                       <div className={`icons-rotate p-1 my-0.5 mx-1 bg-white rounded-full overflow-hidden ${stacks[stack].css}`} key={stack + ind}>
                         <div className={`w-8 h-8 relative ${stacks[stack].css}`}>
-                          <Image src={stacks[stack].src} alt={`Gabriel Toshinori Nakano has experience with ${stacks[stack].name}`} title={stacks[stack].name} layout="fill" objectFit="scale-down" />
+                          <Image src={prefix+stacks[stack].src} alt={`Gabriel Toshinori Nakano has experience with ${stacks[stack].name}`} title={stacks[stack].name} layout="fill" objectFit="scale-down" loader={customLoader} unoptimized />
                         </div>
                       </div>
                     ))}

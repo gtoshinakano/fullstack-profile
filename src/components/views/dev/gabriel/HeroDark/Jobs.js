@@ -15,7 +15,7 @@ const Jobs = () => {
   useEffect(() => {
     gsap.set(container(".should-hide"), {opacity:0})
     gsap.timeline()
-      .from(container(".icons-rotate"), {x:1500, stagger: 0.05, duration: 0.5})
+      .from(container(".icons-rotate"), {x:1500, rotate: 360, stagger: 0.05, duration: 0.5})
       .to(container(".should-hide"), {opacity: 1, stagger: 0.2}, "<")
   }, []);
 

@@ -84,8 +84,8 @@ const Herodark = ({isWide}) => {
               className={`mx-auto`}
             >
               {selected === "job" && <Jobs />}
-              {/* {selected === "projects" && <Projects />}
-              {selected === "partner" && <FuturePartner />} */}
+              {selected === "projects" && <Projects />}
+              {selected === "partner" && <FuturePartner />}
             </div>
           </div>
         </div>
