@@ -4,6 +4,7 @@ import gsap from 'gsap'
 import stacks from "@/data/stacks.json"
 import tools from "@/data/swtools.json"
 import _ from 'lodash'
+import prefix from '@/helpers/prefix';
 
 const Jobs = () => {
 
@@ -82,7 +83,7 @@ const Jobs = () => {
                 </div>
                 <div className="text-right mt-1.5">
                   <div className='w-14 h-10 lg:w-28 lg:h-20 ml-auto mr-0 bg-white rounded overflow-hidden relative'>
-                    <Image src="/img/dev/gabriel/logo-fatec.png" layout="fill" objectFit="scale-down" />
+                    <Image src={`${prefix}/img/dev/gabriel/logo-fatec.png`}   layout="fill" objectFit="scale-down" loader={customLoader} unoptimized />
                   </div>
                 </div>
               </div>
@@ -104,7 +105,7 @@ const Jobs = () => {
                     {item.stacks.map((stack, ind) => (
                       <div className={`icons-rotate p-1 my-0.5 mx-1 bg-white rounded-full overflow-hidden ${stacks[stack].css}`} key={stack + ind}>
                         <div className={`w-8 h-8 relative ${stacks[stack].css}`}>
-                          <Image src={stacks[stack].src} alt={`Gabriel Toshinori Nakano has experience with ${stacks[stack].name}`} title={stacks[stack].name} layout="fill" objectFit="scale-down" />
+                          <Image src={prefix+stacks[stack].src} alt={`Gabriel Toshinori Nakano has experience with ${stacks[stack].name}`} title={stacks[stack].name} layout="fill" objectFit="scale-down" loader={customLoader} unoptimized/>
                         </div>
                       </div>
                     ))}
@@ -115,7 +116,7 @@ const Jobs = () => {
                     {item.tools.map((tool, ind) => (
                       <div className={`icons-rotate p-1 my-0.5 mx-1 bg-white rounded-full overflow-hidden ${tools[tool].css}`} key={tool + ind}>
                         <div className={`w-8 h-8 relative ${tools[tool].css}`}>
-                          <Image src={tools[tool].src} alt={`Gabriel Toshinori Nakano has experience with ${tools[tool].name}`} title={tools[tool].name} layout="fill" objectFit="scale-down" />
+                          <Image src={prefix+tools[tool].src} alt={`Gabriel Toshinori Nakano has experience with ${tools[tool].name}`} title={tools[tool].name} layout="fill" objectFit="scale-down" loader={customLoader} unoptimized/>
                         </div>
                       </div>
                     ))}
@@ -123,7 +124,7 @@ const Jobs = () => {
                 </div>
                 <div className="text-right mt-1.5">
                   <div className='w-14 h-14 lg:w-28 lg:h-28 ml-auto mr-0 bg-white rounded overflow-hidden relative'>
-                    <Image src={item.image} layout="fill" objectFit="scale-down" />
+                    <Image src={prefix+item.image} layout="fill" objectFit="scale-down" loader={customLoader} unoptimized/>
                   </div>
                 </div>
               </div>
@@ -145,7 +146,7 @@ const Jobs = () => {
             </div>
             <div className="text-right mt-1.5">
               <div className='w-14 h-10 lg:w-28 lg:h-20 ml-auto mr-0 bg-white rounded overflow-hidden relative'>
-                <Image src="/img/dev/gabriel/logo-uninove.png" layout="fill" objectFit="scale-down" />
+                <Image src={`${prefix}/img/dev/gabriel/logo-uninove.png`} layout="fill" objectFit="scale-down" loader={customLoader} unoptimized/>
               </div>
             </div>
           </div>
@@ -162,6 +163,10 @@ const Jobs = () => {
 }
 
 export default Jobs;
+
+const customLoader = ({ src }) => {
+  return src
+}
 
 const data = [
   {
