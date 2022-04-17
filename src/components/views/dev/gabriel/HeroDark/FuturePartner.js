@@ -16,7 +16,7 @@ const Futurepartner = () => {
 
   return (
     <>
-      <h2 className='should-hide text-3xl font-futura font-bold mb-5 lg:mb-10 text-center md:text-left'>
+      <h2 className='should-hide text-2xl md:text-3xl font-futura font-bold mb-5 lg:mb-10 text-center md:text-left'>
         🙍‍♂️ Why <span className='text-primary'>UI/UX Developer</span> and not <span className='text-primary'>Designer</span> ?
       </h2>
       <div ref={containerRef} className="space-y-4 lg:space-y-6 text-lg lg:text-xl lg:max-w-3xl tracking-wider font-openSans">

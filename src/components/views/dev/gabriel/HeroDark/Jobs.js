@@ -24,7 +24,7 @@ const Jobs = () => {
 
   return (
     <>
-      <h2 className='should-hide text-2xl font-futura mb-5 capitalize text-center md:text-left'>
+      <h2 className='should-hide text-2xl md:text-3xl font-futura font-bold mb-5 capitalize text-center md:text-left'>
         📋 Profile <span className='text-primary'>&</span> Experiences
       </h2>
       <div className='should-hide w-full my-4 space-y-2'>
