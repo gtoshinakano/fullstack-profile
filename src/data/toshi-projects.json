@@ -260,8 +260,8 @@
     "stacks": ["reactjs", "nextjs", "tailwind", "gsap", "google-analytics"],
     "cover": {},
     "action": {
-      "label": "",
-      "url": ""
+      "label": "This page",
+      "url": "https://gtoshinakano.github.io/uiux-profile/"
     },
     "label": "portfolio"
   }

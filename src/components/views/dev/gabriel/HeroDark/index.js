@@ -25,6 +25,23 @@ const Herodark = ({isWide}) => {
   const [selected, setSelected] = useState("job") //job projects partner
   const [loading, setLoading] = useState(false) 
 
+  useEffect(() => {
+    gsap.timeline({
+      scrollTrigger:{
+        trigger: container("#profile-photo"),
+        scrub:1,
+        start: "top center",
+        end: "10% 10%"
+      }
+    })
+      .to(container("#profile-photo-01"), {opacity:0})
+      .from(container("#profile-photo-02"), {opacity:0}, "<")
+      .to(container("#profile-photo-02"), {opacity:0})
+      .from(container("#profile-photo-03"), {opacity:0}, "<")
+
+
+  }, []);
+
   const onSelect = (newSelected) => {
     setLoading(true)
     gsap.timeline({
@@ -50,7 +67,7 @@ const Herodark = ({isWide}) => {
               <span className='inline md:hidden'>I'm </span> 
               Gabriel Toshinori Nakano,
             </div>
-            <div className='font-futura text-5xl md:text-6xl'>Call me <span className='text-secondary'>Toshi</span>,</div>
+            <div className='font-futura text-5xl md:text-6xl font-bold'>Call me <span className='text-secondary'>Toshi</span>,</div>
             <div className='font-trueno font-semibold text-sm md:text-xl leading-loose'>
               UI/UX Developer |  Full-Stack  | NextJS
             </div>
@@ -58,22 +75,44 @@ const Herodark = ({isWide}) => {
               A New UX Designer with {dayjs().subtract(2011, "year").format("YYYY")} years of coding experience. 
             </div>
             <div className='font-trueno font-thin text-sm mt-5'>
-              <p>🇯🇵 Japanese Brazillian 🇧🇷</p>
+              <p>🇯🇵 Japanese Brazilian 🇧🇷</p>
               {/*  */}
               <p>🎂 {dayjs(new Date(1988, 3, 9)).toNow(true)}</p>
               <p>🗼 Based in Tokyo</p>
             </div>
           </div>
           <div id="profile-photo" className='w-full md:w-1/3 lg:pr-16 py-5 my-auto'>
-            <div className='w-72 h-72 md:w-60 md:h-60 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 mx-auto my-auto border-white'>
-              <Image 
-                src={`${prefix}/img/dev/gabriel/gabriel-photo.png`} 
-                width={569} 
-                height={549} 
-                layout="intrinsic" 
-                loader={customLoader}
-                unoptimized
-              />
+            <div className='relative w-72 h-72 md:w-60 md:h-60 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 mx-auto my-auto border-white'>
+              <div id='profile-photo-01' className={"absolute"}>
+                <Image 
+                  src={`${prefix}/img/dev/gabriel/gabriel-photo.png`} 
+                  width={1131} 
+                  height={1131} 
+                  layout="intrinsic" 
+                  loader={customLoader}
+                  unoptimized
+                />
+              </div>
+              <div id='profile-photo-02' className={"absolute"}>
+                <Image 
+                  src={`${prefix}/img/dev/gabriel/gabriel-github.png`} 
+                  width={460} 
+                  height={460} 
+                  layout="intrinsic" 
+                  loader={customLoader}
+                  unoptimized
+                />
+              </div>
+              <div id='profile-photo-03' className={"absolute"}>
+                <Image 
+                  src={`${prefix}/img/dev/gabriel/gabriel-photo.jpg`} 
+                  width={2199} 
+                  height={2184} 
+                  layout="intrinsic" 
+                  loader={customLoader}
+                  unoptimized
+                />
+              </div>
             </div>
           </div>
         </div>
