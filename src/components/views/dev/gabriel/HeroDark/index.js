@@ -191,9 +191,9 @@ const Button = ({children, className,isActive, ...rest}) => {
   return (
     <button 
       {...rest}
-      className={`bg-white w-1/3 text-center py-2 font-trueno transition-all transform duration-400 hover:bg-slate-300 ${className} ${isActive 
-        ? "cursor-not-allowed bg-gradient-to-br from-white via-slate-300 to-gray-400 text-rose-500 font-[600] tracking-wider" 
-        : "cursor-pointer text-ternary font-[100]  hover:text-rose-300"}` }
+      className={`bg-white w-1/3 text-center py-2 font-trueno transition-all transform duration-150 hover:bg-ternary ${className} ${isActive 
+        ? "cursor-not-allowed bg-gradient-to-br from-white via-slate-300 to-gray-400 text-primary font-[600] tracking-wider" 
+        : "cursor-pointer text-ternary font-[100]  hover:text-figmaBlue hover:font-semibold"}` }
       disabled={isActive}
     >
       {children}
