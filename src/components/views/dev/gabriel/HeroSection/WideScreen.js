@@ -4,6 +4,7 @@ import * as HeroSvg from './HeroSvg';
 import gsap from 'gsap';
 import prefix from '@/helpers/prefix';
 import customLoader from "@/helpers/customLoader"
+import * as ga from '@/lib/ga';
 
 const WideScreen = ({ loading }) => {
 
@@ -47,6 +48,10 @@ const WideScreen = ({ loading }) => {
 
   const handleAction = () => {
     gsap.to(window, {duration: 0.5, scrollTo:"main"});
+    ga.event({
+      action: 'hero_cta',
+      params: {'event_category': "3-3-3 Principle", 'event_label': "widescreen"}
+    })
   }
 
   return (
@@ -133,7 +138,9 @@ const WideScreen = ({ loading }) => {
             className='font-futura text-xl pt-2.5 pb-2 pl-5 pr-16 font-semibold  text-white tracking-wider bg-primary hover:bg-opacity-100 transform transition-all duration-200'
             onClick={handleAction}
           >
-            <span className='block font-wask font-semibold text-left text-sm'>Read The</span>
+            <span 
+              className='block font-wask font-semibold text-left text-sm'
+              >Read The</span>
             3-3-3 Principles
             <span className='block font-wask font-thin text-left text-lg'>for a better UX</span>
           </button>

@@ -4,6 +4,7 @@ import * as HeroSvg from './HeroSvg';
 import gsap from 'gsap';
 import prefix from '@/helpers/prefix';
 import customLoader from "@/helpers/customLoader"
+import * as ga from "@/lib/ga"
 
 const Mobile = ({ loading }) => {
 
@@ -47,7 +48,10 @@ const Mobile = ({ loading }) => {
 
   const handleAction = () => {
     gsap.to(window, {duration: 0.5, scrollTo:"main"});
-    console.log("oi")
+    ga.event({
+      action: 'hero_cta',
+      params: {'event_category': "3-3-3 Principle", 'event_label': "mobile screen"}
+    })
   }
 
   return (
