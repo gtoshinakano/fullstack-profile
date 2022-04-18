@@ -12,6 +12,7 @@ jobs:
 
     env:
       NEXT_PUBLIC_BASE_PATH: /uiux-profile
+      NEXT_PUBLIC_GOOGLE_ANALYTICS: G-RH74DXLKZL
 
     strategy:
       matrix:

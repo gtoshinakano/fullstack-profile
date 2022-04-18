@@ -23,7 +23,7 @@ const Futurepartner = () => {
         <p className='should-hide'>My coding journey started on days when browsers didn't have Developer tools, the famous <strong>F12 key</strong>. </p>
         <p className='should-hide'>It was really hard to create websites full of user interactions at that time.</p>
         <p className='should-hide'>But, thanks to the evolution of technologies and browsers, now we can see more and more complex web applications doing an infinite amount of things.</p>
-        <p className='should-hide'>My interest in UI/UX Design arose when browsers started to do complex features like playing videos and animating objects using pure CSS.</p>
+        <p className='should-hide'>My interest in UI/UX Design arose when browsers started to have complex features like playing videos and animating objects using pure CSS.</p>
         <p className='should-hide'>What intrigued me was how companies like Facebook and Youtube provided that level of user experience on a single web browser.</p>
         <p className='should-hide'>It was very exciting for me, because I always dreamed with being part of a big company or building my own APP.</p>
         <p className='should-hide'>And I realized that the code itself is not what makes a product perceived by people as useful.</p>
