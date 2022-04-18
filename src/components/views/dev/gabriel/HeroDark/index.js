@@ -10,6 +10,7 @@ import ScrollToPlugin from "gsap/dist/ScrollToPlugin"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
 import prefix from "@/helpers/prefix"
 import customLoader from "@/helpers/customLoader"
+import { event } from '@/lib/ga';
 
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -48,6 +49,10 @@ const Herodark = ({isWide}) => {
       onComplete: () => {
         setSelected(newSelected)
         setLoading(false)
+        event({
+          action: 'menu_click',
+          params: {'event_category': newSelected}
+        })
       },
     })
       .to(container("#mid-container .should-hide"), {opacity: 0, stagger: 0.05, reversed: true, duration: 0.01}, "<")
