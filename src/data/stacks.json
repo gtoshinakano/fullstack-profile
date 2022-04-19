@@ -1,181 +1,181 @@
 {
   "bootstrap": {
     "name": "Bootstrap",
-    "src" : "/img/stacks/bootstrap.svg",
+    "src": "/img/stacks/bootstrap.svg",
     "css": "",
     "url": ""
   },
   "css": {
     "name": "CSS",
-    "src" : "/img/stacks/css.svg",
+    "src": "/img/stacks/css.svg",
     "css": "",
     "url": ""
   },
   "express": {
     "name": "ExpressJS",
-    "src" : "/img/stacks/express.svg",
+    "src": "/img/stacks/express.svg",
     "css": "bg-white",
     "url": ""
   },
   "firebase": {
     "name": "Firebase Services",
-    "src" : "/img/stacks/firebase.svg",
+    "src": "/img/stacks/firebase.svg",
     "css": "",
     "url": ""
   },
   "git": {
     "name": "Git",
-    "src" : "/img/stacks/git.svg",
+    "src": "/img/stacks/git.svg",
     "css": "bg-white",
     "url": ""
   },
   "google-analytics": {
     "name": "Google Analytics",
-    "src" : "/img/stacks/google-analytics.svg",
+    "src": "/img/stacks/google-analytics.svg",
     "css": "",
     "url": ""
   },
   "google-apps-script": {
     "name": "Google Apps Script",
-    "src" : "/img/stacks/google-apps-script.png",
+    "src": "/img/stacks/google-apps-script.png",
     "css": "bg-white",
     "url": ""
   },
   "google-charts": {
     "name": "Google Charts API",
-    "src" : "/img/stacks/google-charts.png",
+    "src": "/img/stacks/google-charts.png",
     "css": "",
     "url": ""
   },
   "google-maps": {
     "name": "Google Maps API",
-    "src" : "/img/stacks/google-maps.svg",
+    "src": "/img/stacks/google-maps.svg",
     "css": "bg-white",
     "url": ""
   },
   "google-spreadsheets": {
     "name": "Google Spreadsheets",
-    "src" : "/img/stacks/google-spreadsheets.png",
+    "src": "/img/stacks/google-spreadsheets.png",
     "css": "bg-white",
     "url": ""
   },
   "gsap": {
     "name": "GreenSock Animation Plugin",
-    "src" : "/img/stacks/gsap.svg",
+    "src": "/img/stacks/gsap.svg",
     "css": "",
     "url": ""
   },
   "html": {
     "name": "HTML",
-    "src" : "/img/stacks/html.svg",
+    "src": "/img/stacks/html.svg",
     "css": "",
     "url": ""
   },
   "i18n": {
     "name": "i18n Translation Lib",
-    "src" : "/img/stacks/i18n.png",
+    "src": "/img/stacks/i18n.png",
     "css": "",
     "url": ""
   },
   "java": {
     "name": "Java",
-    "src" : "/img/stacks/java.svg",
+    "src": "/img/stacks/java.svg",
     "css": "",
     "url": ""
   },
   "javascript": {
     "name": "Javascript",
-    "src" : "/img/stacks/javascript.svg",
+    "src": "/img/stacks/javascript.svg",
     "css": "bg-yellow-300",
     "url": ""
   },
   "jquery": {
     "name": "JQuery",
-    "src" : "/img/stacks/jquery.svg",
+    "src": "/img/stacks/jquery.svg",
     "css": "bg-white",
     "url": ""
   },
   "mysql": {
     "name": "MySQL",
-    "src" : "/img/stacks/mysql.svg",
+    "src": "/img/stacks/mysql.svg",
     "css": "",
     "url": ""
   },
   "nextjs": {
     "name": "NextJS",
-    "src" : "/img/stacks/nextjs.svg",
+    "src": "/img/stacks/nextjs.svg",
     "css": "bg-white",
     "url": ""
   },
   "nodejs": {
     "name": "NodeJS",
-    "src" : "/img/stacks/nodejs.svg",
+    "src": "/img/stacks/nodejs.svg",
     "css": "bg-white",
     "url": ""
   },
   "nodemailer": {
     "name": "NodeMailer",
-    "src" : "/img/stacks/nodemailer.png",
+    "src": "/img/stacks/nodemailer.png",
     "css": "bg-white",
     "url": ""
   },
   "php": {
     "name": "PHP",
-    "src" : "/img/stacks/php.svg",
+    "src": "/img/stacks/php.svg",
     "css": "",
     "url": ""
   },
   "reactjs": {
     "name": "ReactJS",
-    "src" : "/img/stacks/reactjs.svg",
+    "src": "/img/stacks/reactjs.svg",
     "css": "",
     "url": ""
   },
   "react-query": {
     "name": "React Query",
-    "src" : "/img/stacks/react-query.svg",
+    "src": "/img/stacks/react-query.svg",
     "css": "",
     "url": ""
   },
   "redux": {
     "name": "Redux",
-    "src" : "/img/stacks/redux.svg",
+    "src": "/img/stacks/redux.svg",
     "css": "",
     "url": ""
   },
   "ros": {
     "name": "Robot Operating System",
-    "src" : "/img/stacks/ros.png",
+    "src": "/img/stacks/ros.png",
     "css": "",
     "url": ""
   },
   "rsuite": {
     "name": "React Suite UI",
-    "src" : "/img/stacks/rsuite.png",
+    "src": "/img/stacks/rsuite.png",
     "css": "",
     "url": ""
   },
   "semantic-ui": {
     "name": "Semantic UI",
-    "src" : "/img/stacks/semantic-ui.svg",
+    "src": "/img/stacks/semantic-ui.svg",
     "css": "",
     "url": ""
   },
   "styled-components": {
     "name": "Styled Components",
-    "src" : "/img/stacks/styled-components.png",
+    "src": "/img/stacks/styled-components.png",
     "css": "",
     "url": ""
   },
   "tailwind": {
     "name": "TailwindCSS",
-    "src" : "/img/stacks/tailwind.svg",
+    "src": "/img/stacks/tailwind.svg",
     "css": "",
     "url": ""
   },
   "ubuntu": {
     "name": "Ubuntu Operating System",
-    "src" : "/img/stacks/ubuntu.svg",
+    "src": "/img/stacks/ubuntu.svg",
     "css": "",
     "url": ""
   }

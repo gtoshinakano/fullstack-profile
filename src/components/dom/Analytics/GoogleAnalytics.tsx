@@ -1,15 +1,13 @@
-import React, {useEffect, ReactElement} from 'react';
-import Script from 'next/script';
-import { useRouter } from 'next/router';
+import React, { useEffect, ReactElement } from 'react'
+import Script from 'next/script'
+import { useRouter } from 'next/router'
 import * as ga from '@Lib/ga'
 
-const GAScript = () : ReactElement => {
-
+const GAScript = (): ReactElement => {
   const router = useRouter()
 
   useEffect(() => {
-
-    const handleRouteChange = (url : string) : void => {
+    const handleRouteChange = (url: string): void => {
       ga.pageview(url)
     }
     //When the component is mounted, subscribe to router changes
@@ -26,11 +24,11 @@ const GAScript = () : ReactElement => {
   return (
     <>
       <Script
-        strategy="lazyOnload"
+        strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy='lazyOnload'>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -41,8 +39,7 @@ const GAScript = () : ReactElement => {
         `}
       </Script>
     </>
-  );
-};
+  )
+}
 
-export default GAScript;
-
+export default GAScript

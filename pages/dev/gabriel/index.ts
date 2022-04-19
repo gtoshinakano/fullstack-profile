@@ -1,3 +1,3 @@
-import Page from "../gabriel-toshinori-nakano"
+import Page from '../gabriel-toshinori-nakano'
 
 export default Page

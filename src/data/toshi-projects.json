@@ -124,7 +124,12 @@
     "public": "Feira da Liberdade's Exhibitors Association",
     "problem": "All financial data from the Association were in an Excel Sheet. They needed an easier way to register information and print monthly balances.",
     "solution": "I converted the .XLS sheet into a Google Spreadsheet, served it's data via Google Apps Scripts http request and made this system in ReactJS. It became a complete dashboard for controlling incomes and expenses.",
-    "stacks": ["reactjs", "rsuite", "google-spreadsheets", "google-apps-script"],
+    "stacks": [
+      "reactjs",
+      "rsuite",
+      "google-spreadsheets",
+      "google-apps-script"
+    ],
     "cover": {},
     "action": {
       "label": "",
@@ -143,7 +148,12 @@
     "public": "Me",
     "problem": "Manage daily personal finances during exchange program in Hokkaido.",
     "solution": "During the 14 days of quarantine period, I built a tool to input daily finances data on a Google Sheets. It was an Google Sheet serving data to a SPA in ReactJS. I created the simplest and easiest input form so I could use it on daily basis. I used that simple interface every time I bought something during my exchange program and the results were a full cash control, input anytime/anywhere, and more learnings",
-    "stacks": ["reactjs", "semantic-ui", "google-spreadsheets", "google-apps-script"],
+    "stacks": [
+      "reactjs",
+      "semantic-ui",
+      "google-spreadsheets",
+      "google-apps-script"
+    ],
     "cover": {},
     "action": {
       "label": "",
@@ -200,7 +210,13 @@
     "public": "Hokkaido Association's Events Leads",
     "problem": "It was our first event after one year of covid pandemics and we needed to present a new plate to the public",
     "solution": "I was in charge of making a page to introduce our event to the public. This time I focused on the page interactivity and on SVG animations. We sent the page on Whatsapp groups, and approx. 50% of all conversions came from our page, and the other 50% came directly from whatsapp or personal contact. I learned a lot about getting the audience attention, lead them to an educational content about the product and then, to let them take an action.",
-    "stacks": ["reactjs", "nextjs", "styled-components", "tailwind", "google-analytics"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "styled-components",
+      "tailwind",
+      "google-analytics"
+    ],
     "cover": {},
     "action": {
       "label": "See",

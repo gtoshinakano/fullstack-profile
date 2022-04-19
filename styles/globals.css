@@ -53,8 +53,10 @@
 
 @font-face {
   font-family: 'futura';
-  src: url('https://gtoshinakano.github.io/uiux-profile/fonts/unicode.futurab-webfont.woff2') format('ttf'),
-       url('https://gtoshinakano.github.io/uiux-profile/fonts/unicode.futurab-webfont.woff') format('woff');
+  src: url('https://gtoshinakano.github.io/uiux-profile/fonts/unicode.futurab-webfont.woff2')
+      format('ttf'),
+    url('https://gtoshinakano.github.io/uiux-profile/fonts/unicode.futurab-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -67,6 +69,6 @@
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
 
-.primary-btn{
+.primary-btn {
   background-image: linear-gradient(to bottom, #accbee 0%, #e7f0fd 100%);
 }

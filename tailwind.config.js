@@ -14,15 +14,15 @@ module.exports = {
         maxHeight: 'max-height',
       },
       colors: {
-        heroGray: "#001424",
-        primary: "#D90368",
-        secondary: "#EF8354",
-        ternary: "#2B303F",
-        figmaBlue: "#54CAEF"
+        heroGray: '#001424',
+        primary: '#D90368',
+        secondary: '#EF8354',
+        ternary: '#2B303F',
+        figmaBlue: '#54CAEF',
       },
       maxWidth: {
-        'xl-screen': '1728px'
-      }
+        'xl-screen': '1728px',
+      },
     },
     fontFamily: {
       bigNoodle: ['"big-noodle"', 'Helvetica'],
@@ -36,5 +36,5 @@ module.exports = {
       pacifico: ['Pacifico'],
       trueno: ['Trueno'],
     },
-  }
+  },
 }

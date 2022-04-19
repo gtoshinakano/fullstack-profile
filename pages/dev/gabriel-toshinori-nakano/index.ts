@@ -1,3 +1,3 @@
-import Gabriel from "./gabriel"
+import Gabriel from './gabriel'
 
 export default Gabriel
