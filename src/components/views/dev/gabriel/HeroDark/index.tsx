@@ -1,7 +1,7 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useRef, useState, useEffect, ReactNode} from 'react';
 import Image from 'next/image';
 import gsap from 'gsap'
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime'
 import Jobs from './Jobs';
 import Projects from './Projects';
@@ -17,13 +17,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 dayjs.extend(relativeTime)
 
+interface IProps {
+  isWide: boolean | 0 | undefined
+}
 
-const Herodark = ({isWide}) => {
 
-  const containerRef = useRef()
+const Herodark = ({isWide} : IProps) => {
+
+  const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
 
-  const [selected, setSelected] = useState("job") //job projects partner
+  const [selected, setSelected] = useState<string>("job") //job projects partner
   const [loading, setLoading] = useState(false) 
 
   useEffect(() => {
@@ -43,7 +47,7 @@ const Herodark = ({isWide}) => {
 
   }, []);
 
-  const onSelect = (newSelected) => {
+  const onSelect = (newSelected : string) : void => {
     setLoading(true)
     gsap.timeline({
       onComplete: () => {
@@ -141,9 +145,15 @@ const Herodark = ({isWide}) => {
 
 export default Herodark;
 
-const Menu = ({setSelected, selected, loading}) => {
+interface IMenuProps {
+  setSelected : (str: string) => void
+  selected: string
+  loading?: boolean
+}
 
-  const containerRef = useRef()
+const Menu = ({setSelected, selected, loading} : IMenuProps) => {
+
+  const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
 
   useEffect(() => {
@@ -165,21 +175,18 @@ const Menu = ({setSelected, selected, loading}) => {
       <div ref={containerRef} className={`absolute w-full flex z-50`}> 
         <div id="menu-container" className='flex w-[80%] md:w-1/2 lg:w-1/3 lg:min-w-[345px] border-b-42 border-primary rounded-full overflow-hidden shadow-md mx-auto'>
           <Button 
-            className=''
             isActive={selected === "job"}
             onClick={() => setSelected("job")}
           >
             Profile
           </Button>
           <Button 
-            className=''
             isActive={selected === "projects"}
             onClick={() => setSelected("projects")}
           >
             Timeline
           </Button>
           <Button 
-            className=''
             isActive={selected === "partner"}
             onClick={() => setSelected("partner")}
           >
@@ -191,7 +198,14 @@ const Menu = ({setSelected, selected, loading}) => {
   )
 }
 
-const Button = ({children, className,isActive, ...rest}) => {
+interface IButtonProps {
+  children: ReactNode,
+  className?: string,
+  isActive: boolean,
+  [x:string]: any;
+}
+
+const Button = ({children, className,isActive, ...rest} : IButtonProps) => {
 
   return (
     <button 

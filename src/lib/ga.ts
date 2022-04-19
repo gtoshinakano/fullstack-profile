@@ -6,7 +6,10 @@ declare global {
 
 interface IEvent{
   action: string 
-  params: string
+  params: {
+    event_category?: string
+    event_label?: string 
+  }
 }
 
 // log the pageview with their URL

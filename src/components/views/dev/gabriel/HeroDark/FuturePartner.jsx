@@ -3,7 +3,6 @@ import gsap from 'gsap'
 
 
 const Futurepartner = () => {
-
   
   const containerRef = useRef()
   const container = gsap.utils.selector(containerRef)
