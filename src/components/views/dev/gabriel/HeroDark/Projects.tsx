@@ -1,15 +1,36 @@
 import React, {useRef, useEffect, useState} from 'react';
-import stacks from "@/data/stacks.json"
-import data from "@/data/toshi-projects.json"
+import StacksJson from "@/data/stacks.json"
+import ProjectsJson from "@/data/toshi-projects.json"
 import Image from 'next/image';
 import gsap from 'gsap'
 import _ from 'lodash'
 import prefix from '@/helpers/prefix';
 import customLoader from '@/helpers/customLoader';
 
+type IProject = {
+  period: string[]
+  type: string
+  title: string
+  subtitle: string
+  learnings: string
+  country: string
+  where: string
+  public: string
+  problem: string
+  solution: string
+  stacks: string[]
+  cover?: any
+  action: {label: string, url: string}
+  label: string // Unique Key of project
+}
+
+type anyObj = {
+  [key: string]: any
+}
+
 const Projects = () => {
 
-  const containerRef = useRef()
+  const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
   
   useEffect(() => {
@@ -18,16 +39,18 @@ const Projects = () => {
       .to(container(".should-hide"), {opacity: 1, stagger: 0.05}, "<")
   }, []);
 
-  const [expanded, setExpanded] = useState([])
+  let data : IProject[] = ProjectsJson
+  let stacks : anyObj = StacksJson
+  const [expanded, setExpanded] = useState<string[]>([])
 
-  const allExpanded = expanded.length === data.length
+  const allExpanded : boolean = expanded.length === data.length
 
   const toggleAll = () => {
     if(allExpanded) setExpanded([])
     else setExpanded(data.map((item) => (item.label)))
   }
 
-  const toggleByLabel = (label) => {
+  const toggleByLabel = (label : string) => {
     if(!expanded.includes(label)) setExpanded([...expanded, label])
     else {
       const index = expanded.indexOf(label);

@@ -1,17 +1,22 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef, useState, ReactElement} from 'react';
 import Image from 'next/image';
 import gsap from 'gsap'
-import stacks from "@/data/stacks.json"
-import tools from "@/data/swtools.json"
+import StacksJson from "@/data/stacks.json"
+import ToolsJson from "@/data/swtools.json"
 import _ from 'lodash'
 import prefix from '@/helpers/prefix';
 import customLoader from "@/helpers/customLoader"
+import data from '@/data/jobs.json'
 
-const Jobs = () => {
+type anyObj = {
+  [key: string]: any
+}
 
-  const containerRef = useRef()
+const Jobs = () : ReactElement => {
+
+  const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
-  const [hasEducation, setEducation] = useState(true)
+  const [hasEducation, setEducation] = useState<boolean>(true)
 
   useEffect(() => {
     gsap.set(container(".should-hide"), {opacity:0})
@@ -21,6 +26,8 @@ const Jobs = () => {
   }, []);
 
   let jobs = _.reverse([...data])
+  let stacks : anyObj = StacksJson
+  let tools : anyObj = ToolsJson
 
   return (
     <>
@@ -103,8 +110,11 @@ const Jobs = () => {
                   <div className='flex flex-wrap overflow-hidden '>
                     <i className="uil uil-layer-group text-2xl text-slate-600 my-auto mr-4 hidden md:block"></i>
                     <span className='w-full block md:hidden mb-1 text-slate-500'>Tech Stacks</span>
-                    {item.stacks.map((stack, ind) => (
-                      <div className={`icons-rotate p-1 my-0.5 mx-1 bg-white rounded-full overflow-hidden ${stacks[stack].css}`} key={stack + ind}>
+                    {item.stacks.map((stack: string, ind: number) => (
+                      <div 
+                        className={`icons-rotate p-1 my-0.5 mx-1 bg-white rounded-full overflow-hidden ${stacks[stack].css}`} 
+                        key={stack + ind}
+                      >
                         <div className={`w-8 h-8 relative ${stacks[stack].css}`}>
                           <Image src={prefix+stacks[stack].src} alt={`Gabriel Toshinori Nakano has experience with ${stacks[stack].name}`} title={stacks[stack].name} layout="fill" objectFit="scale-down" loader={customLoader} unoptimized/>
                         </div>
@@ -164,42 +174,3 @@ const Jobs = () => {
 }
 
 export default Jobs;
-
-const data = [
-  {
-    company: "MapleBR Private Server",
-    job_name: "Practitioner",
-    period: ["Jan 2011","May 2012"],
-    description: "",
-    image: "/img/dev/gabriel/logos/maplestory.png",
-    stacks: ["java", "php", "mysql", "html", "css"],
-    tools: ["dreamweaver", "fireworks", "netbeans", "workbench"]
-  },
-  {
-    company: "DAEE - Depto. de Águas e Energia Elétrica",
-    job_name: "PHP Developer",
-    period: ["Jul 2013","Nov 2019"],
-    description: "",
-    image: "/img/dev/gabriel/logos/daee.jpg",
-    stacks: ["php", "mysql", "html", "css", "javascript","google-charts", "git", "jquery"],
-    tools: ["netbeans", "mysql-front", "nodejs", "github", "atom"]
-  },
-  {
-    company: "Noli Fretes [StartUp]",
-    job_name: "ReactJS Developer",
-    period: ["Nov 2019", "Mar 2020"],
-    description: "",
-    image: "/img/dev/gabriel/logos/noli-fretes.webp",
-    stacks: ["reactjs", "google-maps", "mysql", "semantic-ui", "express", "git"],
-    tools: ["vscode", "nodejs", "postman", "github"]
-  },
-  {
-    company: "WeDoIT.jp",
-    job_name: "FullStack Freelancer",
-    period: ["Ago 2021","Today"],
-    description: "",
-    image: "/img/wedoit-logo.png",
-    stacks: ["nextjs", "firebase", "express", "tailwind", "gsap", "redux", "react-query", "i18n", "git", "google-analytics"],
-    tools: ["vscode", "nodejs", "postman", "github", "figma", "illustrator", "xd"]
-  },
-]
