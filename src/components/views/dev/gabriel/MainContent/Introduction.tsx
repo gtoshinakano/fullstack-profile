@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {ReactElement} from 'react';
 import Image from "next/image"
 import prefix from '@/helpers/prefix';
 import customLoader from "@/helpers/customLoader"
 
-const Introduction = () => {
+const Introduction = () : ReactElement => {
   return (
     <section className="space-y-10">
       <h1 className="font-futura mb-16 text-5xl capitalize text-heroGray">my UI/UX Guide</h1>
