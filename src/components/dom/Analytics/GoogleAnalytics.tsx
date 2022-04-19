@@ -1,15 +1,15 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, ReactElement} from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
 import * as ga from '@Lib/ga'
 
-const GAScript = () => {
+const GAScript = () : ReactElement => {
 
   const router = useRouter()
 
   useEffect(() => {
 
-    const handleRouteChange = (url) => {
+    const handleRouteChange = (url : string) : void => {
       ga.pageview(url)
     }
     //When the component is mounted, subscribe to router changes

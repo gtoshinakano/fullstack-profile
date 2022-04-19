@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactElement} from 'react';
 import GA from './GoogleAnalytics';
 // import Plausible from './Plausible';
 // import SimpleAnalytics from './SimpleAnalytics';
@@ -6,7 +6,7 @@ import GA from './GoogleAnalytics';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const Analytics = () => {
+const Analytics = () : ReactElement => {
   return (
     <>
       {/* {isProduction && siteMetadata.analytics.plausibleDataDomain && (
