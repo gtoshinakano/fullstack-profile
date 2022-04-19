@@ -1,13 +1,24 @@
-import React, {useState} from 'react';
+import React, {useState, ReactElement} from 'react';
 import * as HeroSection from "@Components/views/dev/gabriel/HeroSection"
 import PublicLayout from '@/components/layout/Public';
 import HeroDark from '@/components/views/dev/gabriel/HeroDark';
 import MainContent from '@/components/views/dev/gabriel/MainContent';
 
-const GabrielPage = () => {
+declare global {
+  interface Window {
+    Pace: any
+  }
+}
 
-  const [loading, setLoading] = useState(true);
-  const [windowProps, setWindow] = useState({})
+interface IWindowProps{
+  width?: number
+  height?: number
+}
+
+const GabrielPage = (): ReactElement => {
+
+  const [loading, setLoading] = useState<boolean>(true);
+  const [windowProps, setWindow] = useState<IWindowProps>({})
   
   React.useEffect(() => {
     const { Pace } = window
@@ -16,7 +27,7 @@ const GabrielPage = () => {
       setLoading(false)
       setWindow({ width: innerWidth, height :innerHeight })
     })
-    const handleResize = () => {
+    const handleResize = () : void => {
       const {innerWidth: width, innerHeight: height } = window
       setWindow({  width, height })
     }
@@ -24,13 +35,15 @@ const GabrielPage = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [])
 
-  const isWide = windowProps.width > windowProps.height;
+  const isWide = (windowProps.width && windowProps.height) && (windowProps.width > windowProps.height);
 
   return (
     <PublicLayout title="UI/UX Dev. Gabriel Toshinori Nakano - Tokyo">
-      {isWide 
-        ? <HeroSection.WideScreen loading={loading} /> 
-        : <HeroSection.Mobile loading={loading} />}
+      <section className='min-h-screen'>
+        {!loading && (isWide 
+          ? <HeroSection.WideScreen loading={loading} /> 
+          : <HeroSection.Mobile loading={loading} />)}
+      </section>
       <HeroDark isWide={isWide} />
       <MainContent />
     </PublicLayout>

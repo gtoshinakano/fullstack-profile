@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {ReactElement, ReactNode} from 'react';
 import Head from 'next/head'
 
-const Index = ({children, title}) => {
+interface IProps {
+  children: ReactNode
+  title: string
+}
+
+const Index = ({children, title} : IProps) : ReactElement => {
   return (
     <>
       <Head>

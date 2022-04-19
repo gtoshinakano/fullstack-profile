@@ -4,8 +4,14 @@ import '@Styles/font-trueno.css'
 import 'react-loading-skeleton/dist/skeleton.css'
 import Analytics from '@Components/dom/Analytics'
 import Head from 'next/head'
+import React from 'react'
 
-function MyApp({ Component, pageProps }) {
+interface IProps{
+  Component: React.FC
+  pageProps: any
+}
+
+function MyApp({ Component, pageProps } : IProps) {
   return (<>
     <Head>
       <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
