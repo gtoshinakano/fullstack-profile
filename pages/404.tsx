@@ -1,12 +1,11 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect, useRef, ReactElement} from 'react'
 import {useRouter} from 'next/router'
 import Layout from '@Components/layout/Public'
 import gsap from 'gsap'
 
-export default function Home() {
+export default function Home() : ReactElement {
 
-  const router = useRouter()
-  const containerRef = useRef()
+  const containerRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     gsap.timeline({repeat: -1})
