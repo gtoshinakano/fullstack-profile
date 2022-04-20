@@ -198,7 +198,7 @@ const Menu = ({ setSelected, selected, loading }: IMenuProps) => {
             isActive={selected === 'projects'}
             onClick={() => setSelected('projects')}
           >
-            Timeline
+            Projects
           </Button>
           <Button
             isActive={selected === 'partner'}

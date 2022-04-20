@@ -225,6 +225,25 @@
     "label": "ishikari"
   },
   {
+    "period": ["Ago 2021 ", "Sep 2021"],
+    "type": "volunteer",
+    "title": "ASEBASE Database of Ex Internship Students/Trainees",
+    "subtitle": "",
+    "learnings": "UI/UX is about facilitating the user's life when filling up forms",
+    "country": "🇧🇷",
+    "where": "",
+    "public": "Brazilian Ex Students/Trainees from Japan Association ASEBEX",
+    "problem": "When brazilian students goes to Japan, they face a lot of common challenges. Experienced people can help them giving advices",
+    "solution": "Create a digital community for Brazilian exchange students and trainees in Japan",
+    "stacks": ["reactjs", "nextjs", "tailwind", "styled-components", "firebase", "mysql"],
+    "cover": {},
+    "action": {
+      "label": "View code and video",
+      "url": "https://github.com/gtoshinakano/asebase-next"
+    },
+    "label": "asebase"
+  },
+  {
     "period": ["Oct 2021 ", "Nov 2021"],
     "type": "freelance",
     "title": "Gustavo Amaral's NFT Collection Landing Page",
@@ -233,7 +252,7 @@
     "country": "🇧🇷",
     "where": "WeDoIT.jp",
     "public": "Crypto Currencies Investors",
-    "problem": "Find a good way to launch an NFT Collection",
+    "problem": "Launch a NFT Collection from a famous artist",
     "solution": "We built a landing page for promoting an NFT Collection from an artist friend. We  promoted it compiling information about the artist and his previous works. The challenge here was to translate the artist's style into an animated Webpage.",
     "stacks": ["reactjs", "nextjs", "tailwind", "gsap", "google-analytics"],
     "cover": {},
