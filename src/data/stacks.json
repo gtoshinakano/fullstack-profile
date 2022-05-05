@@ -173,6 +173,12 @@
     "css": "",
     "url": ""
   },
+  "typeorm": {
+    "name": "TypeORM",
+    "src": "/img/stacks/typeorm.png",
+    "css": "",
+    "url": ""
+  },
   "ubuntu": {
     "name": "Ubuntu Operating System",
     "src": "/img/stacks/ubuntu.svg",
