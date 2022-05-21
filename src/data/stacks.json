@@ -65,6 +65,12 @@
     "css": "",
     "url": ""
   },
+  "heroku": {
+    "name": "Heroku",
+    "src": "/img/stacks/heroku.svg",
+    "css": "",
+    "url": ""
+  },
   "html": {
     "name": "HTML",
     "src": "/img/stacks/html.svg",

@@ -235,7 +235,7 @@
     "public": "Brazilian Ex Students/Trainees from Japan Association ASEBEX",
     "problem": "When brazilian students goes to Japan, they face a lot of common challenges. Experienced people can help them giving advices",
     "solution": "Create a digital community for Brazilian exchange students and trainees in Japan",
-    "stacks": ["reactjs", "nextjs", "tailwind", "styled-components", "firebase", "mysql", "typeorm"],
+    "stacks": ["reactjs", "nextjs", "tailwind", "styled-components", "firebase", "mysql", "typeorm", "heroku"],
     "cover": {},
     "action": {
       "label": "View code and video",
