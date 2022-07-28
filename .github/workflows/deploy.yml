@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /uiux-profile
+      NEXT_PUBLIC_BASE_PATH: /fullstack-profile
       NEXT_PUBLIC_GOOGLE_ANALYTICS: G-RH74DXLKZL
 
     strategy:
