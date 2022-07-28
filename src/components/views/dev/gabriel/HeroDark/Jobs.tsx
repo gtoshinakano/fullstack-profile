@@ -44,8 +44,8 @@ const Jobs = (): ReactElement => {
           Summary
         </h3>
         <div className='pl-5 pb-4 space-y-1'>
-          <p>• UI/UX Designer </p>
           <p>• FullStack Javascript Developer</p>
+          <p>• UI/UX First</p>
           <p>• Multi-Tech experienced</p>
           <p>• Japanese raised in Brazil</p>
         </div>
@@ -53,12 +53,12 @@ const Jobs = (): ReactElement => {
           Skills
         </h3>
         <div className='pl-5 pb-4 space-y-1'>
-          <p>• Figma, Illustrator, Photoshop, Adobe XD</p>
-          <p>• JavaScript/HTML/CSS</p>
           <p>• ReactJS/NextJS/Express</p>
+          <p>• Dominated DOM / HTML / CSS / JS</p>
           <p>• Firebase/Google Maps API/Analytics</p>
-          <p>• SQL and NoSQL Data Modeling/Thinking</p>
-          <p>• Google App Scripts (SpreadSheets)</p>
+          <p>• SQL and NoSQL Data Modeling</p>
+          <p>• Good understanding of CI/CD</p>
+          <p>• Figma, Illustrator, Photoshop, Adobe XD</p>
         </div>
         <h3 className='text-xl font-futura tracking-wider capitalize pb-2'>
           Experiences

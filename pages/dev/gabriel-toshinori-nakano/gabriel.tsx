@@ -40,7 +40,7 @@ const GabrielPage = (): ReactElement => {
     windowProps.width > windowProps.height
 
   return (
-    <PublicLayout title='UI/UX Dev. Gabriel Toshinori Nakano - Tokyo'>
+    <PublicLayout title='FULL STACK DEV. Gabriel Toshinori Nakano - Tokyo'>
       <section className='min-h-screen'>
         {!loading &&
           (isWide ? (

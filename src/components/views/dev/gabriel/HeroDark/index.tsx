@@ -82,17 +82,16 @@ const Herodark = ({ isWide }: IProps) => {
               Call me <span className='text-secondary'>Toshi</span>,
             </div>
             <div className='font-trueno font-semibold text-sm md:text-xl leading-loose'>
-              UI/UX Developer | Full-Stack | NextJS
+              Full-Stack Developer | UI/UX Enthusiast | NodeJS
             </div>
             <div className='font-futura font-semibold text-sm leading-loose capitalize hidden md:block'>
-              A New UX Designer with{' '}
               {dayjs().subtract(2011, 'year').format('YYYY')} years of coding
               experience.
             </div>
             <div className='font-trueno font-thin text-sm mt-5'>
               <p>🇯🇵 Japanese Brazilian 🇧🇷</p>
               {/*  */}
-              <p>🎂 {dayjs(new Date(1988, 3, 9)).toNow(true)}</p>
+              <p>🎂 {dayjs(new Date(1988, 3, 9)).toNow(true)} old</p>
               <p>🗼 Based in Tokyo</p>
             </div>
           </div>
