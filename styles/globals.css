@@ -53,9 +53,9 @@
 
 @font-face {
   font-family: 'futura';
-  src: url('https://gtoshinakano.github.io/uiux-profile/fonts/unicode.futurab-webfont.woff2')
+  src: url('https://gtoshinakano.github.io/fullstack-profile/fonts/unicode.futurab-webfont.woff2')
       format('ttf'),
-    url('https://gtoshinakano.github.io/uiux-profile/fonts/unicode.futurab-webfont.woff')
+    url('https://gtoshinakano.github.io/fullstack-profile/fonts/unicode.futurab-webfont.woff')
       format('woff');
   font-weight: normal;
   font-style: normal;
