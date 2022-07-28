@@ -45,7 +45,7 @@
   {
     "company": "WeDoIT.jp",
     "job_name": "FullStack Freelancer",
-    "period": ["Ago 2021", "Today"],
+    "period": ["Ago 2021", "Apr 2022"],
     "description": "",
     "image": "/img/wedoit-logo.png",
     "stacks": [
@@ -68,6 +68,27 @@
       "figma",
       "illustrator",
       "xd"
+    ]
+  },
+  {
+    "company": "Infosys.jp",
+    "job_name": "FullStack Engineer",
+    "period": ["Apr 2022", "Jul 2022"],
+    "description": "",
+    "image": "/img/dev/gabriel/logos/infosys-technologies-logo.svg",
+    "stacks": [
+      "reactjs",
+      "aws",
+      "sonarqube",
+      "git"
+    ],
+    "tools": [
+      "vscode",
+      "nodejs",
+      "postman",
+      "github",
+      "jira",
+      "jenkins"
     ]
   }
 ]

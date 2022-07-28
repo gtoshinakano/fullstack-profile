@@ -282,10 +282,10 @@
     "label": "onoda"
   },
   {
-    "period": ["Apr 2022 ", "Today"],
+    "period": ["Apr 2022 ", "May 2022"],
     "type": "personal",
     "title": "This Portfolio and the 3-3-3 Principles For a Better UX",
-    "subtitle": "WeDoIT.jp",
+    "subtitle": "gtoshinakano.github.io/fullstack-profile",
     "learnings": "Keep reading to know me better",
     "country": "🇯🇵",
     "where": "Tokyo",
@@ -296,8 +296,27 @@
     "cover": {},
     "action": {
       "label": "This page",
-      "url": "https://gtoshinakano.github.io/uiux-profile/"
+      "url": "https://gtoshinakano.github.io/fullstack-profile/"
     },
     "label": "portfolio"
+  },
+  {
+    "period": ["May 2022 ", "Today"],
+    "type": "job",
+    "title": "Project Requirement Design Deliverables",
+    "subtitle": "",
+    "learnings": "To understand project's requirements making it easier for Offshore team",
+    "country": "🇯🇵",
+    "where": "Tokyo",
+    "public": "Offshore Development Team",
+    "problem": "Business Analysts write requirement documents and Onsite technical team has to prepare it to be Offshore developers friendly",
+    "solution": "In a well structured software house, Business Analysts does their job to understand the customer needs in order to create a good solution for them. Being part of the technical team, I did my best to create technical documents that Offshore development team could understand the requirements to brought up the best solution for the client. That includes DB Design, Data validation strategy and Data flow designs.",
+    "stacks": ["excel", "drawio", "mysql"],
+    "cover": {},
+    "action": {
+      "label": "",
+      "url": ""
+    },
+    "label": "requirement"
   }
 ]

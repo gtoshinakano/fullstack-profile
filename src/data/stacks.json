@@ -1,4 +1,10 @@
 {
+  "aws": {
+    "name": "Amazon Web Services",
+    "src": "/img/stacks/aws.svg",
+    "css": "bg-white",
+    "url": ""
+  },
   "bootstrap": {
     "name": "Bootstrap",
     "src": "/img/stacks/bootstrap.svg",
@@ -9,6 +15,18 @@
     "name": "CSS",
     "src": "/img/stacks/css.svg",
     "css": "",
+    "url": ""
+  },
+  "drawio": {
+    "name": "CSS",
+    "src": "/img/stacks/drawio.png",
+    "css": "",
+    "url": ""
+  },
+  "excel": {
+    "name": "Microsoft Excel",
+    "src": "/img/stacks/excel.svg",
+    "css": "bg-white",
     "url": ""
   },
   "express": {
@@ -165,6 +183,12 @@
     "name": "Semantic UI",
     "src": "/img/stacks/semantic-ui.svg",
     "css": "",
+    "url": ""
+  },
+  "sonarqube": {
+    "name": "SonarQube",
+    "src": "/img/stacks/sonarqube.svg",
+    "css": "bg-white",
     "url": ""
   },
   "styled-components": {
