@@ -3,7 +3,6 @@ import * as HeroSection from '@Components/views/dev/gabriel/HeroSection'
 import PublicLayout from '@/components/layout/Public'
 import HeroDark from '@/components/views/dev/gabriel/HeroDark'
 import MainContent from '@/components/views/dev/gabriel/MainContent'
-import { useTranslation } from 'next-i18next';
 
 declare global {
   interface Window {
@@ -19,7 +18,6 @@ interface IWindowProps {
 const GabrielPage = (): ReactElement => {
   const [loading, setLoading] = useState<boolean>(true)
   const [windowProps, setWindow] = useState<IWindowProps>({})
-  const  {t} = useTranslation()
 
   React.useEffect(() => {
     const { Pace } = window

@@ -11,6 +11,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import prefix from '@/helpers/prefix'
 import customLoader from '@/helpers/customLoader'
 import { event } from '@/lib/ga'
+import { useTranslation } from 'react-i18next'
 
 gsap.registerPlugin(ScrollToPlugin)
 gsap.registerPlugin(ScrollTrigger)
@@ -24,6 +25,7 @@ interface IProps {
 const Herodark = ({ isWide }: IProps) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
+  const {t, i18n} = useTranslation()
 
   const [selected, setSelected] = useState<string>('job') //job projects partner
   const [loading, setLoading] = useState(false)
@@ -74,19 +76,18 @@ const Herodark = ({ isWide }: IProps) => {
           <div className='w-full md:w-2/3 flex flex-col px-4 md:pl-16 py-6'>
             <div className='font-trueno font-light text-xs md:text-sm'>
               <span className='font-pacifico'> Hi ! 👋 </span>
-              <span className='hidden md:inline'>my name is </span>
-              <span className='inline md:hidden'>I'm </span>
+              <span className='hidden md:inline'>{t("my-name-is")} </span>
+              <span className='inline md:hidden'>{t("I-m")} </span>
               Gabriel Toshinori Nakano,
             </div>
             <div className='font-futura text-5xl md:text-6xl font-bold'>
-              Call me <span className='text-secondary'>Toshi</span>,
+              {t("call-me")}<span className='text-secondary'>{t("Toshi")}</span>,
             </div>
             <div className='font-trueno font-semibold text-sm md:text-xl leading-loose'>
-              Full-Stack Developer | UI/UX Enthusiast | NodeJS
+              {t("full-stack-dev")} | {t("UI-UX-Enthusiast")} | NodeJS
             </div>
             <div className='font-futura font-semibold text-sm leading-loose capitalize hidden md:block'>
-              {dayjs().subtract(2011, 'year').format('YYYY')} years of coding
-              experience.
+              {dayjs().subtract(2011, 'year').format('YYYY')} {t("years-of-code")}
             </div>
             <div className='font-trueno font-thin text-sm mt-5'>
               <p>🇯🇵 Japanese Brazilian 🇧🇷</p>
