@@ -17,7 +17,7 @@ export const useRedirect = (to) => {
     }
 
     languageDetector.cache(detectedLng)
-    router.replace(basePath + detectedLng + to)
+    router.replace(basePath + detectedLng)
   })
 
   return <></>
