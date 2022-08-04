@@ -10,14 +10,14 @@ export const useRedirect = (to) => {
   // language detection
   useEffect(() => {
     const detectedLng = languageDetector.detect()
-    const basePath = process.env.NODE_ENV === 'production' ?  process.env.NEXT_PUBLIC_BASE_PATH + '/' + detectedLng : '/' + detectedLng
-    if (to.startsWith(basePath) && router.route === '/404') { // prevent endless loop
-      router.replace(basePath + router.route)
+    const basePath = process.env.NODE_ENV === 'production' ?  process.env.NEXT_PUBLIC_BASE_PATH + '/' : '/'
+    if (to.startsWith(basePath + detectedLng) && router.route === '/404') { // prevent endless loop
+      router.replace(basePath + detectedLng + router.route)
       return
     }
 
     languageDetector.cache(detectedLng)
-    router.replace(basePath + to)
+    router.replace(basePath + detectedLng + to)
   })
 
   return <></>
