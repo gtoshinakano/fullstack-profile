@@ -27,5 +27,17 @@
     "japanese": "日本語",
     "english": "英語"
   },
-  "languages": "言語"
+  "languages": "言語",
+  "projects": {
+    "jobs": "Jobs",
+    "personal-projects": "パーソナルプロジェクト",
+    "target": "ターゲット",
+    "problem": "チャレンジ",
+    "solution": "解決方法",
+    "tech-stacks-used": "使用したTECHスタック",
+    "read": "詳しく読む",
+    "hide": "閉じる"
+  },
+  "hide-all": "詳細非表示",
+  "expand-all": "詳細表示"
 }

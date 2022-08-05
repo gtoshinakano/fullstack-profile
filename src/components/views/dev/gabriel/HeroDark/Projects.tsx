@@ -6,6 +6,7 @@ import gsap from 'gsap'
 import _ from 'lodash'
 import prefix from '@/helpers/prefix'
 import customLoader from '@/helpers/customLoader'
+import { useTranslation } from 'react-i18next'
 
 type IProject = {
   period: string[]
@@ -31,6 +32,7 @@ type anyObj = {
 const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
+  const { t } = useTranslation()
 
   useEffect(() => {
     gsap
@@ -72,9 +74,9 @@ const Projects = () => {
   return (
     <>
       <h2 className='should-hide text-2xl md:text-3xl font-futura font-bold mb-5 capitalize text-center md:text-left'>
-        🚀 Jobs
+        🚀 {t('projects.jobs')}
         <span className='text-primary'> & </span>
-        Personal Projects
+        {t('projects.personal-projects')}
       </h2>
       <div className='should-hide w-full flex pb-2 '>
         <button
@@ -89,8 +91,7 @@ const Projects = () => {
             <i className='uil uil-plus text-xl mr-2'></i>
           )}
           <span className='my-auto text-white font-trueno'>
-            {allExpanded ? 'Hide ' : 'Expand '}
-            All
+            {allExpanded ? t('hide-all') : t('expand-all')}
           </span>
         </button>
       </div>
@@ -130,26 +131,26 @@ const Projects = () => {
                 >
                   <p className='tracking-wider mb-1.5'>
                     <span className='md:font-semibold text-slate-500'>
-                      Target:{' '}
+                      {t('projects.target')}:{' '}
                     </span>
                     {item.public}
                   </p>
                   <p className='tracking-wider mb-1.5'>
                     <span className='md:font-semibold text-slate-500'>
-                      Problem:{' '}
+                    {t('projects.problem')}:{' '}
                     </span>
                     {item.problem}
                   </p>
                   <p className='tracking-wider mb-1.5'>
                     <span className='md:font-semibold text-slate-500'>
-                      Solution:{' '}
+                    {t('projects.solution')}:{' '}
                     </span>
                     {item.solution}
                   </p>
                   <div className='flex flex-wrap overflow-hidden '>
                     <i className='uil uil-layer-group text-2xl text-slate-500 my-auto mr-4 hidden md:block'></i>
                     <span className='w-full block md:hidden mb-1 text-slate-500'>
-                      Tech Stacks Used
+                    {t('projects.tech-stacks-used')}
                     </span>
                     {item.stacks.map((stack, ind) => (
                       <div
@@ -180,7 +181,7 @@ const Projects = () => {
                       !expanded.includes(item.label) ? 'underline' : ''
                     }`}
                   >
-                    {!expanded.includes(item.label) ? 'Read' : 'Hide'}
+                    {!expanded.includes(item.label) ? t('projects.read') : t('projects.hide')}
                     <i
                       className={`uil uil-plus block h-4 w-4 transform duration-300 transition-all ${
                         !expanded.includes(item.label)

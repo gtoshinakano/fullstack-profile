@@ -27,5 +27,17 @@
     "japanese": "Japonês",
     "english": "Inglês"
   },
-  "languages": "Idiomas"
+  "languages": "Idiomas",
+  "projects": {
+    "jobs": "Jobs",
+    "personal-projects": "Projetos Pessoais",
+    "target": "Público Alvo",
+    "problem": "Problema",
+    "solution": "Solução",
+    "tech-stacks-used": "Tech Stacks Utilizadas",
+    "read": "Ler",
+    "hide": "Esconder"
+  },
+  "hide-all": "Esconder Tudo",
+  "expand-all": "Expandir Tudo"
 }
