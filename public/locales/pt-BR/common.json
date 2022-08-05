@@ -6,5 +6,13 @@
   "Toshi": "Toshi",
   "full-stack-dev": "Desenvolvedor Full-Stack",
   "UI-UX-Enthusiast": "Entusiasta UI/UX",
-  "years-of-code": "anos de experiência"
+  "years-of-code": "anos de experiência",
+  "japanese-brazilian": "Japonês Brasileiro",
+  "years-old": "anos de idade",
+  "based-in-tokyo": "",
+  "menu": {
+    "profile": "Perfil",
+    "projects": "Projetos",
+    "for-recruiters": "Recrutadores"
+  }
 }

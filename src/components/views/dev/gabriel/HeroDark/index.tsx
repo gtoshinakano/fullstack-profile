@@ -12,6 +12,7 @@ import prefix from '@/helpers/prefix'
 import customLoader from '@/helpers/customLoader'
 import { event } from '@/lib/ga'
 import { useTranslation } from 'react-i18next'
+import { t } from 'i18next'
 
 gsap.registerPlugin(ScrollToPlugin)
 gsap.registerPlugin(ScrollTrigger)
@@ -25,7 +26,7 @@ interface IProps {
 const Herodark = ({ isWide }: IProps) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
-  const {t, i18n} = useTranslation()
+  const {t} = useTranslation()
 
   const [selected, setSelected] = useState<string>('job') //job projects partner
   const [loading, setLoading] = useState(false)
@@ -90,10 +91,10 @@ const Herodark = ({ isWide }: IProps) => {
               {dayjs().subtract(2011, 'year').format('YYYY')} {t("years-of-code")}
             </div>
             <div className='font-trueno font-thin text-sm mt-5'>
-              <p>🇯🇵 Japanese Brazilian 🇧🇷</p>
+              <p>🇯🇵 {t('japanese-brazilian')} 🇧🇷</p>
               {/*  */}
-              <p>🎂 {dayjs(new Date(1988, 3, 9)).toNow(true)} old</p>
-              <p>🗼 Based in Tokyo</p>
+              <p>🎂 {dayjs(new Date(1988, 3, 9)).toNow(true).replace('years', '')} {t('years-old')}</p>
+              <p>🗼 {t('based-in-tokyo')}</p>
             </div>
           </div>
           <div
@@ -160,6 +161,7 @@ interface IMenuProps {
 const Menu = ({ setSelected, selected, loading }: IMenuProps) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
+  const {t} = useTranslation()
 
   useEffect(() => {
     gsap
@@ -192,19 +194,19 @@ const Menu = ({ setSelected, selected, loading }: IMenuProps) => {
             isActive={selected === 'job'}
             onClick={() => setSelected('job')}
           >
-            Profile
+            {t('menu.profile')}
           </Button>
           <Button
             isActive={selected === 'projects'}
             onClick={() => setSelected('projects')}
           >
-            Projects
+            {t('menu.projects')}
           </Button>
           <Button
             isActive={selected === 'partner'}
             onClick={() => setSelected('partner')}
           >
-            <span className='hidden md:inline'>For</span> Recruiters
+            {t('menu.for-recruiters')}
           </Button>
         </div>
       </div>
