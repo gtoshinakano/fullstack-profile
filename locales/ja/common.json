@@ -1,10 +1,18 @@
 {
   "hello": "ハロー",
-  "my-name-is": "僕の名は",
-  "call-me": "訳して",
+  "my-name-is": "僕の名前は",
+  "call-me": "ニックネーム",
   "I-m": "名は",
   "Toshi": "トシ",
   "full-stack-dev": "Full-Stackデベロッパー",
   "UI-UX-Enthusiast": "UI/UX プロトライパー",
-  "years-of-code": "年コーディング経験"
+  "years-of-code": "年コーディング経験",
+  "japanese-brazilian": "日本人（ブラジル育）",
+  "years-old": "際",
+  "based-in-tokyo": "東京",
+  "menu": {
+    "profile": "プロフィール",
+    "projects": "プロジェクト",
+    "for-recruiters": "メッセージ"
+  }
 }
