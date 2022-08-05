@@ -18,132 +18,47 @@ const Futurepartner = () => {
   return (
     <>
       <h2 className='should-hide text-2xl md:text-3xl font-futura font-bold mb-5 lg:mb-10 text-center md:text-left'>
-        🙍‍♂️ Why <span className='text-primary'>UI/UX Developer</span> and not{' '}
-        <span className='text-primary'>Designer</span> ?
+      💬 Dear <span className='text-primary'>Future Partner</span> 
       </h2>
       <div
         ref={containerRef}
         className='space-y-4 lg:space-y-6 text-lg lg:text-xl lg:max-w-3xl tracking-wider font-openSans'
       >
         <p className='should-hide'>
-          My coding journey started on days when browsers didn't have Developer
-          tools, the famous <strong>F12 key</strong>.{' '}
+          It may sound cliche, buy I grew up admiring successful people like Steve Jobs, Bill Gates and Mark Zuckerberg. That's why I chose to study Technology.
         </p>
         <p className='should-hide'>
-          It was really hard to create websites full of user interactions at
-          that time.
+          My dream was - and still is - to create products that would be useful for countless people, and would help them solve their daily basis problems.
         </p>
         <p className='should-hide'>
-          But, thanks to the evolution of technologies and browsers, now we can
-          see more and more complex web applications doing an infinite amount of
-          things.
+          In my previous jobs, I was always searching for problems that could have been solved by creating and implementing a system.
         </p>
         <p className='should-hide'>
-          My interest in UI/UX Design arose when browsers started to have
-          complex features like playing videos and animating objects using pure
-          CSS.
+          So far I have created simple calculators, admin dashboards, databases, processes supporters, and websites. I did most of my projects in my freelancing journey.
         </p>
         <p className='should-hide'>
-          What intrigued me was how companies like Facebook and Youtube provided
-          that level of user experience on a single web browser.
+          Some of them were for personal usage, some of them for organizations usage. But all of them was for solving someone's problem. 
         </p>
         <p className='should-hide'>
-          It was very exciting for me, because I always dreamed with being part
-          of a big company or building my own APP.
+          You can see some repercussions that I'm proud of here and here (both in Japanese).
         </p>
         <p className='should-hide'>
-          And I realized that the code itself is not what makes a product
-          perceived by people as useful.
+          Each project made me practice all I learned and the next one guided me to learn the next necessary things. 
         </p>
         <p className='should-hide'>
-          What does that is the core idea of a product mixed with a good UX
-          implementation.
+          That's why I included so many tech stacks from my experiences in this portfolio. This is all I have experienced so far.
         </p>
         <p className='should-hide'>
-          So I decided to work more with the frontend side aiming to be closer
-          to the end-user.
+          And I can not say that I am a specialist in all that stacks. That would be impossible.
         </p>
         <p className='should-hide'>
-          Learn Frontend Coding is not THAT difficult, but the challenge for
-          most developers is the design part.
+          But that shows you that I am not afraid of learning new technologies or new frameworks from this vast world of technology.
         </p>
         <p className='should-hide'>
-          Because in general, we coders are more worried about making things
-          work than making things beautiful and easy to understand.
+          What I am missing now is to work with ambitious people to bring up to the world great projects. To learn from teams, from people and from challenges.
         </p>
         <p className='should-hide'>
-          But, as a developer who wishes to engage with impacting products, I
-          felt the need to learn more about design and UX.
-        </p>
-        <p className='should-hide'>
-          And through those studies, I realized that UX Design is something that
-          is always going to exist and is an opportunity to learn more about
-          people's minds.
-        </p>
-        <p className='should-hide'>
-          That is the reason I'm pursuing a UX career now.{' '}
-        </p>
-        <p className='should-hide'>
-          To gain experience, to work with end-users, to improve my design
-          skills and make a positive impact on people's life.
-        </p>
-        <p className='should-hide'>And this is how I can contribute:</p>
-        <h3 className='should-hide text-3xl font-semibold font-futura pt-5 text-center md:text-left'>
-          If you need a <span className='text-primary'>UI/UX Designer</span>
-        </h3>
-        <p className='should-hide'>
-          I will support the team by doing research, design, and prototypes. All
-          having in consideration a preview experience about modeling systems
-          architecture, data structure and processes.
-        </p>
-        <p className='should-hide'>
-          I'm aware of the level of backend complexity needed to create any
-          solution, so I will always design UX with what is technically possible
-          in mind.
-        </p>
-        <p className='should-hide'>
-          Since I don't have a personal design style shaped yet, I would
-          appreciate working with other designers in order to learn from them.
-        </p>
-        <p className='should-hide'>
-          Because, after all, I think that the goal of UX is to always pursue
-          improvements and not perfectionism.
-        </p>
-        <p className='should-hide'>
-          I've compiled my studies and written what I think are key principles
-          to consider when creating for UI/UX.
-        </p>
-        <p className='should-hide'>
-          I called it{' '}
-          <b className='font-semibold capitalize'>
-            the 3-3-3 principles for a better UX
-          </b>
-          . You can read below to understand how I apply UX Design to my
-          projects.
-        </p>
-        <h3 className='should-hide text-3xl font-semibold font-futura pt-5 text-center md:text-left'>
-          If you need a <span className='text-primary'>Frontend Developer</span>
-        </h3>
-        <p className='should-hide'>
-          I can build testable prototypes and MVPs (Minimum Viable Products)
-          helping to maintain it.
-        </p>
-        <p className='should-hide'>
-          I can join the development team and code to build SPA (Single Page
-          Applications) similar to this portfolio in ReactJS connecting them
-          with the backend structure.
-        </p>
-        <p className='should-hide'>
-          With a solid CSS knowledge, I can turn a design file into a scalable,
-          functional and responsive webpage with minimal configurations.
-        </p>
-        <p className='should-hide'>
-          I know some ways to create complex Apps using free or free until limit
-          BaaS (Backend As A Service){' '}
-        </p>
-        <p className='should-hide'>
-          And I'm also willing to work with ReactNative in order to learn more
-          about Mobile development.
+          And of course, to give my best to contribute to a better world, with better results and better performance for clients projects.
         </p>
         <h3 className='should-hide text-3xl font-semibold font-futura pt-5 text-center md:text-left'>
           If you <span className='text-primary capitalize'>hire me</span>
@@ -154,20 +69,19 @@ const Futurepartner = () => {
           learn new things.
         </p>
         <p className='should-hide'>
-          I can do both coding and designing. You are free to choose how I could
-          help you better!
+          I am someone who enjoys philosophical thinking to understand the world, the people, and the life. 
+        </p>
+        <p className='should-hide'>  
+          So, sometimes you will see me saying deep things.
         </p>
         <p className='should-hide'>
-          I enjoy philosophical thinking to understand the world, the people,
-          and our lives. Maybe sometimes you will see me saying deep things.
+          After more than 30 years living in Brazil, I came to live in Japan because I am Japanese and I love the Japanese culture.
         </p>
         <p className='should-hide'>
-          Although my Japanese level is (JLPT N3), I intend to enroll in a
-          Japanese language school in order to get N2 in the future.
+          My intention is to stay here, learn Japanese, and contribute for the local economy.
         </p>
         <p className='should-hide'>
-          If you want to know more about me, I invite you to keep reading this
-          page until the end.
+          If you want to know more about me, I invite you to read below my thoughts about UI/UX.
         </p>
       </div>
     </>
