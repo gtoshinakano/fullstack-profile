@@ -225,7 +225,7 @@ const Button = ({ children, className, isActive, ...rest }: IButtonProps) => {
   return (
     <button
       {...rest}
-      className={`bg-white w-1/3 text-center py-2 font-trueno transition-all transform duration-150 hover:bg-ternary ${className} ${
+      className={`bg-white w-1/3 text-center py-2 font-trueno transition-all transform duration-150 hover:bg-ternary text-sm lg:text-base ${className} ${
         isActive
           ? 'cursor-not-allowed bg-gradient-to-br from-white via-slate-300 to-gray-400 text-primary font-[600] tracking-wider'
           : 'cursor-pointer text-ternary font-[100]  hover:text-figmaBlue hover:font-semibold'
