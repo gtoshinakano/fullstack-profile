@@ -7,6 +7,7 @@ import _ from 'lodash'
 import prefix from '@/helpers/prefix'
 import customLoader from '@/helpers/customLoader'
 import data from '@/data/jobs.json'
+import { useTranslation } from 'react-i18next'
 
 type anyObj = {
   [key: string]: any
@@ -16,6 +17,7 @@ const Jobs = (): ReactElement => {
   const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
   const [hasEducation, setEducation] = useState<boolean>(true)
+  const { t } = useTranslation()
 
   useEffect(() => {
     gsap.set(container('.should-hide'), { opacity: 0 })
@@ -37,11 +39,11 @@ const Jobs = (): ReactElement => {
   return (
     <>
       <h2 className='should-hide text-2xl md:text-3xl font-futura font-bold mb-5 capitalize text-center md:text-left'>
-        📋 Profile <span className='text-primary'>&</span> Experiences
+        📋 {t('jobs.profile')} <span className='text-primary'>&</span> {t('jobs.experiences')}
       </h2>
       <div className='should-hide w-full my-4 space-y-2'>
         <h3 className='text-xl font-futura tracking-wider capitalize pb-2'>
-          Summary
+          {t('jobs.summary')}
         </h3>
         <div className='pl-5 pb-4 space-y-1'>
           <p>• FullStack Javascript Developer</p>
@@ -50,7 +52,7 @@ const Jobs = (): ReactElement => {
           <p>• Japanese raised in Brazil</p>
         </div>
         <h3 className='text-xl font-futura tracking-wider capitalize pb-2'>
-          Skills
+          {t('jobs.skills')}
         </h3>
         <div className='pl-5 pb-4 space-y-1'>
           <p>• ReactJS/NextJS/Express</p>
@@ -61,7 +63,7 @@ const Jobs = (): ReactElement => {
           <p>• Figma, Illustrator, Photoshop, Adobe XD</p>
         </div>
         <h3 className='text-xl font-futura tracking-wider capitalize pb-2'>
-          Experiences
+          {t('jobs.experiences')}
         </h3>
       </div>
       <div className='should-hide w-full flex pb-2'>
@@ -77,7 +79,7 @@ const Jobs = (): ReactElement => {
             <i className='uil uil-eye text-xl mr-2'></i>
           )}
           <span className='my-auto text-white font-trueno capitalize'>
-            {hasEducation ? 'hide degrees' : 'show degrees'}
+            {hasEducation ? t('jobs.hide-degrees') : t('jobs.show-degrees')}
           </span>
         </button>
       </div>
@@ -89,7 +91,7 @@ const Jobs = (): ReactElement => {
                 <div className='absolute transform -translate-x-1/2 w-[20px] h-[20px] rounded-full bg-secondary border-2 '></div>
                 <div className='pl-5 w-4/5 xl:w-2/3 text-xs pt-0.5'>
                   <span className='text-white'>Jul. 2010 - Jul. 2013</span>
-                  <span className='text-secondary'> |</span> Graduation
+                  <span className='text-secondary'> |</span> {t('jobs.graduation')}
                   <span className='block font-semibold text-lg mt-1 capitalize'>
                     <i className='uil uil-graduation-cap mr-2'></i>
                     Technologist In Business Management
@@ -195,7 +197,7 @@ const Jobs = (): ReactElement => {
             <div className='absolute transform -translate-x-1/2 w-[20px] h-[20px] rounded-full bg-secondary border-2'></div>
             <div className='pl-5 w-4/5 xl:w-2/3 text-xs pt-0.5'>
               <span className='text-white'>Jan. 2008 - Jul. 2010</span>
-              <span className='text-secondary'> |</span> Graduation
+              <span className='text-secondary'> |</span> {t('jobs.graduation')}
               <span className='block font-semibold text-lg mt-1 capitalize'>
                 <i className='uil uil-graduation-cap mr-2'></i> Technologist In
                 System Development And Analisys
@@ -219,11 +221,11 @@ const Jobs = (): ReactElement => {
         )}
         <div className='should-hide w-full mb-4 space-y-2'>
           <h3 className='text-xl font-futura tracking-wider capitalize pb-2'>
-            languages
+            {t('languages')}
           </h3>
-          <p>🗣 Portuguese (Native)</p>
-          <p>🗣 Japanese Low Business Level</p>
-          <p>🗣 English Low Business Level</p>
+          <p>🗣 {t('jobs.portuguese')} (Native)</p>
+          <p>🗣 {t('jobs.japanese')} Low Business Level (JLPT N3)</p>
+          <p>🗣 {t('jobs.english')} Low Business Level</p>
         </div>
       </div>
     </>

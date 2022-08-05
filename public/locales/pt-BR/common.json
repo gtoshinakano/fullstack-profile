@@ -9,10 +9,23 @@
   "years-of-code": "anos de experiência",
   "japanese-brazilian": "Japonês Brasileiro",
   "years-old": "anos de idade",
-  "based-in-tokyo": "",
+  "based-in-tokyo": "Mora em Tokyo",
   "menu": {
     "profile": "Perfil",
     "projects": "Projetos",
     "for-recruiters": "Recrutadores"
-  }
+  },
+  "jobs": {
+    "summary": "Resumo",
+    "profile": "Perfil",
+    "experiences": "Experiências",
+    "skills": "Skills",
+    "show-degrees": "Mostrar Graduações",
+    "hide-degrees": "Esconder Graduações",
+    "graduation": "Graduação",
+    "portuguese": "Português",
+    "japanese": "Japonês",
+    "english": "Inglês"
+  },
+  "languages": "Idiomas"
 }

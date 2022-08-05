@@ -14,5 +14,18 @@
     "profile": "Profile",
     "projects": "Projects",
     "for-recruiters": "Message"
-  }
+  },
+  "jobs": {
+    "summary": "Summary",
+    "profile": "Profile",
+    "experiences": "Experiences",
+    "skills": "Skills",
+    "show-degrees": "Show Degrees",
+    "hide-degrees": "Hide Degrees",
+    "graduation": "Graduation",
+    "portuguese": "Portuguese",
+    "japanese": "Japanese",
+    "english": "English"
+  },
+  "languages": "languages"
 }
