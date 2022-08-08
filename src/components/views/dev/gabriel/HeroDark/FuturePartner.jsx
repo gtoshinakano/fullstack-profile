@@ -1,9 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
+import { useTranslation, Trans } from 'react-i18next'
 
 const Futurepartner = () => {
   const containerRef = useRef()
   const container = gsap.utils.selector(containerRef)
+  const { t } = useTranslation('future-partner')
+
+  console.log(t('intro', {returnObjects: true}))
 
   useEffect(() => {
     gsap
@@ -18,7 +22,9 @@ const Futurepartner = () => {
   return (
     <>
       <h2 className='should-hide text-2xl md:text-3xl font-futura font-bold mb-5 lg:mb-10 text-center md:text-left'>
-      💬 Dear <span className='text-primary'>Future Partner</span> 
+        <Trans t={t} components={{span : <span className='text-primary'></span>}}>
+          {t('intro.title')}
+        </Trans>
       </h2>
       <div
         ref={containerRef}
