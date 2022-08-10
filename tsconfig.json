@@ -23,6 +23,6 @@
       "@Lib/*": ["src/lib/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/dom/ChangeLanguage/index.js"],
   "exclude": ["node_modules"]
 }

@@ -1,5 +1,6 @@
 import React, { ReactElement, ReactNode } from 'react'
 import Head from 'next/head'
+import ChangeLanguage from '@/components/dom/ChangeLanguage'
 
 interface IProps {
   children: ReactNode
@@ -37,6 +38,7 @@ const Index = ({ children, title }: IProps): ReactElement => {
         <meta name='msapplication-TileColor' content='#da532c' />
         <meta name='theme-color' content='#ffffff' />
       </Head>
+      <ChangeLanguage />
       {children}
     </>
   )
