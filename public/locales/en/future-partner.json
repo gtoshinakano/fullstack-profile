@@ -1,0 +1,87 @@
+{
+  "intro" : {
+    "title": "💬 Dear <span>Future Partner</span>",
+    "paragraphs" : [
+      {
+        "text" : "It may sound cliche, buy I grew up admiring successful people like Steve Jobs, Bill Gates and Mark Zuckerberg. That's why I chose to study Technology."
+      },
+      {
+        "text" : "My dream was - <0>and still is</0> - to create products that would be useful for countless people, and would help them solve their daily basis problems.",
+        "components" : [
+          {"elem": "strong"}
+        ]
+      },
+      {
+        "text" : "In my previous jobs, I was always searching for problems that could have been solved by creating and implementing a system."
+      },
+      {
+        "text" : "So far I have created simple calculators, admin dashboards, databases, processes supporters, and websites. I did most of my projects in my freelancing journey."
+      },
+      {
+        "text" : "Some of them were for personal usage, some of them for organization usage. But all of them were for solving someone's problem. "
+      },
+      {
+        "text" : "You can see some repercussions that I'm proud of <0>here</0> and <1>here</1> (both in Japanese).",
+        "components" : [
+          {
+            "elem": "a",
+            "props": {
+              "href": "https://www.nikkeyshimbun.jp/2020/200926-21colonia.html",
+              "className": "font-bold",
+              "target": "_blank"
+            }
+          },
+          {
+            "elem": "a",
+            "props": {
+              "href": "https://www.nikkeyshimbun.jp/2021/210728-23colonia.html",
+              "className": "font-bold",
+              "target": "_blank"
+            }
+          }
+        ]
+      },
+      {
+        "text" : "Each project made me practice all I learned and the next one guided me to learn the next necessary things."
+      },
+      {
+        "text" : "That's why I included so many tech stacks from my experiences in this portfolio. This is all I have experienced so far."
+      },
+      {
+        "text" : "And I can not say that I am a specialist in all that stacks. That would be impossible."
+      },
+      {
+        "text" : "But that shows you that I am not afraid of learning new technologies or new frameworks from this vast world of technology."
+      },
+      {
+        "text" : "What I am missing now is to work with ambitious people to bring up to the world great projects. To learn from teams, from people and from challenges."
+      },
+      {
+        "text" : "And of course, to give my best to contribute to a better world, with better results and better performance for clients projects."
+      }
+    ]
+  },
+  "hire" : {
+    "title": "If you <span>hire me</span>",
+    "paragraphs" : [
+      {
+        "text" : "You will have on your team someone that loves technology and pursues solutions all the time, that is detail oriented and is willing to learn new things."
+      },
+      {
+        "text" : "I am someone who enjoys philosophical thinking to understand the world, people, and life. "
+      },
+      {
+        "text" : "So, sometimes you will see me saying deep things."
+      },
+      {
+        "text" : "After more than 30 years living in Brazil, I came to live in Japan because I am Japanese and I love the Japanese culture."
+      },
+      {
+        "text" :"My intention is to stay here, learn Japanese, and contribute to the local economy."
+      },
+      {
+        "text" :"If you want to know more about me, I invite you to read below my thoughts about UI/UX."
+      }
+    ]
+  }
+}
