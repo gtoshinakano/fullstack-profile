@@ -1,0 +1,87 @@
+{
+  "intro" : {
+    "title": "💬 Prezado <span>Futuro Parceiro</span>",
+    "paragraphs" : [
+      {
+        "text" : "Pode parecer cliche, mas eu cresci admirando pessoas de sucesso como Steve Jobs, Bill Gates and Mark Zuckerberg. Este é o motivo de eu ter escolhido estudar tecnologia."
+      },
+      {
+        "text" : "Meu sonho era - <0>e ainda é</0> - criar produtos que seriam úteis para inúmeras pessoas e que as ajudaria a solucionar seus problemas diários.",
+        "components" : [
+          {"elem": "strong"}
+        ]
+      },
+      {
+        "text" : "Em meus trabalhos anteriores, sempre estive em busca de problemas que poderiam ser resolvidos ao criar e implementar sistemas nos processos diários."
+      },
+      {
+        "text" : "Até hoje eu criei simples calculadoras, Painéis de Controle para administração, Bancos de Dados, ferramentas de apoio à processos e websites. A maioria deles em minha jornada como Freelancer."
+      },
+      {
+        "text" : "Alguns deles eram para usos pessoais, outros utilizados por organizações. Mas todos eles eram para solucionar algum problema de alguém."
+      },
+      {
+        "text" : "Você pode ver como algumas soluções repercutiram <0>aqui</0> e <1>aqui</1> (ambos em japonês).",
+        "components" : [
+          {
+            "elem": "a",
+            "props": {
+              "href": "https://www.nikkeyshimbun.jp/2020/200926-21colonia.html",
+              "className": "font-bold",
+              "target": "_blank"
+            }
+          },
+          {
+            "elem": "a",
+            "props": {
+              "href": "https://www.nikkeyshimbun.jp/2021/210728-23colonia.html",
+              "className": "font-bold",
+              "target": "_blank"
+            }
+          }
+        ]
+      },
+      {
+        "text" : "Cada projeto me fez praticar tudo o que eu tinha aprendido e o projeto posterior sempre me guiou a aprender as próximas coisas que faltavam"
+      },
+      {
+        "text" : "E é esse o motivo para o qual incluí tantas tecnologias de minhas experiências neste portifolio. São todas as Stacks que eu já utilizei."
+      },
+      {
+        "text" : "Não posso dizer que sou um especialista em todas essas tecnologias. Isto seria impossível."
+      },
+      {
+        "text" : "Isso apenas mostra que eu estou sempre de aprendendo novas Stacks ou Frameworks deste vasto mundo da tecnologia."
+      },
+      {
+        "text" : "O que mais sinto falta agora é estar rodeado de pessoas ambiciosas que gostariam de trazer ao mundo grandes projetos e obter novos aprendizados através de novos desafios."
+      },
+      {
+        "text" : "E, é claro, dar o meu melhor para contribuir para um mundo melhor, com melhores resultados e performance para os nossos clientes."
+      }
+    ]
+  },
+  "hire" : {
+    "title": "Se você <span>me contratar</span>",
+    "paragraphs" : [
+      {
+        "text" : "Você terá em seu time alguém que ama tecnologia, persegue soluções o tempo todo, orientado à detalhes e busca sempre aprender coisas novas."
+      },
+      {
+        "text" : "Eu sou uma pessoa que curte ter idéias filosóficas para entender o mundo, as pessoas e a vida."
+      },
+      {
+        "text" : "Portanto, você me verá dizendo coisas profundas de vez em quando."
+      },
+      {
+        "text" : "Eu vim ao Japão após viver a maior parte da minha vida no Brasil porque eu amo a cultura japonesa e quero muito me tornar proficiente o idioma."
+      },
+      {
+        "text" :"A minha intenção é continuar a minha carreira como desenvolvedor no Japão, aprender a falar melhor o idioma e contribuir para a economia local."
+      },
+      {
+        "text" :"Se você quiser saber mais sobre mim, continue lendo abaixo os meus princípios sobre UI/UX."
+      }
+    ]
+  }
+}
