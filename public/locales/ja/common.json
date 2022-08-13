@@ -7,8 +7,8 @@
   "full-stack-dev": "Full-Stackデベロッパー",
   "UI-UX-Enthusiast": "UI/UX プロトライパー",
   "years-of-code": "年コーディング経験",
-  "japanese-brazilian": "日本人（ブラジル育）",
-  "years-old": "際",
+  "japanese-brazilian": "日本人（ブラジル育ち）",
+  "years-old": "歳",
   "based-in-tokyo": "東京",
   "menu": {
     "profile": "プロフィール",
@@ -18,7 +18,7 @@
   "jobs": {
     "summary": "概要",
     "profile": "プロフィール",
-    "experiences": "経験",
+    "experiences": "経歴",
     "skills": "スキル",
     "show-degrees": "卒業表示",
     "hide-degrees": "卒業非表示",
