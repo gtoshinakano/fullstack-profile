@@ -108,7 +108,6 @@ const Herodark = ({ isWide }: IProps) => {
                   src={`${prefix}/img/dev/gabriel/gabriel-photo.png`}
                   width={1131}
                   height={1131}
-                  layout='intrinsic'
                   loader={customLoader}
                   unoptimized
                 />
@@ -119,7 +118,6 @@ const Herodark = ({ isWide }: IProps) => {
                   src={`${prefix}/img/dev/gabriel/gabriel-github.png`}
                   width={460}
                   height={460}
-                  layout='intrinsic'
                   loader={customLoader}
                   unoptimized
                 />
@@ -130,7 +128,6 @@ const Herodark = ({ isWide }: IProps) => {
                   src={`${prefix}/img/dev/gabriel/gabriel-photo.jpg`}
                   width={2199}
                   height={2184}
-                  layout='intrinsic'
                   loader={customLoader}
                   unoptimized
                 />

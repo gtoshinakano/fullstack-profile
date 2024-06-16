@@ -105,8 +105,8 @@ const Jobs = (): ReactElement => {
                     <Image
                       alt="Fatec"
                       src={`${prefix}/img/dev/gabriel/logo-fatec.png`}
-                      layout='fill'
-                      objectFit='scale-down'
+                      fill
+                      className='object-scale-down'
                       loader={customLoader}
                       unoptimized
                     />
@@ -144,8 +144,8 @@ const Jobs = (): ReactElement => {
                             src={prefix + stacks[stack].src}
                             alt={`Gabriel Toshinori Nakano has experience with ${stacks[stack].name}`}
                             title={stacks[stack].name}
-                            layout='fill'
-                            objectFit='scale-down'
+                            fill
+                            className='object-scale-down'
                             loader={customLoader}
                             unoptimized
                           />
@@ -168,8 +168,8 @@ const Jobs = (): ReactElement => {
                             src={prefix + tools[tool].src}
                             alt={`Gabriel Toshinori Nakano has experience with ${tools[tool].name}`}
                             title={tools[tool].name}
-                            layout='fill'
-                            objectFit='scale-down'
+                            fill
+                            className='object-scale-down'
                             loader={customLoader}
                             unoptimized
                           />
@@ -183,8 +183,8 @@ const Jobs = (): ReactElement => {
                     <Image
                       alt=""
                       src={prefix + item.image}
-                      layout='fill'
-                      objectFit='scale-down'
+                      fill
+                      className='object-scale-down'
                       loader={customLoader}
                       unoptimized
                     />
@@ -213,8 +213,8 @@ const Jobs = (): ReactElement => {
                 <Image
                   alt="Uninove"
                   src={`${prefix}/img/dev/gabriel/logo-uninove.png`}
-                  layout='fill'
-                  objectFit='scale-down'
+                  fill
+                  className='object-scale-down'
                   loader={customLoader}
                   unoptimized
                 />

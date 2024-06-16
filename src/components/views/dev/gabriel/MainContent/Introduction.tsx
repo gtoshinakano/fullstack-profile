@@ -334,7 +334,6 @@ const Introduction = (): ReactElement => {
           src={`${prefix}/img/dev/gabriel/ss-netflix.png`}
           width={1289}
           height={731}
-          layout={'intrinsic'}
           loader={customLoader}
           unoptimized
         />
@@ -394,7 +393,6 @@ const Introduction = (): ReactElement => {
           src={`${prefix}/img/dev/gabriel/ss-maple.png`}
           width={1289}
           height={896}
-          layout={'intrinsic'}
           loader={customLoader}
           unoptimized
         />
@@ -431,7 +429,6 @@ const Introduction = (): ReactElement => {
           src={`${prefix}/img/dev/gabriel/ss-twitter.png`}
           width={1258}
           height={711}
-          layout={'intrinsic'}
           loader={customLoader}
           unoptimized
         />
@@ -522,7 +519,6 @@ const Introduction = (): ReactElement => {
           src={`${prefix}/img/dev/gabriel/ss-uber.png`}
           width={1218}
           height={646}
-          layout={'intrinsic'}
           loader={customLoader}
           unoptimized
         />

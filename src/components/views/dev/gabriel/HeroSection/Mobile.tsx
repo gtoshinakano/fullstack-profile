@@ -151,7 +151,6 @@ const Mobile = ({ loading }: IProps) => {
             alt=""
             priority
             src={`${prefix}/img/dev/gabriel/mid-mnt-img.png`}
-            layout='intrinsic'
             width={1728}
             height={881}
             loader={customLoader}
@@ -167,7 +166,6 @@ const Mobile = ({ loading }: IProps) => {
               alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
-              layout='intrinsic'
               width={1728}
               height={919}
               loader={customLoader}
@@ -183,7 +181,6 @@ const Mobile = ({ loading }: IProps) => {
             alt=""
             priority
             src={`${prefix}/img/dev/gabriel/big-mnt-img.png`}
-            layout='intrinsic'
             width={1728}
             height={919}
             loader={customLoader}
@@ -196,7 +193,6 @@ const Mobile = ({ loading }: IProps) => {
               alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
-              layout='intrinsic'
               width={1988}
               height={1290}
               loader={customLoader}
@@ -209,7 +205,6 @@ const Mobile = ({ loading }: IProps) => {
             alt=""
             priority
             src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
-            layout='intrinsic'
             width={1728}
             height={584}
             loader={customLoader}
@@ -222,7 +217,6 @@ const Mobile = ({ loading }: IProps) => {
               alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-center.png`}
-              layout='intrinsic'
               width={1499}
               height={876}
               loader={customLoader}
@@ -238,7 +232,6 @@ const Mobile = ({ loading }: IProps) => {
             alt=""
             priority
             src={`${prefix}/img/dev/gabriel/climb-mnt.png`}
-            layout='intrinsic'
             width={927}
             height={945}
             loader={customLoader}
@@ -253,7 +246,6 @@ const Mobile = ({ loading }: IProps) => {
             alt=""
             priority
             src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
-            layout='intrinsic'
             width={1728}
             height={584}
             loader={customLoader}

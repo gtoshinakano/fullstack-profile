@@ -164,8 +164,8 @@ const Projects = () => {
                             src={prefix + stacks[stack].src}
                             alt={`Gabriel Toshinori Nakano has experience with ${stacks[stack].name}`}
                             title={stacks[stack].name}
-                            layout='fill'
-                            objectFit='scale-down'
+                            fill
+                            className='object-scale-down'
                             loader={customLoader}
                             unoptimized
                           />
