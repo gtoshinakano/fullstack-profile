@@ -330,6 +330,7 @@ const Introduction = (): ReactElement => {
       <p>Let's see a good example of if:</p>
       <div className='w-full'>
         <Image
+          alt=""
           src={`${prefix}/img/dev/gabriel/ss-netflix.png`}
           width={1289}
           height={731}
@@ -389,6 +390,7 @@ const Introduction = (): ReactElement => {
       <p>Look at the first site I made, in 2011:</p>
       <div className='w-full'>
         <Image
+          alt=""
           src={`${prefix}/img/dev/gabriel/ss-maple.png`}
           width={1289}
           height={896}
@@ -425,6 +427,7 @@ const Introduction = (): ReactElement => {
       <p>Have a look on a good 60-30-10 proportion applied.</p>
       <div className='w-full'>
         <Image
+          alt=""
           src={`${prefix}/img/dev/gabriel/ss-twitter.png`}
           width={1258}
           height={711}
@@ -515,6 +518,7 @@ const Introduction = (): ReactElement => {
       </p>
       <div className='w-full'>
         <Image
+          alt=""
           src={`${prefix}/img/dev/gabriel/ss-uber.png`}
           width={1218}
           height={646}

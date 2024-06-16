@@ -103,6 +103,7 @@ const Jobs = (): ReactElement => {
                 <div className='text-right mt-1.5'>
                   <div className='w-14 h-10 lg:w-28 lg:h-20 ml-auto mr-0 bg-white rounded overflow-hidden relative'>
                     <Image
+                      alt="Fatec"
                       src={`${prefix}/img/dev/gabriel/logo-fatec.png`}
                       layout='fill'
                       objectFit='scale-down'
@@ -180,6 +181,7 @@ const Jobs = (): ReactElement => {
                 <div className='text-right mt-1.5'>
                   <div className='w-14 h-14 lg:w-28 lg:h-28 ml-auto mr-0 bg-white rounded overflow-hidden relative'>
                     <Image
+                      alt=""
                       src={prefix + item.image}
                       layout='fill'
                       objectFit='scale-down'
@@ -209,6 +211,7 @@ const Jobs = (): ReactElement => {
             <div className='text-right mt-1.5'>
               <div className='w-14 h-10 lg:w-28 lg:h-20 ml-auto mr-0 bg-white rounded overflow-hidden relative'>
                 <Image
+                  alt="Uninove"
                   src={`${prefix}/img/dev/gabriel/logo-uninove.png`}
                   layout='fill'
                   objectFit='scale-down'

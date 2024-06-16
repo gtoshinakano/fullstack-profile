@@ -136,6 +136,7 @@ const WideScreen = ({ loading }: IProps) => {
       >
         <div className='absolute w-full h-auto z-0' id='big-mnt-img'>
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/mid-mnt-img.png`}
             layout='intrinsic'
@@ -152,6 +153,7 @@ const WideScreen = ({ loading }: IProps) => {
         <div className='cloud-right absolute right-0 w-1/3 opacity-70 z-50'>
           <div className=''>
             <Image
+              alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
               layout='intrinsic'
@@ -164,6 +166,7 @@ const WideScreen = ({ loading }: IProps) => {
         </div>
         <div className='absolute w-full h-auto z-30' id='mid-mnt-img'>
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/big-mnt-img.png`}
             layout='intrinsic'
@@ -176,6 +179,7 @@ const WideScreen = ({ loading }: IProps) => {
         <div className='cloud-left absolute left-0 w-1/2 opacity-70 z-10'>
           <div className=''>
             <Image
+              alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
               layout='intrinsic'
@@ -191,6 +195,7 @@ const WideScreen = ({ loading }: IProps) => {
           id='sm-mnt-back'
         >
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
             layout='intrinsic'
@@ -203,6 +208,7 @@ const WideScreen = ({ loading }: IProps) => {
         <div className='cloud-center absolute left-1/3 w-2/5 z-40'>
           <div className=''>
             <Image
+              alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-center.png`}
               layout='intrinsic'
@@ -218,6 +224,7 @@ const WideScreen = ({ loading }: IProps) => {
           id='climb-mnt'
         >
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/climb-mnt.png`}
             layout='intrinsic'
@@ -232,6 +239,7 @@ const WideScreen = ({ loading }: IProps) => {
           id='sm-mnt-front'
         >
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
             layout='intrinsic'

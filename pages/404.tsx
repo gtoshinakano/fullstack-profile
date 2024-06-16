@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, ReactElement } from 'react'
-import { useRouter } from 'next/router'
 import Layout from '@Components/layout/Public'
 import gsap from 'gsap'
 

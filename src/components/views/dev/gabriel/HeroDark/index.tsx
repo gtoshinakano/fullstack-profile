@@ -104,6 +104,7 @@ const Herodark = ({ isWide }: IProps) => {
             <div className='relative w-72 h-72 md:w-60 md:h-60 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 mx-auto my-auto border-white'>
               <div id='profile-photo-01' className={'absolute'}>
                 <Image
+                  alt="Gabriel toshinori Nakano"
                   src={`${prefix}/img/dev/gabriel/gabriel-photo.png`}
                   width={1131}
                   height={1131}
@@ -114,6 +115,7 @@ const Herodark = ({ isWide }: IProps) => {
               </div>
               <div id='profile-photo-02' className={'absolute'}>
                 <Image
+                  alt="Gabriel toshinori Nakano"
                   src={`${prefix}/img/dev/gabriel/gabriel-github.png`}
                   width={460}
                   height={460}
@@ -124,6 +126,7 @@ const Herodark = ({ isWide }: IProps) => {
               </div>
               <div id='profile-photo-03' className={'absolute'}>
                 <Image
+                 alt="Gabriel toshinori Nakano"
                   src={`${prefix}/img/dev/gabriel/gabriel-photo.jpg`}
                   width={2199}
                   height={2184}

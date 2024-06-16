@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -16,13 +20,31 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@Components/*": ["src/components/*"],
-      "@Views/*": ["src/components/views/*"],
-      "@Styles/*": ["styles/*"],
-      "@Lib/*": ["src/lib/*"]
-    }
+      "@/*": [
+        "src/*"
+      ],
+      "@Components/*": [
+        "src/components/*"
+      ],
+      "@Views/*": [
+        "src/components/views/*"
+      ],
+      "@Styles/*": [
+        "styles/*"
+      ],
+      "@Lib/*": [
+        "src/lib/*"
+      ]
+    },
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/dom/ChangeLanguage/index.js"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/dom/ChangeLanguage/index.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

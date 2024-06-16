@@ -148,6 +148,7 @@ const Mobile = ({ loading }: IProps) => {
           id='big-mnt-img'
         >
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/mid-mnt-img.png`}
             layout='intrinsic'
@@ -163,6 +164,7 @@ const Mobile = ({ loading }: IProps) => {
         <div className='cloud-right absolute right-0 w-1/3 opacity-70 z-50'>
           <div className=''>
             <Image
+              alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
               layout='intrinsic'
@@ -178,6 +180,7 @@ const Mobile = ({ loading }: IProps) => {
           id='mid-mnt-img'
         >
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/big-mnt-img.png`}
             layout='intrinsic'
@@ -190,6 +193,7 @@ const Mobile = ({ loading }: IProps) => {
         <div className='cloud-left absolute left-0 w-1/2 opacity-70 z-30'>
           <div className=''>
             <Image
+              alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-right.png`}
               layout='intrinsic'
@@ -202,6 +206,7 @@ const Mobile = ({ loading }: IProps) => {
         </div>
         <div className='absolute left-0 w-[200vw] h-auto z-40' id='sm-mnt-back'>
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
             layout='intrinsic'
@@ -214,6 +219,7 @@ const Mobile = ({ loading }: IProps) => {
         <div className='cloud-center absolute left-1/3 w-2/5 opacity-80 z-40'>
           <div className=''>
             <Image
+              alt=""
               priority
               src={`${prefix}/img/dev/gabriel/cloud-mnt-center.png`}
               layout='intrinsic'
@@ -229,6 +235,7 @@ const Mobile = ({ loading }: IProps) => {
           id='climb-mnt'
         >
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/climb-mnt.png`}
             layout='intrinsic'
@@ -243,6 +250,7 @@ const Mobile = ({ loading }: IProps) => {
           id='sm-mnt-front'
         >
           <Image
+            alt=""
             priority
             src={`${prefix}/img/dev/gabriel/sm-mnt-front.png`}
             layout='intrinsic'
