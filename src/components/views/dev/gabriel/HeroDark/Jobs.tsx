@@ -55,11 +55,12 @@ const Jobs = (): ReactElement => {
           {t('jobs.skills')}
         </h3>
         <div className='pl-5 pb-4 space-y-1'>
-          <p>• ReactJS/NextJS/Express</p>
-          <p>• Dominated DOM / HTML / CSS / JS</p>
-          <p>• Firebase/Google Maps API/Analytics</p>
+          <p>• NodeJS / Typescript</p>
+          <p>• ReactJS / NextJS / Express</p>
+          <p>• AWS Lambdas / API Gateway & Others</p>
+          <p>• Firebase / Google Maps API / Analytics</p>
           <p>• SQL and NoSQL Data Modeling</p>
-          <p>• Good understanding of CI/CD</p>
+          <p>• Dominated DOM / HTML / CSS / JS</p>
           <p>• Figma, Illustrator, Photoshop, Adobe XD</p>
         </div>
         <h3 className='text-xl font-futura tracking-wider capitalize pb-2'>

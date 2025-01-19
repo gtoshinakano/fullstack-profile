@@ -180,7 +180,6 @@ const Menu = ({ setSelected, selected, loading }: IMenuProps) => {
         borderRadius: 0,
         duration: 0.7,
       })
-    // .to(container("button"), {padding: "2px 0 2px 0"}, "<")
   }, [])
 
   return (
