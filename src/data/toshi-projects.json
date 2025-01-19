@@ -301,17 +301,112 @@
     "label": "portfolio"
   },
   {
-    "period": ["May 2022 ", "Today"],
+    "period": ["May 2022 ", "Aug 2022"],
     "type": "job",
     "title": "Project Requirement Design Deliverables",
     "subtitle": "",
     "learnings": "To understand project's requirements making it easier for Offshore team",
     "country": "🇯🇵",
-    "where": "Tokyo",
+    "where": "AXA",
     "public": "Offshore Development Team",
     "problem": "Business Analysts write requirement documents and Onsite technical team has to prepare it to be Offshore developers friendly",
     "solution": "In a well structured software house, Business Analysts does their job to understand the customer needs in order to create a good solution for them. Being part of the technical team, I did my best to create technical documents that Offshore development team could understand the requirements to brought up the best solution for the client. That includes DB Design, Data validation strategy and Data flow designs.",
     "stacks": ["excel", "drawio", "mysql"],
+    "cover": {},
+    "action": {
+      "label": "",
+      "url": ""
+    },
+    "label": "requirement"
+  },
+  {
+    "period": ["Jul 2023 ", "Jul 2023"],
+    "type": "personal",
+    "title": "Japanese Kanji Memorization Application",
+    "subtitle": "https://anki.web.app/",
+    "learnings": "Developed a simple Spaced repetition system",
+    "country": "🇯🇵",
+    "where": "Tokyo",
+    "public": "People practicing Japanese language memorization skills",
+    "problem": "Learning Japanese is difficult since it requires memorizing special characters known as Kanji. Spaced repetition provides a studying framework for learning and memorizing in an incremental way",
+    "solution": "I built a simple application that allows you to register new words in flashcards, provides translation and 'how to read' functionality. It gradually brings words as you practice them everyday, and you decide when you finally learned one word/phrase",
+    "stacks": ["reactjs", "nextjs", "tailwind", "firebase"],
+    "cover": {},
+    "action": {
+      "label": "See source code",
+      "url": "https://github.com/gtoshinakano/anki-web-app"
+    },
+    "label": "portfolio"
+  },
+  {
+    "period": ["Sep 2022 ", "Oct 2024"],
+    "type": "job",
+    "title": "AXA Life Japan - New Business Workflow",
+    "subtitle": "Cloudification of a 15 years old system",
+    "learnings": "Built a scalable contract assessment application with modern technologies",
+    "country": "🇯🇵",
+    "where": "AXA",
+    "public": "Contract and Medical Assessment Department",
+    "problem": "A 15 years old system became obsolete and had dependencies on expensive services",
+    "solution": "Re-implementation of the entire system using modern frameworks and cloud deployment services",
+    "stacks": ["vite", "reactjs", "fastify", "camunda", "mysql", "aws"],
+    "cover": {},
+    "action": {
+      "label": "",
+      "url": ""
+    },
+    "label": "requirement"
+  },
+  {
+    "period": ["Aug 2024 ", "Aug 2024"],
+    "type": "open source",
+    "title": "Local Network File Upload",
+    "subtitle": "Share files between locally connected devices",
+    "learnings": "Simple NextJS application to upload files from mobile devices to PC",
+    "country": "🇯🇵",
+    "where": "Tokyo",
+    "public": "Anyone",
+    "problem": "Sometimes when we need to share files from our smartphones to our PCs or MacBook, we miss good options for it specially when we want to share large files",
+    "solution": "Implemented a simple web-ui with a NodeJS server that receives files upload with upload completion feedback. Just run the application from your PC and all devices connected on the same network can share files to the server",
+    "stacks": ["nextjs", "reactjs", "tailwind"],
+    "cover": {},
+    "action": {
+      "label": "See source code",
+      "url": "https://github.com/gtoshinakano/local-file-uploader"
+    },
+    "label": "requirement"
+  },
+  {
+    "period": ["Dec 2024 ", "Dec 2024"],
+    "type": "open source",
+    "title": "Online Template String App",
+    "subtitle": "https://github.com/gtoshinakano/web-template-string",
+    "learnings": "Define Text Templates and populate your text with the use of variables",
+    "country": "🇯🇵",
+    "where": "Tokyo",
+    "public": "Anyone",
+    "problem": "My cousin wanted a simple solution for creating a pre-defined text for his work and update the text with the use of variables when necessary. So he needed to have something that replaces variables inside the text, then he could copy the text to save time on his work.",
+    "solution": "Implemented a simple web-ui that allows users to create a text template and populate the text dynamically giving values to variables. It stores the templates in local storage and you can download the templates later for backing up purposes.",
+    "stacks": ["vite", "reactjs", "tailwind"],
+    "cover": {},
+    "action": {
+      "label": "Use it for free",
+      "url": "https://gtoshinakano.github.io/web-template-string/"
+    },
+    "label": "requirement"
+  },
+  {
+    "period": ["Nov 2024 ", "Today 2025"],
+    "type": "job",
+    "title": "Underwriting Improvement",
+    "subtitle": "Digitalization of manual process",
+    "learnings": "Saving time by digitalyzing the manual process of documents reception",
+    "country": "🇯🇵",
+    "where": "AXA",
+    "public": "AXA Contracts Department",
+    "problem": "As an insurance company which receives thousands of customers documents on daily basis, the process of inputting all those documents became a bottleneck for an efficient service",
+    "solution": "Implemented an application used by branch insurance agencies to take pictures of documents and upload them to the contracts department system NBWF. The application process an Optical Characters Recognition (OCR) to extract documents information and inputs it to other systems",
+    "stacks": ["vite", "reactjs", "tailwind", "aws", "mysql"],
     "cover": {},
     "action": {
       "label": "",

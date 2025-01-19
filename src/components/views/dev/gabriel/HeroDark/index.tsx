@@ -88,7 +88,7 @@ const Herodark = ({ isWide }: IProps) => {
               {t("full-stack-dev")} | {t("UI-UX-Enthusiast")} | NodeJS
             </div>
             <div className='font-futura font-semibold text-sm leading-loose capitalize hidden md:block'>
-              {dayjs().subtract(2011, 'year').format('YYYY')} {t("years-of-code")}
+              {dayjs().subtract(2011, 'year').format('YYYY').replace("00", "")} {t("years-of-code")}
             </div>
             <div className='font-trueno font-thin text-sm mt-5'>
               <p>🇯🇵 {t('japanese-brazilian')} 🇧🇷</p>

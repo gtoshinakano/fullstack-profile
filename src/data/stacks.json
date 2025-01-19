@@ -17,6 +17,12 @@
     "css": "",
     "url": ""
   },
+  "camunda": {
+    "name": "Camunda BPMN Platform",
+    "src": "/img/stacks/camunda.jpg",
+    "css": "",
+    "url": ""
+  },
   "drawio": {
     "name": "CSS",
     "src": "/img/stacks/drawio.png",
@@ -33,6 +39,12 @@
     "name": "ExpressJS",
     "src": "/img/stacks/express.svg",
     "css": "bg-white",
+    "url": ""
+  },
+  "fastify": {
+    "name": "Fastify Framework",
+    "src": "/img/stacks/fastify.svg",
+    "css": "",
     "url": ""
   },
   "firebase": {
@@ -212,6 +224,12 @@
   "ubuntu": {
     "name": "Ubuntu Operating System",
     "src": "/img/stacks/ubuntu.svg",
+    "css": "",
+    "url": ""
+  },
+  "vite": {
+    "name": "Vite",
+    "src": "/img/stacks/vitejs.svg",
     "css": "",
     "url": ""
   }

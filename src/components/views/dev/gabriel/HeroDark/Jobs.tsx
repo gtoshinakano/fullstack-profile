@@ -227,8 +227,8 @@ const Jobs = (): ReactElement => {
             {t('languages')}
           </h3>
           <p>🗣 {t('jobs.portuguese')} (Native)</p>
-          <p>🗣 {t('jobs.japanese')} Low Business Level (JLPT N3)</p>
-          <p>🗣 {t('jobs.english')} Low Business Level</p>
+          <p>🗣 {t('jobs.japanese')} Conversational Fluency (JLPT N3/2020)</p>
+          <p>🗣 {t('jobs.english')} Business Level</p>
         </div>
       </div>
     </>
