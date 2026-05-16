@@ -11,11 +11,10 @@ jobs:
 
     env:
       NEXT_PUBLIC_GOOGLE_ANALYTICS: G-RH74DXLKZL
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set base path (main → /fullstack-profile)
         if: github.ref_name == 'main'
@@ -26,7 +25,7 @@ jobs:
         run: echo "NEXT_PUBLIC_BASE_PATH=/fullstack-profile/dev" >> $GITHUB_ENV
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '24.x'
           cache: 'npm'
