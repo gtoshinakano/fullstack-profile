@@ -1,0 +1,10 @@
+{
+  "schema-version": 1,
+  "feature-dir": "_reversa_forward/001-projects-tab-i18n",
+  "feature-id": "001",
+  "short-name": "projects-tab-i18n",
+  "started-at": "2026-05-17T00:00:00Z",
+  "current-stage": "plan",
+  "stages-completed": ["requirements"],
+  "paused-features": []
+}
