@@ -21,17 +21,22 @@ const GabrielPage = (): ReactElement => {
 
   React.useEffect(() => {
     const { Pace } = window
-    Pace.on('done', () => {
+    const reveal = () => {
       const { innerWidth, innerHeight } = window
       setLoading(false)
       setWindow({ width: innerWidth, height: innerHeight })
-    })
+    }
+    Pace.on('done', reveal)
+    const fallback = setTimeout(reveal, 5000)
     const handleResize = (): void => {
       const { innerWidth: width, innerHeight: height } = window
       setWindow({ width, height })
     }
     window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
+    return () => {
+      clearTimeout(fallback)
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
   const isWide =

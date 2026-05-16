@@ -317,7 +317,7 @@
       "label": "",
       "url": ""
     },
-    "label": "requirement"
+    "label": "axa-requirement"
   },
   {
     "period": ["Jul 2023 ", "Jul 2023"],
@@ -355,7 +355,7 @@
       "label": "",
       "url": ""
     },
-    "label": "requirement"
+    "label": "nbwf-requirement"
   },
   {
     "period": ["Aug 2024 ", "Aug 2024"],
@@ -374,7 +374,7 @@
       "label": "See source code",
       "url": "https://github.com/gtoshinakano/local-file-uploader"
     },
-    "label": "requirement"
+    "label": "local-file-uploader"
   },
   {
     "period": ["Dec 2024 ", "Dec 2024"],
@@ -393,7 +393,7 @@
       "label": "Use it for free",
       "url": "https://gtoshinakano.github.io/web-template-string/"
     },
-    "label": "requirement"
+    "label": "web-template-string"
   },
   {
     "period": ["Nov 2024 ", "Today 2025"],
@@ -412,6 +412,6 @@
       "label": "",
       "url": ""
     },
-    "label": "requirement"
+    "label": "underwriting-improvement"
   }
 ]

@@ -139,9 +139,15 @@ const Herodark = ({ isWide }: IProps) => {
         <div className='flex flex-wrap pt-16 lg:pt-28'>
           <div className='px-4 md:px-16 flex flex-col font-thin mx-auto'>
             <div id='mid-container' className={`mx-auto`}>
-              {selected === 'job' && <Jobs />}
-              {selected === 'projects' && <Projects />}
-              {selected === 'partner' && <FuturePartner />}
+              <div id='panel-job' role='tabpanel' aria-labelledby='tab-job' hidden={selected !== 'job'}>
+                {selected === 'job' && <Jobs />}
+              </div>
+              <div id='panel-projects' role='tabpanel' aria-labelledby='tab-projects' hidden={selected !== 'projects'}>
+                {selected === 'projects' && <Projects />}
+              </div>
+              <div id='panel-partner' role='tabpanel' aria-labelledby='tab-partner' hidden={selected !== 'partner'}>
+                {selected === 'partner' && <FuturePartner />}
+              </div>
             </div>
           </div>
         </div>
@@ -187,23 +193,34 @@ const Menu = ({ setSelected, selected, loading }: IMenuProps) => {
       <div ref={containerRef} className={`absolute w-full flex z-50`}>
         <div
           id='menu-container'
+          role='tablist'
+          aria-label='Profile sections'
           className='flex w-[80%] md:w-1/2 lg:w-1/3 lg:min-w-[345px] border-b-42 border-primary rounded-full overflow-hidden shadow-md mx-auto'
         >
           <Button
             isActive={selected === 'job'}
             onClick={() => setSelected('job')}
+            role='tab'
+            aria-selected={selected === 'job'}
+            aria-controls='panel-job'
           >
             {t('menu.profile')}
           </Button>
           <Button
             isActive={selected === 'projects'}
             onClick={() => setSelected('projects')}
+            role='tab'
+            aria-selected={selected === 'projects'}
+            aria-controls='panel-projects'
           >
             {t('menu.projects')}
           </Button>
           <Button
             isActive={selected === 'partner'}
             onClick={() => setSelected('partner')}
+            role='tab'
+            aria-selected={selected === 'partner'}
+            aria-controls='panel-partner'
           >
             {t('menu.for-recruiters')}
           </Button>
