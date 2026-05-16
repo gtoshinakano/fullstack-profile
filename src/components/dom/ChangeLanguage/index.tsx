@@ -9,7 +9,7 @@ const ChangeLanguage = () => {
   const currentLocale = router.query.locale as string
 
   const changeLocale = (locale: string) => {
-    languageDetector.cache(locale)
+    languageDetector.cache?.(locale)
     router.push(prefix + '/' + locale + PROFILE_PATH)
   }
 
