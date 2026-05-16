@@ -36,7 +36,14 @@
     "solution": "解決方法",
     "tech-stacks-used": "使用したTECHスタック",
     "read": "詳しく読む",
-    "hide": "閉じる"
+    "hide": "閉じる",
+    "project-types": {
+      "personal": "個人",
+      "job": "仕事",
+      "volunteer": "ボランティア",
+      "freelance": "フリーランス",
+      "open source": "オープンソース"
+    }
   },
   "hide-all": "詳細非表示",
   "expand-all": "詳細表示"
