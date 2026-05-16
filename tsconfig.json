@@ -19,19 +19,19 @@
     "jsx": "preserve",
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ],
       "@Components/*": [
-        "src/components/*"
+        "./src/components/*"
       ],
       "@Views/*": [
-        "src/components/views/*"
+        "./src/components/views/*"
       ],
       "@Styles/*": [
-        "styles/*"
+        "./styles/*"
       ],
       "@Lib/*": [
-        "src/lib/*"
+        "./src/lib/*"
       ]
     },
     "incremental": true
