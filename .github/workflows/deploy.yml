@@ -2,37 +2,55 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, dev]
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /fullstack-profile
       NEXT_PUBLIC_GOOGLE_ANALYTICS: G-RH74DXLKZL
 
-    strategy:
-      matrix:
-        node-version: [20.x]
-
     steps:
-      - name: Get files
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
+
+      - name: Set base path (main → /fullstack-profile)
+        if: github.ref_name == 'main'
+        run: echo "NEXT_PUBLIC_BASE_PATH=/fullstack-profile" >> $GITHUB_ENV
+
+      - name: Set base path (dev → /fullstack-profile/dev)
+        if: github.ref_name != 'main'
+        run: echo "NEXT_PUBLIC_BASE_PATH=/fullstack-profile/dev" >> $GITHUB_ENV
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '20.x'
           cache: 'npm'
+
       - name: Install packages
         run: npm ci
+
       - name: Build project
         run: npm run build
+
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
-      - name: Deploy
+
+      - name: Deploy (main → root, preserves /dev subfolder)
+        if: github.ref_name == 'main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: out
+          clean-exclude: dev
+
+      - name: Deploy (dev → /dev subfolder)
+        if: github.ref_name != 'main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: out
+          target-folder: dev
