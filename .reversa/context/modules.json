@@ -1,0 +1,489 @@
+{
+  "generated_at": "2026-05-17T00:00:00Z",
+  "modules": [
+    {
+      "name": "hero-section",
+      "path": "src/components/views/dev/gabriel/HeroSection",
+      "purpose": "Full-viewport animated mountain landscape parallax hero. Responsive: renders WideScreen (landscape) or Mobile (portrait) based on viewport aspect ratio. Entry visual for the portfolio.",
+      "primary_files": [
+        "src/components/views/dev/gabriel/HeroSection/WideScreen.tsx",
+        "src/components/views/dev/gabriel/HeroSection/Mobile.tsx",
+        "src/components/views/dev/gabriel/HeroSection/HeroSvg.js",
+        "src/components/views/dev/gabriel/HeroSection/index.ts"
+      ],
+      "functions": [
+        {
+          "name": "WideScreen",
+          "file": "src/components/views/dev/gabriel/HeroSection/WideScreen.tsx",
+          "params": ["loading: boolean"],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "Mobile",
+          "file": "src/components/views/dev/gabriel/HeroSection/Mobile.tsx",
+          "params": ["loading: boolean"],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "UXDevWide",
+          "file": "src/components/views/dev/gabriel/HeroSection/HeroSvg.js",
+          "params": [],
+          "returns": "SVGElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "UXDevMobile",
+          "file": "src/components/views/dev/gabriel/HeroSection/HeroSvg.js",
+          "params": [],
+          "returns": "SVGElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "handleAction",
+          "file": "src/components/views/dev/gabriel/HeroSection/WideScreen.tsx",
+          "params": [],
+          "returns": "void",
+          "confidence": "confirmed",
+          "note": "Scrolls to main element and fires GA hero_cta event"
+        }
+      ],
+      "entities": [],
+      "business_rules": [
+        {
+          "description": "Hero is hidden (display:none) while Pace.js loading indicator is active",
+          "location": "pages/[locale]/dev/gabriel-toshinori-nakano/gabriel.tsx",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "Responsive breakpoint is aspect ratio (width > height), not viewport width",
+          "location": "pages/[locale]/dev/gabriel-toshinori-nakano/gabriel.tsx",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "CTA button fades out completely as user scrolls down 600px",
+          "location": "src/components/views/dev/gabriel/HeroSection/WideScreen.tsx",
+          "confidence": "confirmed"
+        }
+      ],
+      "dependencies": ["analytics"],
+      "algorithms": [
+        {
+          "name": "GSAP Multi-Layer Parallax",
+          "description": "10+ elements animated simultaneously via GSAP ScrollTrigger timeline with scrub:1, end:600px. Each layer moves at independent speed/direction to create 3D depth illusion.",
+          "confidence": "confirmed"
+        }
+      ],
+      "complexity": "medium"
+    },
+    {
+      "name": "hero-dark",
+      "path": "src/components/views/dev/gabriel/HeroDark",
+      "purpose": "Dark-themed profile section below the hero. Tabbed interface with 3 panels: Profile (work history + education), Projects (portfolio accordion), Message (recruiter text). Features a GSAP sticky expanding menu.",
+      "primary_files": [
+        "src/components/views/dev/gabriel/HeroDark/index.tsx",
+        "src/components/views/dev/gabriel/HeroDark/Jobs.tsx",
+        "src/components/views/dev/gabriel/HeroDark/Projects.tsx",
+        "src/components/views/dev/gabriel/HeroDark/FuturePartner.jsx"
+      ],
+      "functions": [
+        {
+          "name": "Herodark",
+          "file": "src/components/views/dev/gabriel/HeroDark/index.tsx",
+          "params": ["isWide: boolean | 0 | undefined"],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "onSelect",
+          "file": "src/components/views/dev/gabriel/HeroDark/index.tsx",
+          "params": ["newSelected: string"],
+          "returns": "void",
+          "confidence": "confirmed",
+          "note": "Tab switch with GSAP fade + scroll + GA event"
+        },
+        {
+          "name": "Menu",
+          "file": "src/components/views/dev/gabriel/HeroDark/index.tsx",
+          "params": ["setSelected: fn", "selected: string", "loading?: boolean"],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "Jobs",
+          "file": "src/components/views/dev/gabriel/HeroDark/Jobs.tsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "Projects",
+          "file": "src/components/views/dev/gabriel/HeroDark/Projects.tsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "toggleAll",
+          "file": "src/components/views/dev/gabriel/HeroDark/Projects.tsx",
+          "params": [],
+          "returns": "void",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "toggleByLabel",
+          "file": "src/components/views/dev/gabriel/HeroDark/Projects.tsx",
+          "params": ["label: string"],
+          "returns": "void",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "FuturePartner",
+          "file": "src/components/views/dev/gabriel/HeroDark/FuturePartner.jsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        }
+      ],
+      "entities": [
+        {
+          "name": "IProject",
+          "fields": [
+            { "name": "period", "type": "string[]", "required": true },
+            { "name": "type", "type": "string", "required": true, "values": ["personal", "job", "volunteer", "freelance", "open source"] },
+            { "name": "title", "type": "string", "required": true },
+            { "name": "subtitle", "type": "string", "required": true },
+            { "name": "learnings", "type": "string", "required": true },
+            { "name": "country", "type": "string", "required": true },
+            { "name": "where", "type": "string", "required": true },
+            { "name": "public", "type": "string", "required": true },
+            { "name": "problem", "type": "string", "required": true },
+            { "name": "solution", "type": "string", "required": true },
+            { "name": "stacks", "type": "string[]", "required": true },
+            { "name": "cover", "type": "any", "required": false },
+            { "name": "action", "type": "{ label: string; url: string }", "required": true },
+            { "name": "label", "type": "string", "required": true, "note": "NOT unique — 'requirement' appears 5 times" }
+          ],
+          "confidence": "confirmed"
+        }
+      ],
+      "business_rules": [
+        {
+          "description": "Tab change is locked (loading=true) during GSAP animation to prevent rapid switching",
+          "location": "src/components/views/dev/gabriel/HeroDark/index.tsx:50-68",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "Projects always displayed in reverse chronological order (newest first)",
+          "location": "src/components/views/dev/gabriel/HeroDark/Projects.tsx:72",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "Education entries are hardcoded in JSX, not in jobs.json",
+          "location": "src/components/views/dev/gabriel/HeroDark/Jobs.tsx:90-113",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "BUG: duplicate label 'requirement' in toshi-projects.json causes 5 projects to expand/collapse together",
+          "location": "src/data/toshi-projects.json",
+          "confidence": "confirmed"
+        }
+      ],
+      "dependencies": ["data", "i18n", "analytics"],
+      "algorithms": [
+        {
+          "name": "Profile Photo Crossfade Carousel",
+          "description": "ScrollTrigger timeline with scrub:1 on #profile-photo element. Sequences opacity transitions for 3 photos: photo.png → github.png → photo.jpg",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "Menu Sticky Expansion",
+          "description": "GSAP ScrollTrigger pins the menu, then expands width (to innerWidth on mobile, 850px on desktop), scales to 1.1, and removes border-radius. Duration: 0.7s.",
+          "confidence": "confirmed"
+        }
+      ],
+      "complexity": "high"
+    },
+    {
+      "name": "main-content",
+      "path": "src/components/views/dev/gabriel/MainContent",
+      "purpose": "Static long-form editorial article: 'The 3-3-3 Principles for a Better UX'. No interactivity beyond reading. Uses illustrative screenshots.",
+      "primary_files": [
+        "src/components/views/dev/gabriel/MainContent/MainContent.tsx",
+        "src/components/views/dev/gabriel/MainContent/Introduction.tsx",
+        "src/components/views/dev/gabriel/MainContent/index.ts"
+      ],
+      "functions": [
+        {
+          "name": "MainContent",
+          "file": "src/components/views/dev/gabriel/MainContent/MainContent.tsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed",
+          "note": "Thin wrapper rendering Introduction inside <main>"
+        },
+        {
+          "name": "Introduction",
+          "file": "src/components/views/dev/gabriel/MainContent/Introduction.tsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed",
+          "note": "Fully static, no hooks, no props"
+        }
+      ],
+      "entities": [],
+      "business_rules": [
+        {
+          "description": "Article is entirely in English — not internationalized regardless of locale",
+          "location": "src/components/views/dev/gabriel/MainContent/Introduction.tsx",
+          "confidence": "inferred"
+        },
+        {
+          "description": "Social links at bottom (Let's connect, Share, Buy me Coffee) are non-functional plain text spans",
+          "location": "src/components/views/dev/gabriel/MainContent/Introduction.tsx:621",
+          "confidence": "confirmed"
+        }
+      ],
+      "dependencies": [],
+      "algorithms": [],
+      "complexity": "low"
+    },
+    {
+      "name": "analytics",
+      "path": "src/components/dom/Analytics",
+      "purpose": "Google Analytics 4 integration. Production-only. Tracks SPA route changes and custom user interaction events (menu clicks, CTA clicks).",
+      "primary_files": [
+        "src/components/dom/Analytics/index.tsx",
+        "src/components/dom/Analytics/GoogleAnalytics.tsx",
+        "src/lib/ga.ts"
+      ],
+      "functions": [
+        {
+          "name": "Analytics",
+          "file": "src/components/dom/Analytics/index.tsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "GAScript",
+          "file": "src/components/dom/Analytics/GoogleAnalytics.tsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "pageview",
+          "file": "src/lib/ga.ts",
+          "params": ["url: string"],
+          "returns": "void",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "event",
+          "file": "src/lib/ga.ts",
+          "params": ["{ action: string, params: { event_category?, event_label? } }"],
+          "returns": "void",
+          "confidence": "confirmed"
+        }
+      ],
+      "entities": [
+        {
+          "name": "IEvent",
+          "fields": [
+            { "name": "action", "type": "string", "required": true },
+            { "name": "params.event_category", "type": "string", "required": false },
+            { "name": "params.event_label", "type": "string", "required": false }
+          ],
+          "confidence": "confirmed"
+        }
+      ],
+      "business_rules": [
+        {
+          "description": "Analytics disabled in development — only renders in production",
+          "location": "src/components/dom/Analytics/index.tsx:7",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "GA ID injected at build time via NEXT_PUBLIC_GOOGLE_ANALYTICS env var",
+          "location": ".github/workflows/deploy.yml",
+          "confidence": "confirmed"
+        }
+      ],
+      "dependencies": [],
+      "algorithms": [],
+      "complexity": "low"
+    },
+    {
+      "name": "i18n",
+      "path": "src/lib",
+      "purpose": "Multi-language support for 3 locales (en, ja, pt-BR). Route-based locale (/[locale]/...). Browser language auto-detection on first visit. Translation namespaces: common, future-partner.",
+      "primary_files": [
+        "next-i18next.config.js",
+        "src/lib/getStatic.js",
+        "src/lib/languageDetector.js",
+        "src/lib/redirect.js",
+        "public/locales/en/common.json",
+        "public/locales/ja/common.json",
+        "public/locales/pt-BR/common.json"
+      ],
+      "functions": [
+        {
+          "name": "getI18nPaths",
+          "file": "src/lib/getStatic.js",
+          "params": [],
+          "returns": "Array<{ params: { locale: string } }>",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "makeStaticProps",
+          "file": "src/lib/getStatic.js",
+          "params": ["ns: string[]"],
+          "returns": "getStaticProps function",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "useRedirect",
+          "file": "src/lib/redirect.js",
+          "params": ["to?: string"],
+          "returns": "ReactElement (empty)",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "Redirect",
+          "file": "src/lib/redirect.js",
+          "params": [],
+          "returns": "ReactElement (empty)",
+          "confidence": "confirmed"
+        }
+      ],
+      "entities": [],
+      "business_rules": [
+        {
+          "description": "Default locale is 'en' — fallback for unknown browser languages",
+          "location": "next-i18next.config.js:3",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "BUG/GAP: useRedirect has no useEffect dependency array — re-runs on every render",
+          "location": "src/lib/redirect.js:11",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "Introduction.tsx article is not translated — always renders in English",
+          "location": "src/components/views/dev/gabriel/MainContent/Introduction.tsx",
+          "confidence": "inferred"
+        }
+      ],
+      "dependencies": [],
+      "algorithms": [
+        {
+          "name": "Locale Redirect Loop Guard",
+          "description": "In useRedirect: if current route is /404 AND target starts with basePath+detectedLng, redirect to basePath+detectedLng+route instead of just basePath+detectedLng. Prevents infinite redirect loops on 404.",
+          "confidence": "confirmed"
+        }
+      ],
+      "complexity": "medium"
+    },
+    {
+      "name": "layout",
+      "path": "src/components/layout/Public",
+      "purpose": "Public page shell providing consistent <Head> meta, Unicons CDN link, favicon references, and the fixed ChangeLanguage widget.",
+      "primary_files": [
+        "src/components/layout/Public/index.tsx",
+        "src/components/dom/ChangeLanguage/index.tsx"
+      ],
+      "functions": [
+        {
+          "name": "Public",
+          "file": "src/components/layout/Public/index.tsx",
+          "params": ["children: ReactNode", "title: string"],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        },
+        {
+          "name": "ChangeLanguage",
+          "file": "src/components/dom/ChangeLanguage/index.tsx",
+          "params": [],
+          "returns": "ReactElement",
+          "confidence": "confirmed"
+        }
+      ],
+      "entities": [],
+      "business_rules": [
+        {
+          "description": "Unicons icon CSS loaded from CDN per page — required for uil-* icon classes throughout the app",
+          "location": "src/components/layout/Public/index.tsx:17",
+          "confidence": "confirmed"
+        }
+      ],
+      "dependencies": ["i18n"],
+      "algorithms": [],
+      "complexity": "low"
+    },
+    {
+      "name": "data",
+      "path": "src/data",
+      "purpose": "Static JSON data layer. No API, no database. Provides work history, portfolio projects, and tech stack icon registry at build time.",
+      "primary_files": [
+        "src/data/jobs.json",
+        "src/data/toshi-projects.json",
+        "src/data/stacks.json",
+        "src/data/swtools.json",
+        "src/helpers/prefix.ts",
+        "src/helpers/customLoader.ts"
+      ],
+      "functions": [
+        {
+          "name": "customLoader",
+          "file": "src/helpers/customLoader.ts",
+          "params": ["{ src: string }"],
+          "returns": "string",
+          "confidence": "confirmed",
+          "note": "Identity function — returns src unchanged, bypasses Next.js image optimization"
+        }
+      ],
+      "entities": [
+        {
+          "name": "JobEntry",
+          "fields": [
+            { "name": "company", "type": "string", "required": true },
+            { "name": "job_name", "type": "string", "required": true },
+            { "name": "period", "type": "string[2]", "required": true },
+            { "name": "description", "type": "string", "required": true },
+            { "name": "image", "type": "string", "required": true },
+            { "name": "stacks", "type": "string[]", "required": true },
+            { "name": "tools", "type": "string[]", "required": true }
+          ],
+          "confidence": "confirmed"
+        },
+        {
+          "name": "StackEntry",
+          "fields": [
+            { "name": "name", "type": "string", "required": true },
+            { "name": "src", "type": "string", "required": true },
+            { "name": "css", "type": "string", "required": true },
+            { "name": "url", "type": "string", "required": true }
+          ],
+          "confidence": "confirmed"
+        }
+      ],
+      "business_rules": [
+        {
+          "description": "customLoader bypasses Next.js image optimization — required for GitHub Pages (no server-side processing)",
+          "location": "src/helpers/customLoader.ts",
+          "confidence": "confirmed"
+        },
+        {
+          "description": "prefix resolves to empty string in dev, '/fullstack-profile' in production",
+          "location": "src/helpers/prefix.ts",
+          "confidence": "confirmed"
+        }
+      ],
+      "dependencies": [],
+      "algorithms": [],
+      "complexity": "low"
+    }
+  ]
+}

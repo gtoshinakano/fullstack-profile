@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-05-17T00:00:00Z",
+  "project_root": "/home/toshi/app-projects/fullstack-profile",
+  "languages": [
+    { "name": "TypeScript", "extensions": [".ts", ".tsx"], "file_count": 24 },
+    { "name": "JavaScript", "extensions": [".js", ".jsx"], "file_count": 12 },
+    { "name": "CSS", "extensions": [".css"], "file_count": 3 },
+    { "name": "JSON", "extensions": [".json"], "file_count": 11 }
+  ],
+  "primary_language": "TypeScript",
+  "frameworks": [
+    { "name": "Next.js", "version": "^14.2.35", "source": "package.json" },
+    { "name": "React", "version": "^18.3.1", "source": "package.json" },
+    { "name": "Tailwind CSS", "version": "^3.4.4", "source": "package.json" },
+    { "name": "GSAP", "version": "^3.12.5", "source": "package.json" },
+    { "name": "next-i18next", "version": "^15.4.3", "source": "package.json" }
+  ],
+  "package_manager": "npm",
+  "entry_points": [
+    { "path": "pages/_app.tsx", "type": "app_shell" },
+    { "path": "pages/index.ts", "type": "root_redirect" },
+    { "path": "pages/[locale]/dev/gabriel-toshinori-nakano/gabriel.tsx", "type": "main_page" }
+  ],
+  "config_files": [
+    "next.config.js",
+    "next-i18next.config.js",
+    "tailwind.config.js",
+    "tsconfig.json",
+    ".eslintrc",
+    ".prettierrc",
+    ".env"
+  ],
+  "ci_cd": [
+    ".github/workflows/deploy.yml"
+  ],
+  "docker": null,
+  "database_hints": [],
+  "test_framework": null,
+  "test_file_count": 0,
+  "modules": [
+    "hero-section",
+    "hero-dark",
+    "main-content",
+    "analytics",
+    "i18n",
+    "layout",
+    "data"
+  ],
+  "total_files": 50,
+  "external_integrations": [
+    { "name": "Google Analytics 4", "type": "analytics", "id": "G-RH74DXLKZL" },
+    { "name": "Pace.js", "type": "cdn_library", "source": "cdn.jsdelivr.net" },
+    { "name": "GitHub Pages", "type": "hosting", "deploy_branch": "gh-pages" }
+  ],
+  "i18n": {
+    "framework": "next-i18next",
+    "default_locale": "en",
+    "locales": ["en", "ja", "pt-BR"],
+    "namespaces": ["common", "future-partner"]
+  },
+  "organization_suggestion": {
+    "granularity": "feature",
+    "rationale": "Single-page portfolio with no traditional domain modules or centralized routing — organized by named UI sections (hero-section, hero-dark, main-content, analytics, i18n).",
+    "signals": [],
+    "features": [
+      "hero-section",
+      "hero-dark",
+      "main-content",
+      "analytics",
+      "i18n",
+      "layout",
+      "data"
+    ]
+  }
+}
