@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2017",
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,28 +12,26 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ],
       "@Components/*": [
-        "src/components/*"
+        "./src/components/*"
       ],
       "@Views/*": [
-        "src/components/views/*"
+        "./src/components/views/*"
       ],
       "@Styles/*": [
-        "styles/*"
+        "./styles/*"
       ],
       "@Lib/*": [
-        "src/lib/*"
+        "./src/lib/*"
       ]
     },
     "incremental": true

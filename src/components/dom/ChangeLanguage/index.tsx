@@ -2,15 +2,18 @@ import { useRouter } from "next/router"
 import prefix from "@/helpers/prefix"
 import languageDetector from "@/lib/languageDetector"
 
-const PROFILE_PATH = '/dev/gabriel-toshinori-nakano/'
-
 const ChangeLanguage = () => {
   const router = useRouter()
   const currentLocale = router.query.locale as string
 
   const changeLocale = (locale: string) => {
     languageDetector.cache?.(locale)
-    router.push(prefix + '/' + locale + PROFILE_PATH)
+    // Derive the path after [locale] from the current route template
+    // so the switch works correctly on any page and any deployment basePath
+    const segments = router.pathname.split('/')
+    const pagePathAfterLocale = segments.slice(2).join('/')
+    const newPath = prefix + '/' + locale + (pagePathAfterLocale ? '/' + pagePathAfterLocale : '')
+    router.push(newPath)
   }
 
   return (
