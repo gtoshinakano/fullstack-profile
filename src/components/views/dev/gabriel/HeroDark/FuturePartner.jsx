@@ -7,8 +7,6 @@ const Futurepartner = () => {
   const container = gsap.utils.selector(containerRef)
   const { t } = useTranslation('future-partner')
 
-  console.log(t('intro', {returnObjects: true}))
-
   useEffect(() => {
     gsap
       .timeline()
@@ -69,8 +67,6 @@ const TransSection = ({paragraphs, t}) => (
 
 const TransParagraph = ({components, t, children}) => {
   let comps = components.map(c => c.props ? elemMapping[c.elem](c.props) : elemMapping[c.elem])
-
- console.log(comps)
 
   return (
     <Trans 
