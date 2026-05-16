@@ -36,7 +36,14 @@
     "solution": "Solution",
     "tech-stacks-used": "Tech Stacks Used",
     "read": "Read",
-    "hide": "Hide"
+    "hide": "Hide",
+    "project-types": {
+      "personal": "Personal",
+      "job": "Job",
+      "volunteer": "Volunteer",
+      "freelance": "Freelance",
+      "open source": "Open Source"
+    }
   },
   "hide-all": "Hide All",
   "expand-all": "Expand All"
