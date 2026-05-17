@@ -1,339 +1,339 @@
-# my UI/UX Guide
+# 私のUI/UXガイド
 
-- How would it be a useful App interface?
-- How can we provide a more efficient outcome from our screens?
-- How can we make it so useful that it can become a Habit forming product?
+- 便利なアプリのインターフェースとはどのようなものでしょう？
+- 画面からより効率的な成果を提供するにはどうすればよいでしょう？
+- どのようにすれば、使えば使うほど癖になるような便利なプロダクトを作れるでしょう？
 
-Those are all universal questions that we make ourselves when thinking on projects involving users.
+これらはすべて、ユーザーが関わるプロジェクトを考える際に、私たちが自問自答する普遍的な問いです。
 
-My latest projects had pushed myself to learn about something that we can say is every developer's weak point.
+最近のプロジェクトを通じて、開発者なら誰もが苦手とする分野について学ぶことになりました。
 
-*The design part of the whole thing.*
+*それは、プロジェクト全体のデザイン部分です。*
 
-By studying it I realized that in order to be better at it, I needed:
+勉強を進める中で、デザインスキルを向上させるために必要なことが3つあると気づきました：
 
-1. To be more creative while thinking on solutions.
-2. To understand better people's minds to make things more attractive.
-3. To practice following basic design principles to communicate better and effectively.
+1. 解決策を考える際により創造的に考えること。
+2. 人々の心理をより深く理解し、より魅力的なものを作ること。
+3. 基本的なデザイン原則を実践し、より効果的にコミュニケーションを取ること。
 
-While further practicing, I learned concepts that I will keep using in all my future projects and I'm going to teach you here for free.
+さらに練習を重ねる中で、今後のすべてのプロジェクトで活用し続ける概念を学びました。ここでは無料でその内容を共有します。
 
-Maybe it can be useful for you too, as it was for me. Or maybe you can get only what makes sense for you.
+私にとって役立ったように、あなたにとっても役立つかもしれません。あるいは、あなたにとって意味のある部分だけを取り入れても構いません。
 
-I call it **the 3-3-3 principles for a better UX**.
+私はこれを**より良いUXのための3-3-3原則**と呼んでいます。
 
-## The 3-3-3 Principles
+## 3-3-3原則
 
-Once I have heard that **Three** is some kind of a magical number.
+かつて、**3**という数字は魔法の数字だと聞いたことがあります。
 
-It symbolizes simplicity and everything in a cycle of three can have the meaning of beginning, middle and end.
+3はシンプルさを象徴し、3つのサイクルで始まり、中間、終わりを表すことができます。
 
-These key principles consists of 3 communication goals, 3 basic design rules and 3 life learnings applicable to UI/UX.
+この主要な原則は、3つのコミュニケーション目標、3つの基本的なデザインルール、UI/UXに応用できる3つの人生の教訓で構成されています。
 
-I will try to be clear explaining each of them.
+それぞれを分かりやすく説明します。
 
-### 3 Communication Goals
+### 3つのコミュニケーション目標
 
-Once I read on a book that when a communicator has a message to his audience, he has 3 consecutive goals to be achieved in order to deliver it successfully.
+かつて本で読んだのですが、コミュニケーターが観客にメッセージを伝える際、成功させるためには3つの連続した目標を達成する必要があるそうです。
 
-The first goal is:
+最初の目標は：
 
-#### 1/3 Cause a reflection
+#### 1/3 内省を促す
 
-Let's say you are trying to sell something to an audience.
+例えば、観客に何かを売ろうとしているとします。
 
-If you start by saying: "This is my product, please, buy it" you will instantly ruin your sales because the audience needs more information before buying something from you.
+「これが私の製品です、買ってください」と切り出したら、即座に売上を台無しにします。なぜなら観客はあなたの製品を買う前に、もっと情報が必要だからです。
 
-Not only do they need more information, but also they need to feel that buying a product from you is something that will be worth the price they are paying for.
+彼らはより多くの情報を必要とするだけでなく、あなたの製品を買うことが、払った対価に見合う価値があると感じる必要があります。
 
-And in order to feel that, people need a motivation. They need to feel that your product will impact their lives in some positive way.
+そのように感じるためには、人々に動機が必要です。あなたの製品が彼らの生活にポジティブな影響を与えると感じる必要があります。
 
-You need to show them that you know how they feel bad about the problems they have without having your product.
+あなたの製品がないと、彼らが抱えている問題にどれほど悩んでいるかを理解していることを示す必要があります。
 
-You have to lead them to a reflection in their minds.
+彼らの心に内省を促すのです。
 
-Make them think: "Wow, this is true, I have those problems. Does this person knows how to solve it?"
+彼らに「わあ、本当だ、私もその問題を抱えている。この人は解決策を知っているのだろうか？」と思わせるのです。
 
-And then they will give a lot more attention to your message, then you can possibly make a sale or whatever you are trying to help them achieve.
+そうすれば、彼らはあなたのメッセージにさらに注意を払うようになります。そして、売上を上げたり、彼らが達成しようとしていることを助けたりできるようになります。
 
-A reflection can manifest in many shapes like curious information, life-changing insights, or an advice from an authority.
+内省はさまざまな形で現れます。例えば、興味深い情報、人生を変えるような洞察、あるいは権威者からのアドバイスなどです。
 
-But as salesperson, we can't make too much if we only make an audience reflect about the problem they have.
+しかしセールスパーソンとして、観客に問題を内省させるだけでは不十分です。
 
-They can say things like: "Okay, It all makes sense, but..." and there is all kind of imaginable "buts".
+彼らは「確かにそうだけど…」のようなことを言うかもしれません。ありとあらゆる「だけど」が続く可能性があります。
 
-And, generally, the sentence after the word "but" is something that kills sales.
+一般的に、「だけど」の後の文章は売上を台無しにするものです。
 
-You need to be a little bit preciser in your message and achieve the second communication goal, that is:
+メッセージをもう少し的確にし、2つ目のコミュニケーション目標を達成する必要があります。それは：
 
-#### 2/3 Make them take a Decision
+#### 2/3 決断を促す
 
-Okay, you got that making the audience reflect is very good, but it is not enough for you to make a sale. Right?
+観客に内省を促すことは非常に良いことですが、それだけでは売上にはつながりませんよね？
 
-That happens because naturally, people's standard reaction to a salesperson is to create objections in those situations.
+なぜなら、人々はセールスパーソンに対して、自然に反論をすることで自分を守ろうとするからです。
 
-They need to protect themselves from being scammed, right?
+詐欺に遭わないように自分を守る必要があるのです。
 
-It is our duty to know it and to be prepared for, when we are communicating.
+コミュニケーションを取る際には、このことを理解し、準備しておくのが私たちの務めです。
 
-And sometimes, the objection is just that the audience still had too many choices after our communication.
+また、反論の理由は、コミュニケーションの後も観客がまだ多くの選択肢を持っていることだという場合もあります。
 
-And many choices simply confuses people's mind.
+選択肢が多すぎると、人々は混乱してしまいます。
 
-Being precise with the message can fix that problem.
+メッセージを的確にすることで、この問題は解決できます。
 
-We have to let it clear to our audience that they don't have many choices or that, by choosing us, they are making the best choice.
+観客には、選択肢は多くないこと、あるいは私たちを選ぶことが最良の選択であることを明確に伝える必要があります。
 
-So making your audience think:
+例えば、観客にこう思わせます：
 
-*"Okay, I got that gas-moving cars are not good, you told me that hybrid cars have those other problems too, so I have decided that my next car will be an electric one!"*
+*"わかった、ガソリン車は良くない。ハイブリッド車にも他の問題があると教えてもらったから、次の車は電気自動車にしようと決めた！"*
 
-You caused them a reflection, you gave them choices and they have taken a decision.
+内省を促し、選択肢を提示し、彼らは決断を下したのです。
 
-It would be a great outcome if you were an electrical cars seller, but only that decision made should not be enough for you.
+もしあなたが電気自動車の販売員なら、これは素晴らしい結果ですが、決断だけでは不十分です。
 
-You want them to buy it now, right?
+今すぐ買ってほしいですよね？
 
-But unfortunately, they might say the most feared combination of words after the word "but" ever:
+しかし残念ながら、彼らは「だけど」の後に最も恐ろしい言葉を続けるかもしれません：
 
-**"But not now..."**
+**「でも今じゃない…」**
 
-And then we panic, right?
+そうするとパニックになりますよね？
 
-I'm just kidding. That is why we have the third goal of communication.
+冗談です。だからこそ、3つ目のコミュニケーション目標があるのです。
 
-#### 3/3 Make them take an action
+#### 3/3 行動を促す
 
-If your audience had taken a decision, that's good. But there is still something that can make it even better.
+観客が決断を下したのは良いことですが、さらに良くするための要素があります。
 
-Their behavior as a consequence of your communication.
+それは、あなたのコミュニケーションによって引き起こされる彼らの行動です。
 
-And by "behavior", I mean actions like buying a product, subscribing to a list, donating to a cause, cleaning the room, and so on.
+「行動」とは、製品を買う、メーリングリストに登録する、寄付をする、部屋を掃除するなどを指します。
 
-If you are an electrical cars seller, you want your audience to buy them from you.
+電気自動車の販売員なら、観客にあなたの製品を買ってほしいですよね。
 
-A digital marketing guru from the internet once said:
+インターネットのデジタルマーケティングのグルがこう言っていました：
 
-When people says "Not now", actually they wanted to say "It's not a priority for me".
+人々が「今じゃない」と言うとき、実は「私にとって優先順位が高くない」と言いたいのです。
 
-Which means that they need a really good reason to make some effort to accept your offer.
+つまり、あなたのオファーを受け入れるために、彼らには十分な理由が必要なのです。
 
-And the trick here is, you will have to give them some sense of urgency and scarcity.
+ここでのコツは、緊急性と希少性を感じさせることです。
 
-You can say things like: "The opportunity of paying less is only happening today!"
+「今日だけ特別価格で購入できます！」のように伝えます。
 
-And it need to be true, okay?
+もちろん、これは本当のことである必要があります。
 
-So people will feel that they only have that short time to get benefitted from that opportunity.
+そうすれば、その機会を逃すと損だと感じるようになります。
 
-Then they will become more likely to buy your product.
+結果として、製品を購入する可能性が高まります。
 
-And, I hope you got it.
+以上がコミュニケーションの3つの目標です。
 
-The action taken is the third ingredient for a good and objective communication.
+行動を起こさせることが、的確なコミュニケーションの3つ目の要素です。
 
-It's all related to a good UX Design and I'm going to connect the concepts throughout this article.
+これらはすべて良いUXデザインに関連しており、この記事を通じて概念を繋げていきます。
 
-### 3 Basic Design Principles
+### 3つの基本的なデザイン原則
 
-I used to think like that:
+以前の私はこう思っていました：
 
-"What differentiate a good design from a bad one is if it is beautiful or if it hurts our eyes."
+「良いデザインと悪いデザインの違いは、美しいか、目に痛いかだ」
 
-And by "beautiful", I meant, made by someone with some kind of super artistic talent.
+ここでの「美しい」とは、超人的な芸術的才能を持つ人が作ったものを指していました。
 
-Too naive, right?
+あまりにナイーブですよね？
 
-What I was missing was that there is some patterns that if present, it can make a design very effective.
+当時の私は、あるパターンがあればデザインが非常に効果的になることを知りませんでした。
 
-Visual people have more sensitivity to catch these patterns, but auditive people like me doesn't capture it very well, unless it's explicit and well explained.
+視覚優位の人はこれらのパターンに敏感ですが、私のような聴覚優位の人は、明示的に説明されない限りキャッチできません。
 
-It took me a while to learn, but let me try to explain in my own words.
+理解するまでに時間がかかりましたが、自分の言葉で説明します。
 
-#### 1/3 It's about evoking emotions
+#### 1/3 感情を呼び起こすこと
 
-Have you ever asked yourself what makes you buy something?
+あなたが何かを買うとき、何が決め手になったか自問したことはありますか？
 
-And I'm not asking about product features, I'm asking about what happens to you when you decide to buy something.
+製品の機能のことではありません。購入を決断したとき、あなたに何が起きたかを聞いています。
 
-When we feel certain emotions, we tend to take decisions and actions easily, and without thinking too much.
+特定の感情を感じると、私たちは深く考えずに簡単に決断し、行動する傾向があります。
 
-For example, if you know that that product you've always wanted is going to be out of stock soon, it will make you feel that feeling of urgency and scarcity I told you earlier.
+例えば、ずっと欲しかった製品がまもなく在庫切れになると知ったら、先ほど説明した緊急性と希少性を感じるはずです。
 
-Then, it will make you decide if you will let this chance go or if you will act and buy it at that moment.
+そうすると、このチャンスを逃すか、その場で行動して購入するかを決めることになります。
 
-In the design field, the main purpose is to get people's attention and evoke emotions.
+デザインの分野では、人々の注意を引き、感情を呼び起こすことが主な目的です。
 
-A "beautiful design" I told you earlier means a piece of design that perfectly express its purpose and make the viewer feel the right emotions.
+先ほど述べた「美しいデザイン」とは、その目的を完璧に表現し、見る人に適切な感情を抱かせるデザインのことです。
 
-And a design that "hurts our eyes" are the ones that simply can't be precise to show it's purpose and the evoked emotion is bad.
+逆に「目に痛いデザイン」とは、目的を正確に伝えられず、不快な感情を引き起こすものです。
 
-That's why busy images or too many buttons and actions on interfaces are a bad practice.
+だからこそ、ごちゃごちゃした画像や、インターフェース上のボタンやアクションが多すぎるのは良くない習慣です。
 
-Because the purpose is to make people click, buy, subscribe, right?
+目的は人々にクリックさせ、買わせ、登録させることですよね？
 
-You will see my design from 2011, and you can see what might be considered a bad design.
+2011年の私のデザインを見てみましょう。悪いデザインの例が見えます。
 
-#### 2/3 The AIA Composition
+#### 2/3 AIA構成
 
-Compositions are how the elements that compounds a piece of design or an interface are placed on a stage.
+構成とは、デザインやインターフェースを構成する要素をどのように配置するかを指します。
 
-A good composition means that the elements that compounds a design are well placed on the viewport and as a result, it can lead the viewer's attention to an action by evoking the right emotions.
+良い構成とは、要素がビューポート上に適切に配置され、適切な感情を呼び起こすことで、見る人の注意をアクションに向けさせるものです。
 
-And we've just seen that "busy design" evokes confusion, right? And by busy, I meant too many elements competing for your attention on the stage.
+先ほど見たように、「ごちゃごちゃしたデザイン」は混乱を招きます。つまり、ステージ上で多くの要素が注意を競い合っている状態です。
 
-That is why the effective composition is only made of 3 elements. I call them the **Attract**, **Intrigue** and **Act** elements.
+だからこそ、効果的な構成は3つの要素だけで作られます。私はこれらを**Attract（惹きつけ）**、**Intrigue（興味喚起）**、**Act（行動）**要素と呼んでいます。
 
-Let's see a good example of if:
+良い例を見てみましょう：
 
 ![Netflix Screenshot](/img/dev/gabriel/ss-netflix.png)
 
-1. You can see a big background that is the grid of covers from available movies and shows (Attract).
-2. A middle sized element that can be all elements in white color including the Email address input. (Intrigue)
-3. And a few small items in red, like the logo, the sign in button and the Get Started button (Action)
+1. 利用可能な映画や番組のカバーが並ぶ大きな背景（Attract）
+2. メールアドレス入力欄を含む、白で統一された中サイズの要素（Intrigue）
+3. ロゴ、サインインボタン、Get Startedボタンなど、赤の小さい要素（Action）
 
-Everything balanced, great color usage, there is a 3D perspective that gives a sense of infinite possibilities.
+すべてがバランスよく、色使いも素晴らしく、3Dパースペクティブが無限の可能性を感じさせます。
 
-It is clear for our eyes to get what to do when landing on this page.
+このページにアクセスした瞬間、何をすべきかがはっきりと分かります。
 
-The three elements are clearly sized, it doesn't compete with each other, one put your focus into another.
+3つの要素のサイズは明確で、互いに競合せず、一つの要素から次の要素へと焦点が移動します。
 
-You can be use the AIA Composition with Fibonacci's Golden Ratio and the results can be amazing!
+AIA構成をフィボナッチの黄金比と組み合わせれば、驚くような結果が得られるでしょう！
 
-It is more powerful if you use with the next one.
+次に紹介する原則と組み合わせるとさらに効果的です。
 
-#### 3/3 The Perfect Color Proportion
+#### 3/3 完璧な色の配分
 
-I can't say that there is a magic formula to get a perfect color palette, because it doesn't exist.
+完璧なカラーパレットを作る魔法の公式はありません。
 
-But, recently, I discovered that there is another magic **Three**.
+しかし最近、もう一つの魔法の**3**を見つけました。
 
-And before I knew it, I didn't know how to dose color's quantity on a page.
+それまでは、ページ上の色の量をどう調整すればよいか分かりませんでした。
 
-So I chose color palettes, randomly applied it to my CSS and the results was always too colorful.
+だからカラーパレットを選んでCSSにランダムに適用していたら、いつも色が多すぎる結果になっていました。
 
-Look at the first site I made, in 2011:
+2011年に作った最初のサイトを見てみましょう：
 
 ![MapleBR Private Server Screenshot](/img/dev/gabriel/ss-maple.png)
 
-*Wow, it brings me many flashbacks.. I remember I made all the rounded corners with CSS background images.*
+*わあ、たくさんの懐かしい思い出が蘇る… すべての角丸をCSSの背景画像で作っていたのを覚えている。*
 
-It's not **THAT BAD** but, can you see all the signs of a bad design here?
+**それほどひどくはない**けれど、ここにある悪いデザインの兆候が全部見えますか？
 
-There are many blocks and colors attracting your focus, you don't know what to do first. So confusing at first sight, right?
+多くのブロックと色が注意を引き、何を最初にすべきか分かりません。一目で混乱しますよね？
 
-What I needed was just a method to dose the quantity of colors, and what I found more than 10 years later was the 60-30-10 proportion.
+必要だったのは色の量を調整する方法で、10年以上後に見つけたのが60-30-10の配分です。
 
-It means that a portion of 60% of your design should have one color or a shade of this color, another portion of 30% a secondary one and the 10% remaining another one.
+これは、デザインの60%を同一色またはその濃淡、30%を補助色、残りの10%を別の色にするという意味です。
 
-And I don't need to mention that the AIA Composition can use this same proportion for their sizes, right?
+AIA構成でもサイズにこの配分を使えるのは言うまでもありませんよね？
 
-Have a look on a good 60-30-10 proportion applied.
+60-30-10の配分を適用した良い例を見てみましょう：
 
 ![Twitter Screenshot](/img/dev/gabriel/ss-twitter.png)
 
-You first look at the big element on the left, then your eyes slide to the right where the middle and the small sized elements lie.
+最初に左側の大きな要素を見て、次に目が右側の中・小要素に移動します。
 
-60% blue, 30% white and 10% gray. Attract, Intrigue and call to an Action.
+60%が青、30%が白、10%がグレー。Attract、Intrigue、そして行動を促す要素です。
 
-It's like magic. At least for programmers.
+魔法のようです。少なくともプログラマーにとっては。
 
-And It's important for you to know that these numbers aren't an absolute rule.
+また、これらの数字は絶対的なルールではないことを知っておいてください。
 
-You can and should use more than 3 colors but you have to distribute that in a clean and clear way in order to be effective.
+3色以上を使っても構いませんが、効果的にするためには清潔感があり、明確な配分にする必要があります。
 
-So find a way to balance the 60-30-10 proportion yourself. It will make your design really better.
+自分なりの60-30-10のバランスを見つけてください。デザインが本当に良くなります。
 
-### 3 Life Principles We Can Apply To UI/UX
+### UI/UXに応用できる3つの人生の教訓
 
-Communication and design are all related to UI/UX and the better they are the better will be the results.
+コミュニケーションとデザインはすべてUI/UXに関連しており、これらが優れているほど結果も良くなります。
 
-Now, how can we assimilate life principles to it and apply it to UI/UX?
+では、人生の教訓をどうやってUI/UXに取り入れるのでしょうか？
 
-#### 1/3 Everything Constantly Changes
+#### 1/3 すべては絶えず変化する
 
-The World keeps changing and progressing while other things will inevitably become obsolete, especially in the field of technology.
+世界は絶えず変化し進歩していますが、特に技術分野では他のものがすぐに時代遅れになります。
 
-In my experience, I think I spent too much time working with PHP, and I missed when Javascript was arising.
+私の経験では、PHPを使って仕事をする時間が長すぎて、JavaScriptが台頭する時期を逃してしまいました。
 
-But it's not something I regret, it's just a fact that things kept changing. And it will keep changing.
+後悔はしていません。物事は絶えず変化するという事実です。今後も変化し続けます。
 
-That is why I believe that user interfaces should be improved every time it isn't working or when it could be better.
+だからこそ、ユーザーインターフェースは動作しないときや、改善できるときは常に改良すべきだと信じています。
 
-And we will never know better ways if we don't make tests, validations and upgrades frequently.
+頻繁にテスト、検証、アップグレードを行わなければ、より良い方法は見つかりません。
 
-So only the end-users will be really impacted by the differences between changes we've made, and that's why we should always be listening to them.
+変更による違いを本当に実感するのはエンドユーザーだけです。だからこそ、常に彼らの声に耳を傾けるべきです。
 
-We have to keep it in mind. End-users satisfaction will change, new processes will be included, and new roles will always surge.
+これを常に念頭に置いてください。エンドユーザーの満足度は変化し、新しいプロセスが追加され、新しい役割が常に生まれます。
 
-#### 2/3 Simplicity is Key
+#### 2/3 シンプルさが鍵
 
-You might be thinking: "You are being too obvious, everybody knows that simplicity on Design is some kind of a rule."
+「当たり前だ、デザインのシンプルさがルールなんて誰でも知っている」と思うかもしれません。
 
-But let's take this to a deeper level.
+しかし、もう少し深く掘り下げてみましょう。
 
-Whatever your business is, it must have a simple purpose and this purpose should be achievable within a few clicks.
+どのようなビジネスでも、シンプルな目的を持つ必要があります。そしてその目的は数クリック以内で達成できるものでなければなりません。
 
-Let's look at an example from a famous Riding App that everyone probably knows:
+みんなが知っている有名なライドヘイリングアプリの例を見てみましょう：
 
 ![Uber Screenshot](/img/dev/gabriel/ss-uber.png)
 
-Their purpose is clearly expressed. They want to connect private drivers and passengers to a mutual help system, creating a new kind of decentralized economic system.
+彼らの目的は明確に表現されています。個人のドライバーと乘客を相互扶助システムで結びつけ、新しい分散型経済システムを作ることです。
 
-And it can be easily achievable just by opening the app on a smartphone and by choosing where you want to go.
+スマートフォンでアプリを開き、行き先を選ぶだけで簡単に達成できます。
 
-Within a few clicks, the purpose is achieved.
+数クリック以内で目的が達成されます。
 
-But you know that in the middle of these entire process there is a lot of complex things going on.
+しかし、このプロセスの裏では多くの複雑なことが行われていることをあなたは知っています。
 
-And just the simple output from a complex background will help both driver and passenger.
+複雑な背景から生まれるシンプルな出力が、ドライバーと乘客の両方を助けます。
 
-Because for end-users, only the output is what really matters.
+エンドユーザーにとって重要なのは、出力結果だけだからです。
 
-And it's our job to simplify things for them.
+彼らのために物事をシンプルにするのが私たちの仕事です。
 
-#### 3/3 What should we give to our users?
+#### 3/3 ユーザーに何を与えるべきか？
 
-From 2016 until 2018, when I lived in Brazil, it was the time when I invested in courses on personal development.
+2016年から2018年までブラジルに住んでいた時、私は自己啓発コースに投資しました。
 
-One of them was a course on **Dave Elman's Method of Hypnosis**.
+その一つが**デイブ・エルマンの催眠療法コース**です。
 
-And In this field, it is not always that you can help someone that is in a trance state.
+この分野では、トランス状態の人を助けられるとは限りません。
 
-I mean, you can help someone getting into a trance state by following the protocol, but it isn't always that you will be capable of helping them precisely with their emotional problems.
+プロトコルに従ってトランス状態に導くことはできますが、感情的な問題を正確に解決できるとは限りません。
 
-And when it happens, the instructors taught us to give the subject (or the patient) something they called the **hypnotic gift**.
+そんな時、講師は被験者（患者）に**催眠ギフト**と呼ばれるものを与えるよう教えました。
 
-It consisted of giving the subject positive suggestions and making them feel good emotions before they emerge from the trance state.
+それは、トランス状態から覚める前に、被験者にポジティブな暗示を与え、良い感情を抱かせることです。
 
-So that at least that session could result in a positive outcome, which is more valuable than if we did nothing.
+そうすれば、少なくともそのセッションはポジティブな結果となり、何もしないよりも価値があります。
 
-In the UI/UX Universe I believe that we can do something similar.
+UI/UXの世界でも、同じようなことができると信じています。
 
-Sometimes we will need to make small changes or big ones, or sometimes we will need to do everything from zero.
+小さな変更、大きな変更、あるいはゼロから作り直す必要があるかもしれません。
 
-It doesn't matter what but those big or small changes, or the system's new design should be a gift for both the current users and the new ones.
+どのような変更でも、現在のユーザーと新しいユーザーの両方にとってギフトのようなものであるべきです。
 
-Or, at least, let them know that its intentions are all positive.
+少なくとも、その意図がすべてポジティブであることを伝えてください。
 
-This whole page experience is my gift for you that kept with me until here.
+ここまで読んでくれたあなたへの私からのギフトです。
 
-I hope you enjoyed these contents and use it wisely.
+この内容が役立てば幸いです。賢く活用してください。
 
-#### Why I wrote this content?
+#### なぜこの内容を書いたのか？
 
-As you might have seen on my profile section, at the moment, I have low business level in Japanese and English languages. My main is Portuguese.
+プロフィール欄で見たように、現在私の日本語と英語のビジネスレベルは低いです。母語はポルトガル語です。
 
-Since I came to live in Tokyo in January 2022, I needed to practice my English and Japanese skills in order to make a better personal marketing in this country.
+2022年1月に東京に来てから、この国でより良いパーソナルマーケティングを行うために英語と日本語のスキルを練習する必要がありました。
 
-Then I had this idea of practicing Copywriting as well.
+また、コピーライティングも練習したいと考えました。
 
-Then I thought that this content would be interesting for my future teams to know.
+この内容は将来のチームにとっても興味深いと思いました。
 
-Then, I'm here asking you to share this page with anyone who might be interested in having me on a team.
+だから、私をチームに迎えたいと思う人がいれば、このページをシェアしてください。
 
-Or to anyone who you think might be benefited from this content.
+あるいは、この内容が役立つと思う人にシェアしてください。
 
-I'm not an authority in communication or design, I'm only someone trying to share experiences and thoughts.
+私はコミュニケーションやデザインの権威ではありません。ただ経験と考えを共有したい人間です。
 
-So use all this information as advices and not absolute truths.
+だから、この情報は絶対的な真理ではなく、アドバイスとして活用してください。

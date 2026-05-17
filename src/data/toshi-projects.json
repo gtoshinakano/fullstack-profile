@@ -1,6 +1,9 @@
 [
   {
-    "period": ["Jan 2011", "May 2012"],
+    "period": [
+      "Jan 2011",
+      "May 2012"
+    ],
     "type": "personal",
     "title": "MapleBR Private Server",
     "subtitle": "",
@@ -10,16 +13,24 @@
     "public": "Friends",
     "problem": "I needed to practice what I've studied at the University so I started to learn by reading and running open source codes from the internet.",
     "solution": "I built a custom MapleStory private server for testing and learning purposes. I used to code in Java for backend (hosted on a Windows Server 2008), PHP and MySQL to create the page for people to signup. You can see my first page if you read the 3-3-3 Principle.",
-    "stacks": ["java", "php", "mysql", "html", "css"],
+    "stacks": [
+      "java",
+      "php",
+      "mysql",
+      "html",
+      "css"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "maplestory"
   },
   {
-    "period": ["Jul 2013", "May 2018"],
+    "period": [
+      "Jul 2013",
+      "May 2018"
+    ],
     "type": "job",
     "title": "SIGUP - System for Public Expenses Data Management",
     "subtitle": "Departamento de Águas e Energia Elétrica",
@@ -29,16 +40,25 @@
     "public": "Public Servants and Directors",
     "problem": "Public Expenses Data were all managed by EXCEL spreadsheets, turning it difficult to be maintained and shared.",
     "solution": "I suggested the team to build a centralized database for data management in PHP and MySQL. We researched, prototyped, developed our solution translating spreadsheets and graphics into a centralized dashboard with charts (Google Charts API). The results were an economy of R$200.000 (approx. U$50.000 at that time) in public expenses in 6 years.",
-    "stacks": ["php", "mysql", "html", "css", "jquery", "google-charts"],
+    "stacks": [
+      "php",
+      "mysql",
+      "html",
+      "css",
+      "jquery",
+      "google-charts"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "sigup"
   },
   {
-    "period": ["Feb", "2016"],
+    "period": [
+      "Feb",
+      "2016"
+    ],
     "type": "volunteer",
     "title": "Bingo Screen for Matsuri Events",
     "subtitle": "",
@@ -48,16 +68,24 @@
     "public": "Events Staff",
     "problem": "We always used a whiteboard to display Bingo Game numbers on our Matsuri Events",
     "solution": "I built a simple SPA in HTML and JQuery to display bingo numbers for our events. It needed to display big-sized numbers because of the elder public. We kept using it at every Matsuri that had bingo prizes. You can try it as well clicking on the link below!",
-    "stacks": ["html", "css", "jquery", "bootstrap", "git"],
+    "stacks": [
+      "html",
+      "css",
+      "jquery",
+      "bootstrap",
+      "git"
+    ],
     "cover": {},
     "action": {
-      "label": "Use it for free ",
       "url": "https://gtoshinakano.github.io/bingo-screen/"
     },
     "label": "bingo"
   },
   {
-    "period": ["Jun", "2016"],
+    "period": [
+      "Jun",
+      "2016"
+    ],
     "type": "job",
     "title": "Automatic Public Expenses Bills Email Sender",
     "subtitle": "Departamento de Águas e Energia Elétrica",
@@ -67,16 +95,23 @@
     "public": "Accounting Dept.",
     "problem": "The public expenses bills from 50+ locations were sent to a centralized building. We needed to send the right bills to the right places by e-mail.",
     "solution": "I built a simple tool in NodeJS to help my colleagues send their emails.",
-    "stacks": ["nodejs", "javascript", "nodemailer", "git"],
+    "stacks": [
+      "nodejs",
+      "javascript",
+      "nodemailer",
+      "git"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "mailer"
   },
   {
-    "period": ["Jul 2019", "Out 2019"],
+    "period": [
+      "Jul 2019",
+      "Out 2019"
+    ],
     "type": "volunteer",
     "title": "Event Cashier Manager with Barcode Reader",
     "subtitle": "",
@@ -86,16 +121,22 @@
     "public": "Events Staff",
     "problem": "We imported products from Hokkaido and needed a free solution to manage products, stocks and orders for our Bussanten event.",
     "solution": "Using Cloud Firestore as Backend, it was easy to create a system that registers products, orders and only other necessary info for that occasion. I researched, modeled data structure and built the system using ReactJS and Firebase BaaS.",
-    "stacks": ["reactjs", "semantic-ui", "firebase"],
+    "stacks": [
+      "reactjs",
+      "semantic-ui",
+      "firebase"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "cashier"
   },
   {
-    "period": ["Nov 2019", "Mar 2020"],
+    "period": [
+      "Nov 2019",
+      "Mar 2020"
+    ],
     "type": "job",
     "title": "Admin Dashboard for Startup Operations",
     "subtitle": "Noli Fretes - STARTUP",
@@ -105,16 +146,24 @@
     "public": "Startup Team",
     "problem": "We had a MVP Backend and a mobile APP in production so we needed a functional admin interface",
     "solution": "I researched the needs, sketched the screens and started building the features by priority order. I created the auth system, CRUD interfaces, and a dashboard for tracking trucks with GoogleMaps.",
-    "stacks": ["reactjs", "semantic-ui", "firebase", "google-maps", "redux"],
+    "stacks": [
+      "reactjs",
+      "semantic-ui",
+      "firebase",
+      "google-maps",
+      "redux"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "noli"
   },
   {
-    "period": ["May 2020", "Jun 2020"],
+    "period": [
+      "May 2020",
+      "Jun 2020"
+    ],
     "type": "freelance",
     "title": "Financial Management Spreadsheet with Web Interface",
     "subtitle": "",
@@ -132,13 +181,15 @@
     ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "aliber"
   },
   {
-    "period": ["Jun 2020", "Jul 2020"],
+    "period": [
+      "Jun 2020",
+      "Jul 2020"
+    ],
     "type": "personal",
     "title": "Personal Financial Dashboard for My Exchange Time in Japan",
     "subtitle": "",
@@ -156,13 +207,15 @@
     ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "jpn-utils"
   },
   {
-    "period": ["Ago 2020", "Mar 2021"],
+    "period": [
+      "Ago 2020",
+      "Mar 2021"
+    ],
     "type": "personal",
     "title": "Tutorial Blog for ROS and Drone control",
     "subtitle": "",
@@ -172,16 +225,24 @@
     "public": "Robot Operating System - ROS - University Students",
     "problem": "Practice Web development and explaining skills while doing an Exchange Program",
     "solution": "Built a Blog alike tutorial for ROS and Drone control. In order to build it, I was introduced to tools like NextJS, i18n for internationalization, and GSAP for animating elements. It was a test project and I learned a lot about how to dominate the DOM. It was a practice in English writing as well.",
-    "stacks": ["reactjs", "nextjs", "styled-components", "gsap", "ros"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "styled-components",
+      "gsap",
+      "ros"
+    ],
     "cover": {},
     "action": {
-      "label": "Visit Guide",
       "url": "https://ros-bebop-research.vercel.app/"
     },
     "label": "ros"
   },
   {
-    "period": ["Jun 2021 ", "Jul 2021"],
+    "period": [
+      "Jun 2021 ",
+      "Jul 2021"
+    ],
     "type": "freelance",
     "title": "Ecoid.com.br Institutional Website",
     "subtitle": "",
@@ -191,16 +252,23 @@
     "public": "Restaurant Owners who works with food delivery",
     "problem": "The client got an opportunity to represent sales from a paper bowls manufacturer and needed a website to start prospecting.",
     "solution": "I built a simple SPA with a cleaner design. It worked fine at the beginning but, a few months later, the client gave up on the business. It was my first time using TailwindCSS and it made CSS styling really fast. It was when I started to use Design and Prototyping tools like Illustrator and XD",
-    "stacks": ["reactjs", "nextjs", "tailwind", "google-analytics"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "tailwind",
+      "google-analytics"
+    ],
     "cover": {},
     "action": {
-      "label": "See",
       "url": "https://www.ecoid.com.br/"
     },
     "label": "ecoid"
   },
   {
-    "period": ["Jun 2021 ", "Jul 2021"],
+    "period": [
+      "Jun 2021 ",
+      "Jul 2021"
+    ],
     "type": "volunteer",
     "title": "Hokkaido Association Ishikari Nabe Event Promotional Landing Page [Page for Mobile]",
     "subtitle": "",
@@ -219,13 +287,15 @@
     ],
     "cover": {},
     "action": {
-      "label": "See",
       "url": "https://hokkaido-promo.vercel.app/"
     },
     "label": "ishikari"
   },
   {
-    "period": ["Ago 2021 ", "Sep 2021"],
+    "period": [
+      "Ago 2021 ",
+      "Sep 2021"
+    ],
     "type": "volunteer",
     "title": "ASEBASE Database of Ex Internship Students/Trainees",
     "subtitle": "",
@@ -235,16 +305,27 @@
     "public": "Brazilian Ex Students/Trainees from Japan Association ASEBEX",
     "problem": "When brazilian students goes to Japan, they face a lot of common challenges. Experienced people can help them giving advices",
     "solution": "Create a digital community for Brazilian exchange students and trainees in Japan",
-    "stacks": ["reactjs", "nextjs", "tailwind", "styled-components", "firebase", "mysql", "typeorm", "heroku"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "tailwind",
+      "styled-components",
+      "firebase",
+      "mysql",
+      "typeorm",
+      "heroku"
+    ],
     "cover": {},
     "action": {
-      "label": "View code and video",
       "url": "https://github.com/gtoshinakano/asebase-next"
     },
     "label": "asebase"
   },
   {
-    "period": ["Oct 2021 ", "Nov 2021"],
+    "period": [
+      "Oct 2021 ",
+      "Nov 2021"
+    ],
     "type": "freelance",
     "title": "Gustavo Amaral's NFT Collection Landing Page",
     "subtitle": "WeDoIT.jp",
@@ -254,16 +335,24 @@
     "public": "Crypto Currencies Investors",
     "problem": "Launch a NFT Collection from a famous artist",
     "solution": "We built a landing page for promoting an NFT Collection from an artist friend. We  promoted it compiling information about the artist and his previous works. The challenge here was to translate the artist's style into an animated Webpage.",
-    "stacks": ["reactjs", "nextjs", "tailwind", "gsap", "google-analytics"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "tailwind",
+      "gsap",
+      "google-analytics"
+    ],
     "cover": {},
     "action": {
-      "label": "See",
       "url": "https://wedoit.jp/nft/gustavo-amaral/time-and-space?src=toshi"
     },
     "label": "gustavo-amaral"
   },
   {
-    "period": ["Jan 2022 ", "Mar 2022"],
+    "period": [
+      "Jan 2022 ",
+      "Mar 2022"
+    ],
     "type": "freelance",
     "title": "Onoda Boeki Internationalized Website and Logo Design",
     "subtitle": "WeDoIT.jp",
@@ -273,16 +362,23 @@
     "public": "People interested in importing products from Japan to Brazil",
     "problem": "The client needed a website and a logo for his business",
     "solution": "Me and my friend researched, designed and built a single page institutional Website for the company and it's logo as well.",
-    "stacks": ["reactjs", "nextjs", "tailwind", "google-analytics"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "tailwind",
+      "google-analytics"
+    ],
     "cover": {},
     "action": {
-      "label": "See",
       "url": "https://onodaboeki.co.jp"
     },
     "label": "onoda"
   },
   {
-    "period": ["Apr 2022 ", "May 2022"],
+    "period": [
+      "Apr 2022 ",
+      "May 2022"
+    ],
     "type": "personal",
     "title": "This Portfolio and the 3-3-3 Principles For a Better UX",
     "subtitle": "gtoshinakano.github.io/fullstack-profile",
@@ -292,16 +388,24 @@
     "public": "Recruiters, Developers studying UI/UX and future partners",
     "problem": "Expose my experiences in a clear way to explain how I can help in new projects and teams",
     "solution": "This portfolio is a compilation of what I've done and what I've learned in order to be an UI/UX Developer. The 3-3-3 Principles For A Better UX is a guide for you to understand, learn and apply the fundamentals in your next works!",
-    "stacks": ["reactjs", "nextjs", "tailwind", "gsap", "google-analytics"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "tailwind",
+      "gsap",
+      "google-analytics"
+    ],
     "cover": {},
     "action": {
-      "label": "This page",
       "url": "https://gtoshinakano.github.io/fullstack-profile/"
     },
     "label": "portfolio"
   },
   {
-    "period": ["May 2022 ", "Aug 2022"],
+    "period": [
+      "May 2022 ",
+      "Aug 2022"
+    ],
     "type": "job",
     "title": "Project Requirement Design Deliverables",
     "subtitle": "",
@@ -311,16 +415,22 @@
     "public": "Offshore Development Team",
     "problem": "Business Analysts write requirement documents and Onsite technical team has to prepare it to be Offshore developers friendly",
     "solution": "In a well structured software house, Business Analysts does their job to understand the customer needs in order to create a good solution for them. Being part of the technical team, I did my best to create technical documents that Offshore development team could understand the requirements to brought up the best solution for the client. That includes DB Design, Data validation strategy and Data flow designs.",
-    "stacks": ["excel", "drawio", "mysql"],
+    "stacks": [
+      "excel",
+      "drawio",
+      "mysql"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "axa-requirement"
   },
   {
-    "period": ["Jul 2023 ", "Jul 2023"],
+    "period": [
+      "Jul 2023 ",
+      "Jul 2023"
+    ],
     "type": "personal",
     "title": "Japanese Kanji Memorization Application",
     "subtitle": "https://anki.web.app/",
@@ -330,16 +440,23 @@
     "public": "People practicing Japanese language memorization skills",
     "problem": "Learning Japanese is difficult since it requires memorizing special characters known as Kanji. Spaced repetition provides a studying framework for learning and memorizing in an incremental way",
     "solution": "I built a simple application that allows you to register new words in flashcards, provides translation and 'how to read' functionality. It gradually brings words as you practice them everyday, and you decide when you finally learned one word/phrase",
-    "stacks": ["reactjs", "nextjs", "tailwind", "firebase"],
+    "stacks": [
+      "reactjs",
+      "nextjs",
+      "tailwind",
+      "firebase"
+    ],
     "cover": {},
     "action": {
-      "label": "See source code",
       "url": "https://github.com/gtoshinakano/anki-web-app"
     },
     "label": "anki-web"
   },
   {
-    "period": ["Sep 2022 ", "Oct 2024"],
+    "period": [
+      "Sep 2022 ",
+      "Oct 2024"
+    ],
     "type": "job",
     "title": "AXA Life Japan - New Business Workflow",
     "subtitle": "Cloudification of a 15 years old system",
@@ -349,16 +466,25 @@
     "public": "Contract and Medical Assessment Department",
     "problem": "A 15 years old system became obsolete and had dependencies on expensive services",
     "solution": "Re-implementation of the entire system using modern frameworks and cloud deployment services",
-    "stacks": ["vite", "reactjs", "fastify", "camunda", "mysql", "aws"],
+    "stacks": [
+      "vite",
+      "reactjs",
+      "fastify",
+      "camunda",
+      "mysql",
+      "aws"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "nbwf-requirement"
   },
   {
-    "period": ["Aug 2024 ", "Aug 2024"],
+    "period": [
+      "Aug 2024 ",
+      "Aug 2024"
+    ],
     "type": "open source",
     "title": "Local Network File Upload",
     "subtitle": "Share files between locally connected devices",
@@ -368,16 +494,22 @@
     "public": "Anyone",
     "problem": "Sometimes when we need to share files from our smartphones to our PCs or MacBook, we miss good options for it specially when we want to share large files",
     "solution": "Implemented a simple web-ui with a NodeJS server that receives files upload with upload completion feedback. Just run the application from your PC and all devices connected on the same network can share files to the server",
-    "stacks": ["nextjs", "reactjs", "tailwind"],
+    "stacks": [
+      "nextjs",
+      "reactjs",
+      "tailwind"
+    ],
     "cover": {},
     "action": {
-      "label": "See source code",
       "url": "https://github.com/gtoshinakano/local-file-uploader"
     },
     "label": "local-file-uploader"
   },
   {
-    "period": ["Dec 2024 ", "Dec 2024"],
+    "period": [
+      "Dec 2024 ",
+      "Dec 2024"
+    ],
     "type": "open source",
     "title": "Online Template String App",
     "subtitle": "https://github.com/gtoshinakano/web-template-string",
@@ -387,16 +519,22 @@
     "public": "Anyone",
     "problem": "My cousin wanted a simple solution for creating a pre-defined text for his work and update the text with the use of variables when necessary. So he needed to have something that replaces variables inside the text, then he could copy the text to save time on his work.",
     "solution": "Implemented a simple web-ui that allows users to create a text template and populate the text dynamically giving values to variables. It stores the templates in local storage and you can download the templates later for backing up purposes.",
-    "stacks": ["vite", "reactjs", "tailwind"],
+    "stacks": [
+      "vite",
+      "reactjs",
+      "tailwind"
+    ],
     "cover": {},
     "action": {
-      "label": "Use it for free",
       "url": "https://gtoshinakano.github.io/web-template-string/"
     },
     "label": "web-template-string"
   },
   {
-    "period": ["Nov 2024 ", "Today 2025"],
+    "period": [
+      "Nov 2024 ",
+      "Today 2025"
+    ],
     "type": "job",
     "title": "Underwriting Improvement",
     "subtitle": "Digitalization of manual process",
@@ -406,10 +544,15 @@
     "public": "AXA Contracts Department",
     "problem": "As an insurance company which receives thousands of customers documents on daily basis, the process of inputting all those documents became a bottleneck for an efficient service",
     "solution": "Implemented an application used by branch insurance agencies to take pictures of documents and upload them to the contracts department system NBWF. The application process an Optical Characters Recognition (OCR) to extract documents information and inputs it to other systems",
-    "stacks": ["vite", "reactjs", "tailwind", "aws", "mysql"],
+    "stacks": [
+      "vite",
+      "reactjs",
+      "tailwind",
+      "aws",
+      "mysql"
+    ],
     "cover": {},
     "action": {
-      "label": "",
       "url": ""
     },
     "label": "underwriting-improvement"

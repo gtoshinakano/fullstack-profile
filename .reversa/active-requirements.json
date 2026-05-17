@@ -1,10 +1,10 @@
 {
   "schema-version": 1,
-  "feature-dir": "_reversa_forward/001-projects-tab-i18n",
-  "feature-id": "001",
-  "short-name": "projects-tab-i18n",
+  "feature-dir": "_reversa_forward/002-footer-projects-i18n",
+  "feature-id": "002",
+  "short-name": "footer-projects-i18n",
   "started-at": "2026-05-17T00:00:00Z",
-  "current-stage": "coding-em-progresso",
-  "stages-completed": ["requirements", "plan"],
+  "current-stage": "done",
+  "stages-completed": ["requirements", "plan", "coding-em-progresso"],
   "paused-features": []
 }

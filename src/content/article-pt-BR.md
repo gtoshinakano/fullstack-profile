@@ -1,339 +1,339 @@
-# my UI/UX Guide
+# Meu Guia de UI/UX
 
-- How would it be a useful App interface?
-- How can we provide a more efficient outcome from our screens?
-- How can we make it so useful that it can become a Habit forming product?
+- Como seria uma interface de aplicativo útil?
+- Como podemos oferecer resultados mais eficientes a partir de nossas telas?
+- Como podemos torná-lo tão útil que se torne um produto que cria hábito?
 
-Those are all universal questions that we make ourselves when thinking on projects involving users.
+Essas são questões universais que nos fazemos ao pensar em projetos que envolvem usuários.
 
-My latest projects had pushed myself to learn about something that we can say is every developer's weak point.
+Meus projetos recentes me levaram a aprender sobre algo que podemos dizer ser o ponto fraco de todo desenvolvedor.
 
-*The design part of the whole thing.*
+*A parte de design de todo o projeto.*
 
-By studying it I realized that in order to be better at it, I needed:
+Ao estudar isso, percebi que para melhorar, eu precisava:
 
-1. To be more creative while thinking on solutions.
-2. To understand better people's minds to make things more attractive.
-3. To practice following basic design principles to communicate better and effectively.
+1. Ser mais criativo ao pensar em soluções.
+2. Entender melhor a mente das pessoas para tornar as coisas mais atraentes.
+3. Praticar princípios básicos de design para comunicar melhor e de forma mais eficaz.
 
-While further practicing, I learned concepts that I will keep using in all my future projects and I'm going to teach you here for free.
+Ao praticar mais, aprendi conceitos que continuarei usando em todos os meus projetos futuros, e vou ensinar aqui de graça.
 
-Maybe it can be useful for you too, as it was for me. Or maybe you can get only what makes sense for you.
+Talvez seja útil para você também, como foi para mim. Ou talvez você pegue apenas o que faz sentido para você.
 
-I call it **the 3-3-3 principles for a better UX**.
+Eu chamo de **os princípios 3-3-3 para uma UX melhor**.
 
-## The 3-3-3 Principles
+## Os Princípios 3-3-3
 
-Once I have heard that **Three** is some kind of a magical number.
+Certa vez, ouvi que o **três** é uma espécie de número mágico.
 
-It symbolizes simplicity and everything in a cycle of three can have the meaning of beginning, middle and end.
+Ele simboliza simplicidade, e tudo em um ciclo de três pode ter o significado de começo, meio e fim.
 
-These key principles consists of 3 communication goals, 3 basic design rules and 3 life learnings applicable to UI/UX.
+Esses princípios-chave consistem em 3 objetivos de comunicação, 3 regras básicas de design e 3 aprendizados de vida aplicáveis a UI/UX.
 
-I will try to be clear explaining each of them.
+Vou tentar ser claro ao explicar cada um deles.
 
-### 3 Communication Goals
+### 3 Objetivos de Comunicação
 
-Once I read on a book that when a communicator has a message to his audience, he has 3 consecutive goals to be achieved in order to deliver it successfully.
+Certa vez, li em um livro que, quando um comunicador tem uma mensagem para seu público, ele tem 3 objetivos consecutivos para alcançar a fim de entregá-la com sucesso.
 
-The first goal is:
+O primeiro objetivo é:
 
-#### 1/3 Cause a reflection
+#### 1/3 Causar uma reflexão
 
-Let's say you are trying to sell something to an audience.
+Digamos que você está tentando vender algo para um público.
 
-If you start by saying: "This is my product, please, buy it" you will instantly ruin your sales because the audience needs more information before buying something from you.
+Se você começar dizendo: "Este é meu produto, por favor compre-o", você arruinará suas vendas instantaneamente, pois o público precisa de mais informações antes de comprar algo de você.
 
-Not only do they need more information, but also they need to feel that buying a product from you is something that will be worth the price they are paying for.
+Eles não precisam apenas de mais informações, mas também precisam sentir que comprar um produto de você valerá o preço que estão pagando.
 
-And in order to feel that, people need a motivation. They need to feel that your product will impact their lives in some positive way.
+Para sentir isso, as pessoas precisam de motivação. Elas precisam sentir que seu produto impactará suas vidas de forma positiva.
 
-You need to show them that you know how they feel bad about the problems they have without having your product.
+Você precisa mostrar a elas que sabe o quão mal elas se sentem com os problemas que têm sem o seu produto.
 
-You have to lead them to a reflection in their minds.
+Você tem que levá-las a uma reflexão em suas mentes.
 
-Make them think: "Wow, this is true, I have those problems. Does this person knows how to solve it?"
+Faça-as pensar: "Nossa, isso é verdade, eu tenho esses problemas. Será que essa pessoa sabe como resolvê-los?"
 
-And then they will give a lot more attention to your message, then you can possibly make a sale or whatever you are trying to help them achieve.
+Então, elas darão muito mais atenção à sua mensagem. Assim, você pode fazer uma venda ou o que quer que esteja tentando ajudá-las a alcançar.
 
-A reflection can manifest in many shapes like curious information, life-changing insights, or an advice from an authority.
+Uma reflexão pode se manifestar de muitas formas, como informações curiosas, insights que mudam a vida ou conselhos de uma autoridade.
 
-But as salesperson, we can't make too much if we only make an audience reflect about the problem they have.
+Mas como vendedores, não podemos fazer muito se apenas fizermos o público refletir sobre o problema que tem.
 
-They can say things like: "Okay, It all makes sense, but..." and there is all kind of imaginable "buts".
+Elas podem dizer coisas como: "Ok, tudo faz sentido, mas..." e existem todos os tipos de "mas" imagináveis.
 
-And, generally, the sentence after the word "but" is something that kills sales.
+E, geralmente, a frase após a palavra "mas" é algo que mata as vendas.
 
-You need to be a little bit preciser in your message and achieve the second communication goal, that is:
+Você precisa ser um pouco mais preciso na sua mensagem e alcançar o segundo objetivo de comunicação, que é:
 
-#### 2/3 Make them take a Decision
+#### 2/3 Fazer com que tomem uma decisão
 
-Okay, you got that making the audience reflect is very good, but it is not enough for you to make a sale. Right?
+Ok, você entendeu que fazer o público refletir é muito bom, mas não é suficiente para fazer uma venda. Certo?
 
-That happens because naturally, people's standard reaction to a salesperson is to create objections in those situations.
+Isso acontece porque, naturalmente, a reação padrão das pessoas a um vendedor é criar objeções nessas situações.
 
-They need to protect themselves from being scammed, right?
+Elas precisam se proteger de golpes, certo?
 
-It is our duty to know it and to be prepared for, when we are communicating.
+É nosso dever saber disso e estar preparado quando estamos nos comunicando.
 
-And sometimes, the objection is just that the audience still had too many choices after our communication.
+E, às vezes, a objeção é apenas que o público ainda tem muitas escolhas após a nossa comunicação.
 
-And many choices simply confuses people's mind.
+E muitas escolhas simplesmente confundem a mente das pessoas.
 
-Being precise with the message can fix that problem.
+Ser preciso com a mensagem pode resolver esse problema.
 
-We have to let it clear to our audience that they don't have many choices or that, by choosing us, they are making the best choice.
+Temos que deixar claro para o nosso público que eles não têm muitas escolhas ou que, ao nos escolher, estão fazendo a melhor escolha.
 
-So making your audience think:
+Então faça seu público pensar:
 
-*"Okay, I got that gas-moving cars are not good, you told me that hybrid cars have those other problems too, so I have decided that my next car will be an electric one!"*
+*"Ok, entendi que carros a gasolina não são bons, você me disse que carros híbridos também têm esses outros problemas, então decidi que meu próximo carro será elétrico!"*
 
-You caused them a reflection, you gave them choices and they have taken a decision.
+Você causou uma reflexão, deu escolhas a elas e elas tomaram uma decisão.
 
-It would be a great outcome if you were an electrical cars seller, but only that decision made should not be enough for you.
+Seria um ótimo resultado se você fosse um vendedor de carros elétricos, mas apenas essa decisão não deve ser suficiente para você.
 
-You want them to buy it now, right?
+Você quer que elas comprem agora, certo?
 
-But unfortunately, they might say the most feared combination of words after the word "but" ever:
+Mas, infelizmente, elas podem dizer a combinação de palavras mais temida após a palavra "mas":
 
-**"But not now..."**
+**"Mas não agora..."**
 
-And then we panic, right?
+E aí entramos em pânico, certo?
 
-I'm just kidding. That is why we have the third goal of communication.
+Estou brincando. É por isso que temos o terceiro objetivo de comunicação.
 
-#### 3/3 Make them take an action
+#### 3/3 Fazer com que tomem uma ação
 
-If your audience had taken a decision, that's good. But there is still something that can make it even better.
+Se seu público tomou uma decisão, isso é bom. Mas ainda há algo que pode tornar isso ainda melhor.
 
-Their behavior as a consequence of your communication.
+Seu comportamento como consequência da sua comunicação.
 
-And by "behavior", I mean actions like buying a product, subscribing to a list, donating to a cause, cleaning the room, and so on.
+E por "comportamento", quero dizer ações como comprar um produto, assinar uma lista, doar para uma causa, limpar o quarto, e assim por diante.
 
-If you are an electrical cars seller, you want your audience to buy them from you.
+Se você é um vendedor de carros elétricos, quer que seu público compre de você.
 
-A digital marketing guru from the internet once said:
+Um guru de marketing digital da internet disse certa vez:
 
-When people says "Not now", actually they wanted to say "It's not a priority for me".
+Quando as pessoas dizem "Não agora", na verdade elas querem dizer "Não é uma prioridade para mim".
 
-Which means that they need a really good reason to make some effort to accept your offer.
+O que significa que elas precisam de uma razão muito boa para fazer um esforço para aceitar sua oferta.
 
-And the trick here is, you will have to give them some sense of urgency and scarcity.
+E o truque aqui é que você terá que dar a elas um senso de urgência e escassez.
 
-You can say things like: "The opportunity of paying less is only happening today!"
+Você pode dizer coisas como: "A oportunidade de pagar menos só acontece hoje!"
 
-And it need to be true, okay?
+E precisa ser verdade, ok?
 
-So people will feel that they only have that short time to get benefitted from that opportunity.
+Assim, as pessoas sentirão que têm apenas aquele curto tempo para se beneficiar dessa oportunidade.
 
-Then they will become more likely to buy your product.
+Então, elas serão mais propensas a comprar seu produto.
 
-And, I hope you got it.
+E, espero que você tenha entendido.
 
-The action taken is the third ingredient for a good and objective communication.
+A ação tomada é o terceiro ingrediente para uma comunicação boa e objetiva.
 
-It's all related to a good UX Design and I'm going to connect the concepts throughout this article.
+Tudo isso está relacionado a um bom design de UX, e vou conectar os conceitos ao longo deste artigo.
 
-### 3 Basic Design Principles
+### 3 Princípios Básicos de Design
 
-I used to think like that:
+Eu costumava pensar assim:
 
-"What differentiate a good design from a bad one is if it is beautiful or if it hurts our eyes."
+"O que diferencia um bom design de um ruim é se ele é bonito ou se machuca nossos olhos."
 
-And by "beautiful", I meant, made by someone with some kind of super artistic talent.
+E por "bonito", eu queria dizer feito por alguém com algum tipo de super talento artístico.
 
-Too naive, right?
+Muito ingênuo, certo?
 
-What I was missing was that there is some patterns that if present, it can make a design very effective.
+O que eu estava perdendo era que existem alguns padrões que, se presentes, podem tornar um design muito eficaz.
 
-Visual people have more sensitivity to catch these patterns, but auditive people like me doesn't capture it very well, unless it's explicit and well explained.
+Pessoas visuais têm mais sensibilidade para captar esses padrões, mas pessoas auditivas como eu não os captam muito bem, a menos que sejam explícitos e bem explicados.
 
-It took me a while to learn, but let me try to explain in my own words.
+Demorei um pouco para aprender, mas deixe-me tentar explicar com minhas próprias palavras.
 
-#### 1/3 It's about evoking emotions
+#### 1/3 Trata-se de evocar emoções
 
-Have you ever asked yourself what makes you buy something?
+Você já se perguntou o que faz você comprar algo?
 
-And I'm not asking about product features, I'm asking about what happens to you when you decide to buy something.
+E não estou perguntando sobre as características do produto. Estou perguntando o que acontece com você quando decide comprar algo.
 
-When we feel certain emotions, we tend to take decisions and actions easily, and without thinking too much.
+Quando sentimos certas emoções, tendemos a tomar decisões e agir facilmente, sem pensar muito.
 
-For example, if you know that that product you've always wanted is going to be out of stock soon, it will make you feel that feeling of urgency and scarcity I told you earlier.
+Por exemplo, se você sabe que aquele produto que sempre quis está prestes a sair de estoque, isso fará você sentir aquele sentimento de urgência e escassez que mencionei anteriormente.
 
-Then, it will make you decide if you will let this chance go or if you will act and buy it at that moment.
+Então, isso fará você decidir se deixará essa chance passar ou se agirá e comprará naquele momento.
 
-In the design field, the main purpose is to get people's attention and evoke emotions.
+No campo do design, o objetivo principal é chamar a atenção das pessoas e evocar emoções.
 
-A "beautiful design" I told you earlier means a piece of design that perfectly express its purpose and make the viewer feel the right emotions.
+Um "design bonito", como mencionei anteriormente, significa um design que expressa perfeitamente seu propósito e faz o espectador sentir as emoções certas.
 
-And a design that "hurts our eyes" are the ones that simply can't be precise to show it's purpose and the evoked emotion is bad.
+E designs que "machucam nossos olhos" são aqueles que simplesmente não conseguem mostrar seu propósito com precisão, e a emoção evocada é ruim.
 
-That's why busy images or too many buttons and actions on interfaces are a bad practice.
+É por isso que imagens bagunçadas ou muitos botões e ações em interfaces são uma má prática.
 
-Because the purpose is to make people click, buy, subscribe, right?
+Porque o objetivo é fazer as pessoas clicarem, comprarem, assinarem, certo?
 
-You will see my design from 2011, and you can see what might be considered a bad design.
+Você verá meu design de 2011 e poderá ver o que pode ser considerado um mau design.
 
-#### 2/3 The AIA Composition
+#### 2/3 A Composição AIA
 
-Compositions are how the elements that compounds a piece of design or an interface are placed on a stage.
+Composições são a forma como os elementos que compõem um design ou interface são colocados em um palco.
 
-A good composition means that the elements that compounds a design are well placed on the viewport and as a result, it can lead the viewer's attention to an action by evoking the right emotions.
+Uma boa composição significa que os elementos que compõem um design estão bem posicionados no viewport e, como resultado, podem levar a atenção do espectador a uma ação evocando as emoções certas.
 
-And we've just seen that "busy design" evokes confusion, right? And by busy, I meant too many elements competing for your attention on the stage.
+E acabamos de ver que o "design bagunçado" evoca confusão, certo? E por bagunçado, quero dizer muitos elementos competindo por sua atenção no palco.
 
-That is why the effective composition is only made of 3 elements. I call them the **Attract**, **Intrigue** and **Act** elements.
+É por isso que a composição eficaz é feita apenas de 3 elementos. Eu os chamo de elementos **Attract (Atrair)**, **Intrigue (Intrigar)** e **Act (Agir)**.
 
-Let's see a good example of if:
+Vejamos um bom exemplo disso:
 
 ![Netflix Screenshot](/img/dev/gabriel/ss-netflix.png)
 
-1. You can see a big background that is the grid of covers from available movies and shows (Attract).
-2. A middle sized element that can be all elements in white color including the Email address input. (Intrigue)
-3. And a few small items in red, like the logo, the sign in button and the Get Started button (Action)
+1. Você pode ver um grande plano de fundo que é a grade de capas de filmes e programas disponíveis (Attract)
+2. Um elemento de tamanho médio que pode ser todos os elementos na cor branca, incluindo a entrada de endereço de e-mail. (Intrigue)
+3. E alguns itens pequenos em vermelho, como o logotipo, o botão de entrar e o botão Get Started. (Action)
 
-Everything balanced, great color usage, there is a 3D perspective that gives a sense of infinite possibilities.
+Tudo está equilibrado, com ótimo uso de cores, e há uma perspectiva 3D que dá uma sensação de infinitas possibilidades.
 
-It is clear for our eyes to get what to do when landing on this page.
+Está claro para nossos olhos o que fazer ao chegar nesta página.
 
-The three elements are clearly sized, it doesn't compete with each other, one put your focus into another.
+Os três elementos têm tamanhos claros, não competem entre si, e um coloca seu foco no outro.
 
-You can be use the AIA Composition with Fibonacci's Golden Ratio and the results can be amazing!
+Você pode usar a Composição AIA com a Proporção Áurea de Fibonacci, e os resultados podem ser incríveis!
 
-It is more powerful if you use with the next one.
+É mais poderoso se você usá-lo com o próximo.
 
-#### 3/3 The Perfect Color Proportion
+#### 3/3 A Proporção Perfeita de Cores
 
-I can't say that there is a magic formula to get a perfect color palette, because it doesn't exist.
+Não posso dizer que existe uma fórmula mágica para obter uma paleta de cores perfeita, porque ela não existe.
 
-But, recently, I discovered that there is another magic **Three**.
+Mas, recentemente, descobri que existe outra mágica de **três**.
 
-And before I knew it, I didn't know how to dose color's quantity on a page.
+E antes de perceber, eu não sabia como dosar a quantidade de cores em uma página.
 
-So I chose color palettes, randomly applied it to my CSS and the results was always too colorful.
+Então eu escolhia paletas de cores, aplicava-as aleatoriamente ao meu CSS, e os resultados eram sempre muito coloridos.
 
-Look at the first site I made, in 2011:
+Veja o primeiro site que fiz, em 2011:
 
 ![MapleBR Private Server Screenshot](/img/dev/gabriel/ss-maple.png)
 
-*Wow, it brings me many flashbacks.. I remember I made all the rounded corners with CSS background images.*
+*Nossa, traz muitas lembranças... Lembro que fiz todas as bordas arredondadas com imagens de fundo em CSS.*
 
-It's not **THAT BAD** but, can you see all the signs of a bad design here?
+Não é **TÃO RUIM ASSIM**, mas você consegue ver todos os sinais de um mau design aqui?
 
-There are many blocks and colors attracting your focus, you don't know what to do first. So confusing at first sight, right?
+Há muitos blocos e cores atraindo seu foco, e você não sabe o que fazer primeiro. Muito confuso à primeira vista, certo?
 
-What I needed was just a method to dose the quantity of colors, and what I found more than 10 years later was the 60-30-10 proportion.
+O que eu precisava era apenas de um método para dosar a quantidade de cores, e o que encontrei mais de 10 anos depois foi a proporção 60-30-10.
 
-It means that a portion of 60% of your design should have one color or a shade of this color, another portion of 30% a secondary one and the 10% remaining another one.
+Isso significa que 60% do seu design deve ter uma cor ou um tom dessa cor, outros 30% devem ter uma cor secundária, e os 10% restantes devem ter outra cor.
 
-And I don't need to mention that the AIA Composition can use this same proportion for their sizes, right?
+E não preciso mencionar que a Composição AIA pode usar essa mesma proporção para seus tamanhos, certo?
 
-Have a look on a good 60-30-10 proportion applied.
+Veja uma boa aplicação da proporção 60-30-10.
 
 ![Twitter Screenshot](/img/dev/gabriel/ss-twitter.png)
 
-You first look at the big element on the left, then your eyes slide to the right where the middle and the small sized elements lie.
+Você olha primeiro para o grande elemento à esquerda, depois seus olhos deslizam para a direita onde estão os elementos médios e pequenos.
 
-60% blue, 30% white and 10% gray. Attract, Intrigue and call to an Action.
+60% azul, 30% branco e 10% cinza. Attract, Intrigue e call to action.
 
-It's like magic. At least for programmers.
+É como mágica. Pelo menos para programadores.
 
-And It's important for you to know that these numbers aren't an absolute rule.
+E é importante que você saiba que esses números não são uma regra absoluta.
 
-You can and should use more than 3 colors but you have to distribute that in a clean and clear way in order to be effective.
+Você pode e deve usar mais de 3 cores, mas precisa distribuí-las de forma limpa e clara para ser eficaz.
 
-So find a way to balance the 60-30-10 proportion yourself. It will make your design really better.
+Então encontre uma forma de equilibrar a proporção 60-30-10 por conta própria. Isso fará seu design ficar realmente melhor.
 
-### 3 Life Principles We Can Apply To UI/UX
+### 3 Princípios de Vida Que Podemos Aplicar à UI/UX
 
-Communication and design are all related to UI/UX and the better they are the better will be the results.
+Comunicação e design estão todos relacionados à UI/UX, e quanto melhores forem, melhores serão os resultados.
 
-Now, how can we assimilate life principles to it and apply it to UI/UX?
+Agora, como podemos assimilar princípios de vida a isso e aplicá-los à UI/UX?
 
-#### 1/3 Everything Constantly Changes
+#### 1/3 Tudo Muda Constantemente
 
-The World keeps changing and progressing while other things will inevitably become obsolete, especially in the field of technology.
+O mundo continua mudando e progredindo enquanto outras coisas se tornam inevitavelmente obsoletas, especialmente no campo da tecnologia.
 
-In my experience, I think I spent too much time working with PHP, and I missed when Javascript was arising.
+Na minha experiência, acho que passei muito tempo trabalhando com PHP e perdi a ascensão do JavaScript.
 
-But it's not something I regret, it's just a fact that things kept changing. And it will keep changing.
+Mas não é algo que eu lamente. É apenas um fato que as coisas continuaram mudando. E continuarão mudando.
 
-That is why I believe that user interfaces should be improved every time it isn't working or when it could be better.
+É por isso que acredito que as interfaces do usuário devem ser melhoradas sempre que não estiverem funcionando ou quando puderem ser melhores.
 
-And we will never know better ways if we don't make tests, validations and upgrades frequently.
+E nunca conheceremos maneiras melhores se não fizermos testes, validações e atualizações frequentes.
 
-So only the end-users will be really impacted by the differences between changes we've made, and that's why we should always be listening to them.
+Assim, apenas os usuários finais serão realmente impactados pelas diferenças entre as mudanças que fizemos, e é por isso que devemos sempre ouvir o que eles têm a dizer.
 
-We have to keep it in mind. End-users satisfaction will change, new processes will be included, and new roles will always surge.
+Devemos manter isso em mente. A satisfação do usuário final mudará, novos processos serão incluídos e novas funções sempre surgirão.
 
-#### 2/3 Simplicity is Key
+#### 2/3 A Simplicidade é a Chave
 
-You might be thinking: "You are being too obvious, everybody knows that simplicity on Design is some kind of a rule."
+Você deve estar pensando: "Você está sendo óbvio demais, todo mundo sabe que a simplicidade no design é uma espécie de regra."
 
-But let's take this to a deeper level.
+Mas vamos levar isso a um nível mais profundo.
 
-Whatever your business is, it must have a simple purpose and this purpose should be achievable within a few clicks.
+Seja qual for o seu negócio, ele deve ter um propósito simples, e esse propósito deve ser alcançável em poucos cliques.
 
-Let's look at an example from a famous Riding App that everyone probably knows:
+Vejamos um exemplo de um famoso aplicativo de transporte que todos provavelmente conhecem:
 
 ![Uber Screenshot](/img/dev/gabriel/ss-uber.png)
 
-Their purpose is clearly expressed. They want to connect private drivers and passengers to a mutual help system, creating a new kind of decentralized economic system.
+Seu propósito é claramente expresso. Eles querem conectar motoristas particulares e passageiros a um sistema de ajuda mútua, criando um novo tipo de sistema econômico descentralizado.
 
-And it can be easily achievable just by opening the app on a smartphone and by choosing where you want to go.
+E pode ser facilmente alcançado apenas abrindo o aplicativo em um smartphone e escolhendo para onde você quer ir.
 
-Within a few clicks, the purpose is achieved.
+Em poucos cliques, o propósito é alcançado.
 
-But you know that in the middle of these entire process there is a lot of complex things going on.
+Mas você sabe que, no meio de todo esse processo, muitas coisas complexas estão acontecendo.
 
-And just the simple output from a complex background will help both driver and passenger.
+E apenas a saída simples de um plano de fundo complexo ajudará tanto o motorista quanto o passageiro.
 
-Because for end-users, only the output is what really matters.
+Porque, para os usuários finais, apenas a saída é o que realmente importa.
 
-And it's our job to simplify things for them.
+E é nosso trabalho simplificar as coisas para eles.
 
-#### 3/3 What should we give to our users?
+#### 3/3 O que devemos dar aos nossos usuários?
 
-From 2016 until 2018, when I lived in Brazil, it was the time when I invested in courses on personal development.
+De 2016 até 2018, quando morava no Brasil, foi o período em que investi em cursos de desenvolvimento pessoal.
 
-One of them was a course on **Dave Elman's Method of Hypnosis**.
+Um deles foi um curso sobre o **Método de Hipnose de Dave Elman**.
 
-And In this field, it is not always that you can help someone that is in a trance state.
+E neste campo, nem sempre é possível ajudar alguém que está em estado de transe.
 
-I mean, you can help someone getting into a trance state by following the protocol, but it isn't always that you will be capable of helping them precisely with their emotional problems.
+Quero dizer, você pode ajudar alguém a entrar em transe seguindo o protocolo, mas nem sempre será capaz de ajudá-los precisamente com seus problemas emocionais.
 
-And when it happens, the instructors taught us to give the subject (or the patient) something they called the **hypnotic gift**.
+E quando isso acontece, os instrutores nos ensinaram a dar ao sujeito, ou paciente, algo que chamavam de **presente hipnótico**.
 
-It consisted of giving the subject positive suggestions and making them feel good emotions before they emerge from the trance state.
+Consistia em dar sugestões positivas ao sujeito e fazê-lo sentir emoções boas antes de sair do estado de transe.
 
-So that at least that session could result in a positive outcome, which is more valuable than if we did nothing.
+Para que, pelo menos, aquela sessão resultasse em um resultado positivo, que é mais valioso do que se não tivéssemos feito nada.
 
-In the UI/UX Universe I believe that we can do something similar.
+No universo da UI/UX, acredito que podemos fazer algo similar.
 
-Sometimes we will need to make small changes or big ones, or sometimes we will need to do everything from zero.
+Às vezes, precisaremos fazer pequenas ou grandes mudanças, ou às vezes precisaremos fazer tudo do zero.
 
-It doesn't matter what but those big or small changes, or the system's new design should be a gift for both the current users and the new ones.
+Não importa o que seja, mas essas mudanças grandes ou pequenas, ou o novo design do sistema, devem ser um presente tanto para os usuários atuais quanto para os novos.
 
-Or, at least, let them know that its intentions are all positive.
+Ou, pelo menos, deixe-os saber que as intenções são todas positivas.
 
-This whole page experience is my gift for you that kept with me until here.
+Toda essa experiência de página é meu presente para você que ficou comigo até aqui.
 
-I hope you enjoyed these contents and use it wisely.
+Espero que tenha gostado deste conteúdo e use-o com sabedoria.
 
-#### Why I wrote this content?
+#### Por que escrevi este conteúdo?
 
-As you might have seen on my profile section, at the moment, I have low business level in Japanese and English languages. My main is Portuguese.
+Como você deve ter visto na minha seção de perfil, no momento, tenho um nível baixo de japonês e inglês para negócios. Minha língua principal é o português.
 
-Since I came to live in Tokyo in January 2022, I needed to practice my English and Japanese skills in order to make a better personal marketing in this country.
+Como vim morar em Tóquio em janeiro de 2022, precisei praticar minhas habilidades em inglês e japonês para fazer um marketing pessoal melhor neste país.
 
-Then I had this idea of practicing Copywriting as well.
+Então tive a ideia de praticar copywriting também.
 
-Then I thought that this content would be interesting for my future teams to know.
+Então pensei que este conteúdo seria interessante para meus futuros times saberem.
 
-Then, I'm here asking you to share this page with anyone who might be interested in having me on a team.
+Então, estou aqui pedindo para que compartilhe esta página com qualquer pessoa que possa ter interesse em me ter em um time.
 
-Or to anyone who you think might be benefited from this content.
+Ou com qualquer pessoa que você ache que possa se beneficiar deste conteúdo.
 
-I'm not an authority in communication or design, I'm only someone trying to share experiences and thoughts.
+Não sou uma autoridade em comunicação ou design. Sou apenas alguém tentando compartilhar experiências e pensamentos.
 
-So use all this information as advices and not absolute truths.
+Então use todas essas informações como conselhos e não como verdades absolutas.

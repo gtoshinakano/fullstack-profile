@@ -21,7 +21,7 @@ type IProject = {
   solution: string
   stacks: string[]
   cover?: any
-  action: { label: string; url: string }
+  action: { url: string }
   label: string // Unique Key of project
 }
 
@@ -190,13 +190,13 @@ const Projects = () => {
                       }`}
                     ></i>
                   </button>
-                  {item.action?.label !== '' && (
+                  {item.action?.url && (
                     <a
                       target='_blank'
                       href={item.action.url}
                       className={`font-extralight hover:underline flex ml-16 rounded-full bg-primary px-2.5 py-0.5`}
                     >
-                      {item.action.label}
+                      {t(`projects-data:${item.label}.action`)}
                       <i className='uil uil-corner-up-right ml-2'></i>
                     </a>
                   )}
