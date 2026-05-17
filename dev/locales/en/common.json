@@ -50,13 +50,13 @@
   "lets-connect": "Let's connect",
   "share-this-page": "Share this page",
   "toshi-ai": {
-    "title": "Toshi AI – Ask me about Toshi",
+    "title": "ToshiGPT – Ask about Toshi",
     "placeholder": "Type your question... (200 chars max)",
     "send": "Send",
     "questions-remaining_one": "{{count}} question remaining",
     "questions-remaining_other": "{{count}} questions remaining",
     "limit-reached": "Session limit reached. Refresh the page to start over.",
-    "welcome": "Hi! I'm Toshi AI — ask me anything about Gabriel!",
+    "welcome": "Hi, I'm Toshi, nice to meet you! Ask me anything!",
     "error": "Something went wrong. Please try again.",
     "char-count": "{{count}}/200"
   }
