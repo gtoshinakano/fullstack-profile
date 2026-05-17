@@ -29,6 +29,7 @@ const ToshiAITerminal = () => {
   const [input, setInput] = useState('')
   const [isFocused, setIsFocused] = useState(false)
   const outputRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     setMessages([{ role: 'welcome', content: t('toshi-ai.welcome') }])
@@ -109,6 +110,7 @@ const ToshiAITerminal = () => {
       })
     } finally {
       setIsStreaming(false)
+      inputRef.current?.focus()
     }
   }
 
@@ -150,7 +152,7 @@ const ToshiAITerminal = () => {
             ) : (
               <div>
                 <div className='font-mono'>
-                  <span className='text-green-400 font-bold select-none'>{'>'} Toshi AI: </span>
+                  <span className='text-green-400 font-bold select-none'>{'>'} ToshiAI: </span>
                   <span className='text-gray-300'>{msg.content}</span>
                   {msg.isStreaming && (
                     <span className='animate-pulse ml-0.5 text-green-400'>▋</span>
@@ -177,6 +179,7 @@ const ToshiAITerminal = () => {
         {/* Input with blinking block cursor */}
         <div className='flex-1 relative flex items-center min-w-0 overflow-hidden'>
           <input
+            ref={inputRef}
             type='text'
             value={input}
             onChange={(e) => setInput(e.target.value)}
