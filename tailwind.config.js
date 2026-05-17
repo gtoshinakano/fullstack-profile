@@ -35,6 +35,7 @@ module.exports = {
       futura: ['futura'],
       pacifico: ['Pacifico'],
       trueno: ['Trueno'],
+      mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
   },
 }

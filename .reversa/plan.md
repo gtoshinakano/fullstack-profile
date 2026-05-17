@@ -60,6 +60,17 @@
 
 ---
 
+## Re-extração — 2026-05-17
+
+> Disparada após conclusão de `005-cloudflare-worker-ai-proxy` (`/reversa-coding`)
+
+- ✅ **Scout** — inventory.md + dependencies.md + surface.json atualizados (worker module adicionado)
+- ✅ **Archaeologist** — code-analysis.md atualizado: ToshiAITerminal + Feature 8 (worker)
+- ✅ **Architect** — architecture.md atualizado (diagrama + sistema summary)
+- ✅ **Regressão** — 7/7 watch items 🟢 verde (005-cloudflare-worker-ai-proxy)
+
+---
+
 ## Próximo passo
 
 Após o Time de Descoberta concluir e o `_reversa_sdd/` estar populado, você pode disparar um dos fluxos seguintes:

@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-05-17T00:00:00Z",
+  "generated_at": "2026-05-17T12:00:00Z",
+  "re_extraction": true,
   "project_root": "/home/toshi/app-projects/fullstack-profile",
   "languages": [
     { "name": "TypeScript", "extensions": [".ts", ".tsx"], "file_count": 24 },
@@ -44,13 +45,16 @@
     "analytics",
     "i18n",
     "layout",
-    "data"
+    "data",
+    "worker"
   ],
-  "total_files": 50,
+  "total_files": 62,
   "external_integrations": [
     { "name": "Google Analytics 4", "type": "analytics", "id": "G-RH74DXLKZL" },
     { "name": "Pace.js", "type": "cdn_library", "source": "cdn.jsdelivr.net" },
-    { "name": "GitHub Pages", "type": "hosting", "deploy_branch": "gh-pages" }
+    { "name": "GitHub Pages", "type": "hosting", "deploy_branch": "gh-pages" },
+    { "name": "Cloudflare Workers", "type": "edge_compute", "worker_name": "fullstack-profile-ai" },
+    { "name": "OpenRouter", "type": "ai_api", "accessed_via": "worker_only" }
   ],
   "i18n": {
     "framework": "next-i18next",
@@ -69,7 +73,8 @@
       "analytics",
       "i18n",
       "layout",
-      "data"
+      "data",
+      "worker"
     ]
   }
 }

@@ -1,10 +1,10 @@
 {
   "schema-version": 1,
-  "feature-dir": "_reversa_forward/004-terminal-openrouter-migration",
-  "feature-id": "004",
-  "short-name": "terminal-openrouter-migration",
-  "started-at": "2026-05-17T00:00:00Z",
-  "current-stage": "done",
-  "stages-completed": ["requirements", "plan", "to-do", "coding-em-progresso"],
+  "feature-dir": "_reversa_forward/005-cloudflare-worker-ai-proxy",
+  "feature-id": "005",
+  "short-name": "cloudflare-worker-ai-proxy",
+  "started-at": "2026-05-17T04:00:00Z",
+  "current-stage": "requirements",
+  "stages-completed": [],
   "paused-features": []
 }

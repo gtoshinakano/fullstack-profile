@@ -2,8 +2,10 @@ import React, { useState, useRef, useEffect, KeyboardEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { event } from '@/lib/ga'
 import { sendMessage } from './useOpenRouterStream'
+import type { SendMessageResult } from './useOpenRouterStream'
+import MarkdownContent from './MarkdownContent'
 
-const MAX_QUESTIONS = 3
+const MAX_QUESTIONS = 10
 const MAX_CHARS = 200
 
 type MessageRole = 'welcome' | 'user' | 'assistant'
@@ -12,19 +14,24 @@ interface Message {
   role: MessageRole
   content: string
   isStreaming?: boolean
+  model?: string
+  totalTokens?: number
 }
 
 const DOT_COLORS = ['bg-[#FF5F57]', 'bg-[#FFBD2E]', 'bg-[#28C840]']
 
 const ToshiAITerminal = () => {
-  const apiKey = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
+  const workerUrl = process.env.NEXT_PUBLIC_TOSHI_AI_WORKER_URL
   const { t } = useTranslation()
 
   const [messages, setMessages] = useState<Message[]>([])
   const [questionsUsed, setQuestionsUsed] = useState(0)
   const [isStreaming, setIsStreaming] = useState(false)
   const [input, setInput] = useState('')
+  const [isFocused, setIsFocused] = useState(false)
   const outputRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
+  const prevStreamingRef = useRef(false)
 
   useEffect(() => {
     setMessages([{ role: 'welcome', content: t('toshi-ai.welcome') }])
@@ -36,7 +43,13 @@ const ToshiAITerminal = () => {
     }
   }, [messages])
 
-  if (!apiKey) return null
+  useEffect(() => {
+    if (prevStreamingRef.current && !isStreaming) {
+      inputRef.current?.focus()
+    }
+    prevStreamingRef.current = isStreaming
+  }, [isStreaming])
+
 
   const remaining = MAX_QUESTIONS - questionsUsed
   const isOverLimit = input.length > MAX_CHARS
@@ -62,7 +75,7 @@ const ToshiAITerminal = () => {
     setIsStreaming(true)
 
     try {
-      await sendMessage(question, (chunk) => {
+      const result: SendMessageResult = await sendMessage(question, (chunk) => {
         setMessages((prev) => {
           const updated = [...prev]
           const last = updated[updated.length - 1]
@@ -79,6 +92,8 @@ const ToshiAITerminal = () => {
         updated[updated.length - 1] = {
           ...updated[updated.length - 1],
           isStreaming: false,
+          model: result.model,
+          totalTokens: result.totalTokens,
         }
         return updated
       })
@@ -110,8 +125,12 @@ const ToshiAITerminal = () => {
     if (e.key === 'Enter') handleSubmit()
   }
 
+  const inputDisabled = remaining === 0 || isStreaming
+  const showCursor = isFocused && !inputDisabled
+  const showPlaceholder = !input && !isFocused && !inputDisabled
+
   return (
-    <div className='rounded-lg overflow-hidden shadow-2xl border border-gray-700 my-8'>
+    <div className='max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl border border-gray-700 my-8'>
       {/* Title bar */}
       <div className='bg-gray-800 px-4 py-3 flex items-center gap-2'>
         {DOT_COLORS.map((color, i) => (
@@ -133,53 +152,72 @@ const ToshiAITerminal = () => {
         {messages.map((msg, i) => (
           <div key={i} className='mb-2 leading-relaxed'>
             {msg.role === 'user' ? (
-              <span className='text-white'>
-                <span className='text-green-400 font-bold select-none'>{'>'} </span>
-                {msg.content}
-              </span>
+              <div className='font-mono'>
+                <span className='text-green-400 font-bold select-none'>{'>'} User: </span>
+                <span className='text-white block mt-1.5'>{msg.content}</span>
+              </div>
             ) : (
-              <span className='text-green-400'>
-                <span className='font-bold select-none'>{'>'} Toshi AI: </span>
-                {msg.content}
-                {msg.isStreaming && (
-                  <span className='animate-pulse ml-0.5'>▋</span>
+              <div>
+                <div className='font-mono'>
+                  <span className='text-pink-400 font-bold select-none'>{'>'} ToshiAI: </span>
+                  <MarkdownContent content={msg.content} />
+                </div>
+                {!msg.isStreaming && msg.model && (
+                  <div className='text-gray-500 text-xs font-mono mt-1 pl-4'>
+                    — {msg.model} [{msg.totalTokens ?? 0} tokens]
+                  </div>
                 )}
-              </span>
+              </div>
             )}
           </div>
         ))}
         {remaining === 0 && !isStreaming && (
-          <p className='text-yellow-400 text-xs mt-2'>{t('toshi-ai.limit-reached')}</p>
+          <p className='text-gray-400 text-xs mt-2 font-mono'>{t('toshi-ai.limit-reached')}</p>
         )}
       </div>
 
       {/* Input bar */}
       <div className='flex items-center gap-2 px-4 py-3 border-t border-gray-700 bg-gray-800'>
         <span className='text-green-400 font-bold font-mono select-none'>{'>'}</span>
-        <input
-          type='text'
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={handleKeyDown}
-          placeholder={remaining > 0 ? t('toshi-ai.placeholder') : ''}
-          disabled={remaining === 0 || isStreaming}
-          aria-label={t('toshi-ai.placeholder')}
-          className='bg-transparent text-white flex-1 outline-none placeholder-gray-500 font-mono text-sm disabled:opacity-40'
-        />
+
+        {/* Input with blinking block cursor */}
+        <div className='flex-1 relative flex items-center min-w-0 overflow-hidden'>
+          <input
+            ref={inputRef}
+            type='text'
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKeyDown}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
+            disabled={inputDisabled}
+            aria-label={t('toshi-ai.placeholder')}
+            className='absolute inset-0 bg-transparent text-transparent caret-transparent outline-none font-mono text-sm disabled:cursor-not-allowed'
+          />
+          <span className='font-mono text-sm whitespace-pre pointer-events-none'>
+            {showPlaceholder
+              ? <span className='text-gray-500'>{t('toshi-ai.placeholder')}</span>
+              : <span className='text-white'>{input}</span>
+            }
+          </span>
+          {showCursor && (
+            <span className='cursor-blink text-white font-mono text-sm select-none leading-none'>█</span>
+          )}
+        </div>
+
         <span
-          className={`text-xs font-mono ${
-            isOverLimit ? 'text-red-400' : 'text-gray-500'
-          }`}
+          className={`text-xs font-mono shrink-0 ${isOverLimit ? 'text-red-400' : 'text-gray-500'
+            }`}
         >
           {t('toshi-ai.char-count', { count: input.length })}
         </span>
-        <span className='text-xs text-gray-500 whitespace-nowrap'>
+        <span className='text-xs text-gray-500 whitespace-nowrap font-mono shrink-0'>
           {t('toshi-ai.questions-remaining', { count: remaining })}
         </span>
         <button
           onClick={handleSubmit}
           disabled={!canSubmit}
-          className='text-xs px-3 py-1 rounded bg-green-700 text-white font-mono disabled:opacity-30 hover:bg-green-600 transition-colors'
+          className='text-xs px-3 pt-1.5 pb-1 rounded bg-green-700 text-white font-mono disabled:opacity-30 hover:bg-green-600 transition-colors shrink-0'
         >
           {t('toshi-ai.send')}
         </button>

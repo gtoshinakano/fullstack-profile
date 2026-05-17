@@ -39,6 +39,8 @@
     ],
     "pending_count": 18
   },
+  "last_re_extraction": "2026-05-17T12:30:00Z",
+  "re_extraction_notes": "Feature 005 worker added. Scout, Archaeologist (hero-dark+worker), Architect updated. Regression check: 7/7 verde.",
   "checkpoints": {
     "writer": {
       "completed_at": "2026-05-17T00:00:00Z",

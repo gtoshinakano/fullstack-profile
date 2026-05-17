@@ -50,13 +50,13 @@
   "lets-connect": "コネクト",
   "share-this-page": "このページをシェア",
   "toshi-ai": {
-    "title": "Toshi AI – Toshiについて聞いてください",
+    "title": "ToshiGPT – Toshiについて聞いてください",
     "placeholder": "質問を入力してください…（200文字以内）",
     "send": "送信",
     "questions-remaining_one": "残り{{count}}回の質問",
     "questions-remaining_other": "残り{{count}}回の質問",
     "limit-reached": "セッションの制限に達しました。ページを更新して再開してください。",
-    "welcome": "こんにちは！私はToshi AIです。Gabrielについて何でも聞いてください！",
+    "welcome": "こんにちは！私はToshiです。私について何でも聞いてください！",
     "error": "エラーが発生しました。もう一度お試しください。",
     "char-count": "{{count}}/200"
   }

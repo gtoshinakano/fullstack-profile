@@ -136,8 +136,44 @@ onSelect(newValue):
 - Education is shown by default but can be hidden 🟢
 - `label` field in projects.json acts as expand/collapse key — **duplicate labels exist** (`"requirement"` appears 5 times) 🔴 **BUG:** toggling one "requirement" project expands all with same label simultaneously
 
+### ToshiAITerminal (sub-feature de hero-dark) 🟢
+
+**Arquivos:**
+| File | Role |
+|------|------|
+| `src/components/views/dev/gabriel/HeroDark/ToshiAITerminal/index.tsx` | Terminal UI — input, streaming output, char counter, question limit |
+| `src/components/views/dev/gabriel/HeroDark/ToshiAITerminal/useOpenRouterStream.ts` | SSE client → Cloudflare Worker |
+| `src/components/views/dev/gabriel/HeroDark/ToshiAITerminal/MarkdownContent.tsx` | Renderiza respostas com react-markdown + syntax highlighting |
+
+**`ToshiAITerminal()`** 🟢
+- Constantes: `MAX_QUESTIONS = 3`, `MAX_CHARS = 200`
+- Renderização condicional: `if (!workerUrl) return null` — guard via `NEXT_PUBLIC_TOSHI_AI_WORKER_URL`
+- Estado: `messages: Message[]`, `questionsUsed: number`, `isStreaming: boolean`, `input: string`, `isFocused: boolean`
+- Refs: `outputRef` (auto-scroll), `inputRef` (auto-focus pós-streaming), `prevStreamingRef` (detecta fim de streaming)
+- Após cada resposta completa: GA event `ai_terminal_query` com label = questões restantes
+- Blinking cursor: classe CSS `.cursor-blink` no `styles/globals.css` (`@keyframes blink`)
+- Todos os textos são `font-mono`; largura máxima `max-w-3xl`
+
+**`sendMessage(question, onChunk)`** em `useOpenRouterStream.ts` 🟢
+- POST para `NEXT_PUBLIC_TOSHI_AI_WORKER_URL` com body `{ question }` — sem header Authorization
+- Parser SSE linha a linha: detecta `data: <json>` e `data: [DONE]`
+- Extrai `data.model` e `data.usage.total_tokens` do último chunk
+- Retorna `{ model: string, totalTokens: number }`
+
+**`MarkdownContent({ content })`** 🟢
+- Usa `react-markdown` com plugins `remark-gfm` e `rehype-raw`
+- Code blocks renderizados com `react-syntax-highlighter` (tema `dracula`)
+
+### Business Rules — ToshiAI
+- Máximo 3 perguntas por sessão (client-side, sem enforcement server-side) 🟢
+- Máximo 200 caracteres por pergunta 🟢
+- Input desabilitado durante streaming ou ao atingir limite 🟢
+- Erro de rede desconta a pergunta da contagem (rollback) 🟢
+- Model name e total de tokens exibidos abaixo de cada resposta completa 🟢
+
 ### Dependencies
 - `gsap`, `dayjs`, `lodash`, `react-i18next`, `next/image`
+- `react-markdown`, `react-syntax-highlighter` (usados pelo ToshiAITerminal)
 - `@/data/jobs.json`, `@/data/stacks.json`, `@/data/swtools.json`, `@/data/toshi-projects.json`
 
 ---
@@ -336,6 +372,66 @@ See `data-dictionary.md` for complete field-level documentation.
 
 ---
 
+## Feature 8 — worker (Cloudflare Worker AI Proxy)
+
+> **NOVO** — Adicionado em 2026-05-17 (feature 005-cloudflare-worker-ai-proxy)
+
+**Purpose:** Edge proxy que isola a chave OpenRouter do frontend. Recebe `{ question }` do browser, constrói o system prompt dinamicamente, e encaminha o stream SSE do OpenRouter de volta ao cliente.
+
+### Primary Files
+| File | Role |
+|------|------|
+| `worker/src/index.ts` | HTTP handler — CORS, routing POST/OPTIONS, proxy SSE |
+| `worker/src/systemPrompt.ts` | Construção do system prompt a partir dos JSONs de dados |
+| `worker/wrangler.toml` | Config Cloudflare: `name = "fullstack-profile-ai"` |
+| `worker/package.json` | Dependências do sub-projeto (wrangler ^3, @cloudflare/workers-types ^4) |
+| `worker/.dev.vars.example` | Template de secrets para `wrangler dev` local |
+
+### Functions
+
+**`fetch(request, env)`** em `worker/src/index.ts` 🟢
+- `env.OPENROUTER_API_KEY` — chave do OpenRouter (Cloudflare secret, nunca no frontend)
+- `env.OPENROUTER_MODEL` — modelo a usar (Cloudflare secret)
+- CORS: `ALLOWED_ORIGIN = 'https://gtoshinakano.github.io'`
+- `OPTIONS` → 204 com headers `Access-Control-Allow-*` (preflight)
+- `POST` com Origin inválida → 403
+- `POST` com Origin válida → parse `{ question }`, chama `buildSystemPrompt()`, POST OpenRouter, pipe `upstream.body` como `text/event-stream`
+- Erros: 400 (bad input), 502 (upstream error), 504 (timeout), todos com headers CORS
+
+**`buildSystemPrompt()`** em `worker/src/systemPrompt.ts` 🟢
+- Importa staticamente `../../src/data/jobs.json`, `toshi-projects.json`, `stacks.json`, `swtools.json`
+- Os JSONs são bundled pelo esbuild em tempo de deploy — fonte de verdade compartilhada com o frontend
+- `serializeJobs()`: formata histórico de trabalho (empresa | cargo | período | stacks)
+- `serializeProjects()`: formata projetos em ordem reversa (mais recente primeiro)
+- `collectSkills()`: unique set de stacks/tools de todos os jobs + projetos, resolvidos pelos registries
+
+### CORS Policy 🟢
+```
+ALLOWED_ORIGIN = 'https://gtoshinakano.github.io'
+Toda request com Origin diferente → 403 imediato
+OPTIONS (preflight) com Origin inválida → 403 (não 204)
+```
+
+### SSE Streaming 🟢
+```
+Worker recebe stream do OpenRouter → pipe direto (upstream.body)
+Sem buffering. Content-Type: text/event-stream, Cache-Control: no-cache
+Frontend parser identifica: data: <json> e data: [DONE]
+```
+
+### Business Rules — Worker
+- API key nunca sai do worker (é Cloudflare secret injetado em runtime) 🟢
+- System prompt gerado server-side — conteúdo nunca trafega na rede 🟢
+- CORS restrito a um único domínio de produção — sem allowlist dinâmica 🟢
+- Sem rate limiting server-side (limite de 3 perguntas é client-only) 🟡 INFERRED
+
+### Deployment
+- `cloudflare/wrangler-action@v3` no `.github/workflows/deploy.yml`
+- Secrets `OPENROUTER_API_KEY` e `OPENROUTER_MODEL` injetados via `secrets:` block do wrangler action
+- Deploy ocorre ANTES do build do frontend em cada pipeline run
+
+---
+
 ## Cross-Cutting Concerns
 
 ### Loading Sequence
@@ -360,4 +456,5 @@ See `data-dictionary.md` for complete field-level documentation.
 | Social links at bottom of article not functional (plain text spans) | 🟡 INFERRED | `Introduction.tsx:621` |
 | `hasGa()` return type declared `void` but returns expression | 🟡 INFERRED | `src/lib/ga.ts:28` |
 | Unicons, Pace.js loaded from CDN — no version pinning | 🟡 INFERRED | `layout/Public/index.tsx`, `pages/_app.tsx` |
-| `@headlessui/react`, `recharts`, `react-markdown`, `react-syntax-highlighter` declared but unused | 🟡 INFERRED | `package.json` |
+| `@headlessui/react`, `recharts` declared but not found in active components | 🟡 INFERRED | `package.json` |
+| `react-markdown`, `react-syntax-highlighter` — **agora ativos** em `ToshiAITerminal/MarkdownContent.tsx` | 🟢 RESOLVED | `package.json` |
