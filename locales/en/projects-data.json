@@ -1,0 +1,170 @@
+{
+  "maplestory": {
+    "title": "MapleBR Private Server",
+    "learnings": "A good way to learn how to code is by testing things made by others",
+    "public": "Friends",
+    "problem": "I needed to practice what I've studied at the University so I started to learn by reading and running open source codes from the internet.",
+    "solution": "I built a custom MapleStory private server for testing and learning purposes. I used to code in Java for backend (hosted on a Windows Server 2008), PHP and MySQL to create the page for people to signup. You can see my first page if you read the 3-3-3 Principle.",
+    "action": ""
+  },
+  "sigup": {
+    "title": "SIGUP - System for Public Expenses Data Management",
+    "learnings": "You can find how to improve a system by observing final user's daily work",
+    "public": "Public Servants and Directors",
+    "problem": "Public Expenses Data were all managed by EXCEL spreadsheets, turning it difficult to be maintained and shared.",
+    "solution": "I suggested the team to build a centralized database for data management in PHP and MySQL. We researched, prototyped, developed our solution translating spreadsheets and graphics into a centralized dashboard with charts (Google Charts API). The results were an economy of R$200.000 (approx. U$50.000 at that time) in public expenses in 6 years.",
+    "action": ""
+  },
+  "bingo": {
+    "title": "Bingo Screen for Matsuri Events",
+    "learnings": "Anything can be used for years if it solves a problem. Even if it's a Web page",
+    "public": "Events Staff",
+    "problem": "We always used a whiteboard to display Bingo Game numbers on our Matsuri Events",
+    "solution": "I built a simple SPA in HTML and JQuery to display bingo numbers for our events. It needed to display big-sized numbers because of the elder public. We kept using it at every Matsuri that had bingo prizes. You can try it as well clicking on the link below!",
+    "action": "Use it for free"
+  },
+  "mailer": {
+    "title": "Automatic Public Expenses Bills Email Sender",
+    "learnings": "Everyone has a browser in their pockets so we can reach anyone with JS",
+    "public": "Accounting Dept.",
+    "problem": "The public expenses bills from 50+ locations were sent to a centralized building. We needed to send the right bills to the right places by e-mail.",
+    "solution": "I built a simple tool in NodeJS to help my colleagues send their emails.",
+    "action": ""
+  },
+  "cashier": {
+    "title": "Event Cashier Manager with Barcode Reader",
+    "learnings": "Sometimes, the solution needs to do only one thing better than the others.",
+    "public": "Events Staff",
+    "problem": "We imported products from Hokkaido and needed a free solution to manage products, stocks and orders for our Bussanten event.",
+    "solution": "Using Cloud Firestore as Backend, it was easy to create a system that registers products, orders and only other necessary info for that occasion. I researched, modeled data structure and built the system using ReactJS and Firebase BaaS.",
+    "action": ""
+  },
+  "noli": {
+    "title": "Admin Dashboard for Startup Operations",
+    "learnings": "Prototyping and MVPing at the same time made me think: There must be a lot of UI/UX opportunities out there",
+    "public": "Startup Team",
+    "problem": "We had a MVP Backend and a mobile APP in production so we needed a functional admin interface",
+    "solution": "I researched the needs, sketched the screens and started building the features by priority order. I created the auth system, CRUD interfaces, and a dashboard for tracking trucks with GoogleMaps.",
+    "action": ""
+  },
+  "aliber": {
+    "title": "Financial Management Spreadsheet with Web Interface",
+    "learnings": "How to create a web application, build and host it for free?",
+    "public": "Feira da Liberdade's Exhibitors Association",
+    "problem": "All financial data from the Association were in an Excel Sheet. They needed an easier way to register information and print monthly balances.",
+    "solution": "I converted the .XLS sheet into a Google Spreadsheet, served it's data via Google Apps Scripts http request and made this system in ReactJS. It became a complete dashboard for controlling incomes and expenses.",
+    "action": ""
+  },
+  "jpn-utils": {
+    "title": "Personal Financial Dashboard for My Exchange Time in Japan",
+    "learnings": "You can create a habit if you facilitate the behavior to happen more often",
+    "public": "Me",
+    "problem": "Manage daily personal finances during exchange program in Hokkaido.",
+    "solution": "During the 14 days of quarantine period, I built a tool to input daily finances data on a Google Sheets. It was an Google Sheet serving data to a SPA in ReactJS. I created the simplest and easiest input form so I could use it on daily basis. I used that simple interface every time I bought something during my exchange program and the results were a full cash control, input anytime/anywhere, and more learnings",
+    "action": ""
+  },
+  "ros": {
+    "title": "Tutorial Blog for ROS and Drone control",
+    "learnings": "Research ROS and Internet Of Things - IoT - in Japan",
+    "public": "Robot Operating System - ROS - University Students",
+    "problem": "Practice Web development and explaining skills while doing an Exchange Program",
+    "solution": "Built a Blog alike tutorial for ROS and Drone control. In order to build it, I was introduced to tools like NextJS, i18n for internationalization, and GSAP for animating elements. It was a test project and I learned a lot about how to dominate the DOM. It was a practice in English writing as well.",
+    "action": "Visit Guide"
+  },
+  "ecoid": {
+    "title": "Ecoid.com.br Institutional Website",
+    "learnings": "The cleaner it is, better for the user",
+    "public": "Restaurant Owners who works with food delivery",
+    "problem": "The client got an opportunity to represent sales from a paper bowls manufacturer and needed a website to start prospecting.",
+    "solution": "I built a simple SPA with a cleaner design. It worked fine at the beginning but, a few months later, the client gave up on the business. It was my first time using TailwindCSS and it made CSS styling really fast. It was when I started to use Design and Prototyping tools like Illustrator and XD",
+    "action": "See"
+  },
+  "ishikari": {
+    "title": "Hokkaido Association Ishikari Nabe Event Promotional Landing Page [Page for Mobile]",
+    "learnings": "A good UX makes users stay on your screen and take actions, whatever the action is",
+    "public": "Hokkaido Association's Events Leads",
+    "problem": "It was our first event after one year of covid pandemics and we needed to present a new plate to the public",
+    "solution": "I was in charge of making a page to introduce our event to the public. This time I focused on the page interactivity and on SVG animations. We sent the page on Whatsapp groups, and approx. 50% of all conversions came from our page, and the other 50% came directly from whatsapp or personal contact. I learned a lot about getting the audience attention, lead them to an educational content about the product and then, to let them take an action.",
+    "action": "See"
+  },
+  "asebase": {
+    "title": "ASEBASE Database of Ex Internship Students/Trainees",
+    "learnings": "UI/UX is about facilitating the user's life when filling up forms",
+    "public": "Brazilian Ex Students/Trainees from Japan Association ASEBEX",
+    "problem": "When brazilian students goes to Japan, they face a lot of common challenges. Experienced people can help them giving advices",
+    "solution": "Create a digital community for Brazilian exchange students and trainees in Japan",
+    "action": "View code and video"
+  },
+  "gustavo-amaral": {
+    "title": "Gustavo Amaral's NFT Collection Landing Page",
+    "learnings": "\"It is not necessary to understand everything to be able to use everything\"",
+    "public": "Crypto Currencies Investors",
+    "problem": "Launch a NFT Collection from a famous artist",
+    "solution": "We built a landing page for promoting an NFT Collection from an artist friend. We  promoted it compiling information about the artist and his previous works. The challenge here was to translate the artist's style into an animated Webpage.",
+    "action": "See"
+  },
+  "onoda": {
+    "title": "Onoda Boeki Internationalized Website and Logo Design",
+    "learnings": "Progression is better than perfection",
+    "public": "People interested in importing products from Japan to Brazil",
+    "problem": "The client needed a website and a logo for his business",
+    "solution": "Me and my friend researched, designed and built a single page institutional Website for the company and it's logo as well.",
+    "action": "See"
+  },
+  "portfolio": {
+    "title": "このポートフォリオとより良いUXのための3-3-3原則",
+    "learnings": "もっと私を知りたい場合は、読み進めてください",
+    "public": "採用担当者、UI/UXを学ぶ開発者、将来のパートナー",
+    "problem": "自分の経験を明確に説明し、新しいプロジェクトやチームでどのように貢献できるかを示す必要がありました。",
+    "solution": "このポートフォリオは、私がこれまでに行ってきたことと学んできたことをまとめたものです。より良いUXのための3-3-3原則は、次のプロジェクトで基本を理解し、学び、適用するためのガイドとなります。",
+    "action": "This page"
+  },
+  "axa-requirement": {
+    "title": "プロジェクト要件設計成果物",
+    "learnings": "オフショアチームのためにプロジェクト要件を理解しやすくする",
+    "public": "オフショア開発チーム",
+    "problem": "ビジネスアナリストが要件文書を作成するが、オンサイドの技術チームがそれをオフショア開発者に理解しやすい形に準備する必要がありました。",
+    "solution": "しっかりとしたソフトウェアハウスでは、ビジネスアナリストが顧客のニーズを理解して良い解決策を作ります。技術チームの一員として、私は顧客のニーズを理解し、オフショア開発チームが要件を理解して最善の解決策を提供できるような技術文書を作成することに尽力しました。これにはDB設計、データ検証戦略、データフロー設計が含まれます。",
+    "action": ""
+  },
+  "anki-web": {
+    "title": "日本語漢字記憶アプリケーション",
+    "learnings": "シンプルな間隔繰り返しシステムを開発しました",
+    "public": "日本語の記憶スキルを練習している人々",
+    "problem": "日本語の学習は難しく、漢字と呼ばれる特別な文字を覚える必要があります。間隔繰り返しは、漢字を少しずつ学び、覚えていくための学習フレームワークを提供します。",
+    "solution": "フラッシュカードに新しい単語を登録し、翻訳と\"読み方\"機能を提供するシンプルなアプリケーションを構築しました。毎日練習すると少しずつ単語が表示され、自分で覚えたと判断したときにその単語をマスターしたとします。",
+    "action": "See source code"
+  },
+  "nbwf-requirement": {
+    "title": "AXA生命ジャパン - 新規ビジネスワークフロー",
+    "learnings": "現代技術を使ったスケーラブルな契約評価アプリケーションを構築しました",
+    "public": "契約および医療評価部門",
+    "problem": "15年もの間使われてきたシステムが時代遅れになり、高価なサービスに依存していました。",
+    "solution": "最新のフレームワークとクラウドデプロイメントサービスを使って、システム全体を再実装しました。",
+    "action": ""
+  },
+  "local-file-uploader": {
+    "title": "ローカルネットワークファイルアップロード",
+    "learnings": "モバイルデバイスからPCへのファイルアップロードのためのシンプルなNextJSアプリケーション",
+    "public": "誰でも",
+    "problem": "スマートフォンからPCやMacBookへファイルを共有したいときに、特に大容量ファイルを共有する良い方法が見つからないことがあります。",
+    "solution": "ファイルのアップロードを受け取り、アップロード完了フィードバックを提供するNodeJSサーバーを備えたシンプルなウェブUIを実装しました。PCでこのアプリケーションを実行すれば、同じネットワークに接続されたすべてのデバイスがファイルをサーバーに共有できます。",
+    "action": "See source code"
+  },
+  "web-template-string": {
+    "title": "オンラインテンプレート文字列アプリ",
+    "learnings": "テキストテンプレートを定義し、変数を使ってテキストに値を埋め込みます",
+    "public": "誰でも",
+    "problem": "私のいとこは、仕事で使う予定のテキストを作成し、必要に応じて変数を使ってテキストを更新する簡単な方法が欲しかったのです。そのため、テキストの中の変数を置き換えて、そのテキストをコピーして時間を節約できる何かが必要でした。",
+    "solution": "ユーザーがテキストテンプレートを作成し、変数に値を与えてテキストを動的に埋め込むことができるシンプルなウェブUIを実装しました。テンプレートはローカルストレージに保存され、バックアップ目的で後からダウンロードすることもできます。",
+    "action": "Use it for free"
+  },
+  "underwriting-improvement": {
+    "title": "アンダーライティング改善",
+    "learnings": "書類受領の手動プロセスをデジタル化して時間を節約",
+    "public": "AXA契約部門",
+    "problem": "保険会社として、毎日数千件の顧客書類を受領しますが、それらすべてを手動で入力するプロセスが効率的なサービスのボトルネックになっていました。",
+    "solution": "保険会社の支店が書類の写真を撮影し、OCR（光学文字認識）で情報を抽出して契約部門のNBWFシステムにアップロードできるアプリケーションを実装しました。",
+    "action": ""
+  }
+}

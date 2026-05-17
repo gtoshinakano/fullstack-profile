@@ -36,8 +36,17 @@
     "solution": "Solution",
     "tech-stacks-used": "Tech Stacks Used",
     "read": "Read",
-    "hide": "Hide"
+    "hide": "Hide",
+    "project-types": {
+      "personal": "Personal",
+      "job": "Job",
+      "volunteer": "Volunteer",
+      "freelance": "Freelance",
+      "open source": "Open Source"
+    }
   },
   "hide-all": "Hide All",
-  "expand-all": "Expand All"
+  "expand-all": "Expand All",
+  "lets-connect": "Let's connect",
+  "share-this-page": "Share this page"
 }
