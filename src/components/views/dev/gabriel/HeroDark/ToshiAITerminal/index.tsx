@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { event } from '@/lib/ga'
 import { sendMessage } from './useOpenRouterStream'
 import type { SendMessageResult } from './useOpenRouterStream'
+import MarkdownContent from './MarkdownContent'
 
 const MAX_QUESTIONS = 3
 const MAX_CHARS = 200
@@ -160,9 +161,13 @@ const ToshiAITerminal = () => {
               <div>
                 <div className='font-mono'>
                   <span className='text-green-400 font-bold select-none'>{'>'} ToshiAI: </span>
-                  <span className='text-gray-300'>{msg.content}</span>
-                  {msg.isStreaming && (
-                    <span className='animate-pulse ml-0.5 text-green-400'>▋</span>
+                  {msg.isStreaming ? (
+                    <>
+                      <span className='text-gray-300'>{msg.content}</span>
+                      <span className='animate-pulse ml-0.5 text-green-400'>▋</span>
+                    </>
+                  ) : (
+                    <MarkdownContent content={msg.content} />
                   )}
                 </div>
                 {!msg.isStreaming && msg.model && (
