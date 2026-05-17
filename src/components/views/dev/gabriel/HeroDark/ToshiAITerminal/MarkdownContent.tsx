@@ -1,10 +1,10 @@
 import ReactMarkdown from 'react-markdown'
 
 interface MarkdownContentProps {
-  content: string
+  content: string,
 }
 
-const MarkdownContent = ({ content }: MarkdownContentProps) => {
+const MarkdownContent = ({ content  }: MarkdownContentProps) => {
   return (
     <div className='terminal-markdown'>
       <ReactMarkdown

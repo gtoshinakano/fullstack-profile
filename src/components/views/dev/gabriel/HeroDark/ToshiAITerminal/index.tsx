@@ -5,7 +5,7 @@ import { sendMessage } from './useOpenRouterStream'
 import type { SendMessageResult } from './useOpenRouterStream'
 import MarkdownContent from './MarkdownContent'
 
-const MAX_QUESTIONS = 3
+const MAX_QUESTIONS = 10
 const MAX_CHARS = 200
 
 type MessageRole = 'welcome' | 'user' | 'assistant'
@@ -50,7 +50,6 @@ const ToshiAITerminal = () => {
     prevStreamingRef.current = isStreaming
   }, [isStreaming])
 
-  if (!workerUrl) return null
 
   const remaining = MAX_QUESTIONS - questionsUsed
   const isOverLimit = input.length > MAX_CHARS
@@ -155,20 +154,13 @@ const ToshiAITerminal = () => {
             {msg.role === 'user' ? (
               <div className='font-mono'>
                 <span className='text-green-400 font-bold select-none'>{'>'} User: </span>
-                <span className='text-white'>{msg.content}</span>
+                <span className='text-white block mt-1.5'>{msg.content}</span>
               </div>
             ) : (
               <div>
                 <div className='font-mono'>
-                  <span className='text-green-400 font-bold select-none'>{'>'} ToshiAI: </span>
-                  {msg.isStreaming ? (
-                    <>
-                      <span className='text-gray-300'>{msg.content}</span>
-                      <span className='animate-pulse ml-0.5 text-green-400'>▋</span>
-                    </>
-                  ) : (
-                    <MarkdownContent content={msg.content} />
-                  )}
+                  <span className='text-pink-400 font-bold select-none'>{'>'} ToshiAI: </span>
+                  <MarkdownContent content={msg.content} />
                 </div>
                 {!msg.isStreaming && msg.model && (
                   <div className='text-gray-500 text-xs font-mono mt-1 pl-4'>
@@ -214,9 +206,8 @@ const ToshiAITerminal = () => {
         </div>
 
         <span
-          className={`text-xs font-mono shrink-0 ${
-            isOverLimit ? 'text-red-400' : 'text-gray-500'
-          }`}
+          className={`text-xs font-mono shrink-0 ${isOverLimit ? 'text-red-400' : 'text-gray-500'
+            }`}
         >
           {t('toshi-ai.char-count', { count: input.length })}
         </span>
@@ -226,7 +217,7 @@ const ToshiAITerminal = () => {
         <button
           onClick={handleSubmit}
           disabled={!canSubmit}
-          className='text-xs px-3 py-1 rounded bg-green-700 text-white font-mono disabled:opacity-30 hover:bg-green-600 transition-colors shrink-0'
+          className='text-xs px-3 pt-1.5 pb-1 rounded bg-green-700 text-white font-mono disabled:opacity-30 hover:bg-green-600 transition-colors shrink-0'
         >
           {t('toshi-ai.send')}
         </button>
