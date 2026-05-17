@@ -11,6 +11,8 @@ jobs:
 
     env:
       NEXT_PUBLIC_GOOGLE_ANALYTICS: G-RH74DXLKZL
+      NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      NEXT_PUBLIC_OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
 
     steps:
       - name: Checkout

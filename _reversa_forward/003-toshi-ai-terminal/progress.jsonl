@@ -1,0 +1,10 @@
+{"ts":"2026-05-17T00:00:00Z","action":"T001","status":"done","files":["package.json","package-lock.json"]}
+{"ts":"2026-05-17T00:00:01Z","action":"T002","status":"done","files":["public/locales/en/common.json"]}
+{"ts":"2026-05-17T00:00:02Z","action":"T003","status":"done","files":["public/locales/ja/common.json"]}
+{"ts":"2026-05-17T00:00:03Z","action":"T004","status":"done","files":["public/locales/pt-BR/common.json"]}
+{"ts":"2026-05-17T00:00:04Z","action":"T005","status":"done","files":["src/components/views/dev/gabriel/HeroDark/ToshiAITerminal/systemPrompt.ts"]}
+{"ts":"2026-05-17T00:00:05Z","action":"T006","status":"done","files":["src/components/views/dev/gabriel/HeroDark/ToshiAITerminal/useGeminiStream.ts"]}
+{"ts":"2026-05-17T00:00:06Z","action":"T007","status":"done","files":["src/components/views/dev/gabriel/HeroDark/ToshiAITerminal/index.tsx"]}
+{"ts":"2026-05-17T00:00:07Z","action":"T008","status":"done","files":["src/components/views/dev/gabriel/HeroDark/index.tsx"]}
+{"ts":"2026-05-17T00:00:08Z","action":"T009","status":"done","files":[".env.local.example"]}
+{"ts":"2026-05-17T00:00:09Z","action":"T010","status":"done","files":["out/"],"note":"Build succeeded after fixing IEvent type: params.questions_remaining replaced with event_category+event_label"}
