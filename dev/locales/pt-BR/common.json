@@ -48,5 +48,16 @@
   "hide-all": "Esconder Tudo",
   "expand-all": "Expandir Tudo",
   "lets-connect": "Vamos conectar",
-  "share-this-page": "Compartilhe esta página"
+  "share-this-page": "Compartilhe esta página",
+  "toshi-ai": {
+    "title": "Toshi AI – Pergunte sobre mim",
+    "placeholder": "Digite sua pergunta… (máx. 200 caracteres)",
+    "send": "Enviar",
+    "questions-remaining_one": "{{count}} pergunta restante",
+    "questions-remaining_other": "{{count}} perguntas restantes",
+    "limit-reached": "Limite da sessão atingido. Atualize a página para recomeçar.",
+    "welcome": "Olá! Sou o Toshi AI — pergunte qualquer coisa sobre o Gabriel!",
+    "error": "Algo deu errado. Por favor, tente novamente.",
+    "char-count": "{{count}}/200"
+  }
 }
