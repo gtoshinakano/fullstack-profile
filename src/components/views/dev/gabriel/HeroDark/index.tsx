@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect, ReactNode } from 'react'
+import ToshiAITerminal from './ToshiAITerminal'
 import Image from 'next/image'
 import gsap from 'gsap'
 import dayjs from 'dayjs'
@@ -135,6 +136,7 @@ const Herodark = ({ isWide }: IProps) => {
             </div>
           </div>
         </div>
+        <ToshiAITerminal />
         <Menu setSelected={onSelect} selected={selected} loading={loading} />
         <div className='flex flex-wrap pt-16 lg:pt-28'>
           <div className='px-4 md:px-16 flex flex-col font-thin mx-auto'>
