@@ -11,12 +11,24 @@ jobs:
 
     env:
       NEXT_PUBLIC_GOOGLE_ANALYTICS: G-RH74DXLKZL
-      NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      NEXT_PUBLIC_OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
+      NEXT_PUBLIC_TOSHI_AI_WORKER_URL: ${{ secrets.NEXT_PUBLIC_TOSHI_AI_WORKER_URL }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Deploy Cloudflare Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker
+          secrets: |
+            OPENROUTER_API_KEY
+            OPENROUTER_MODEL
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
 
       - name: Set base path (main → /fullstack-profile)
         if: github.ref_name == 'main'

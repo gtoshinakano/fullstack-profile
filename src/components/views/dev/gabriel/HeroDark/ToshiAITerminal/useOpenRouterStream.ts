@@ -1,5 +1,3 @@
-import { buildSystemPrompt } from './systemPrompt'
-
 export interface SendMessageResult {
   model: string
   totalTokens: number
@@ -9,33 +7,17 @@ export async function sendMessage(
   question: string,
   onChunk: (text: string) => void
 ): Promise<SendMessageResult> {
-  const apiKey = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
-  if (!apiKey) throw new Error('NEXT_PUBLIC_OPENROUTER_API_KEY is not set')
+  const workerUrl = process.env.NEXT_PUBLIC_TOSHI_AI_WORKER_URL
+  if (!workerUrl) throw new Error('NEXT_PUBLIC_TOSHI_AI_WORKER_URL is not set')
 
-  const model = process.env.NEXT_PUBLIC_OPENROUTER_MODEL
-  if (!model) throw new Error('NEXT_PUBLIC_OPENROUTER_MODEL is not set')
-
-  const response = await fetch(
-    'https://openrouter.ai/api/v1/chat/completions',
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model,
-        messages: [
-          { role: 'system', content: buildSystemPrompt() },
-          { role: 'user', content: question },
-        ],
-        stream: true,
-      }),
-    }
-  )
+  const response = await fetch(workerUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question }),
+  })
 
   if (!response.ok) {
-    throw new Error(`OpenRouter API error: ${response.status}`)
+    throw new Error(`Worker API error: ${response.status}`)
   }
 
   const reader = response.body!.getReader()
@@ -70,5 +52,5 @@ export async function sendMessage(
   const usage = lastData?.usage as Record<string, number> | undefined
   const totalTokens = usage?.total_tokens ?? 0
 
-  return { model: capturedModel || model, totalTokens }
+  return { model: capturedModel || workerUrl, totalTokens }
 }

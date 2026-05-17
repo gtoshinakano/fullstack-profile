@@ -21,7 +21,7 @@ interface Message {
 const DOT_COLORS = ['bg-[#FF5F57]', 'bg-[#FFBD2E]', 'bg-[#28C840]']
 
 const ToshiAITerminal = () => {
-  const apiKey = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
+  const workerUrl = process.env.NEXT_PUBLIC_TOSHI_AI_WORKER_URL
   const { t } = useTranslation()
 
   const [messages, setMessages] = useState<Message[]>([])
@@ -50,7 +50,7 @@ const ToshiAITerminal = () => {
     prevStreamingRef.current = isStreaming
   }, [isStreaming])
 
-  if (!apiKey) return null
+  if (!workerUrl) return null
 
   const remaining = MAX_QUESTIONS - questionsUsed
   const isOverLimit = input.length > MAX_CHARS

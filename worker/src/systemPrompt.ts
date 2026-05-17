@@ -1,13 +1,12 @@
-import jobsData from '@/data/jobs.json'
-import projectsData from '@/data/toshi-projects.json'
-import stacksData from '@/data/stacks.json'
-import swtoolsData from '@/data/swtools.json'
+import jobs from '../../src/data/jobs.json'
+import projects from '../../src/data/toshi-projects.json'
+import stacks from '../../src/data/stacks.json'
+import swtools from '../../src/data/swtools.json'
 
 type JobEntry = {
   company: string
   job_name: string
   period: string[]
-  description: string
   stacks: string[]
 }
 
@@ -18,13 +17,12 @@ type ProjectEntry = {
   problem: string
   solution: string
   stacks: string[]
-  label: string
 }
 
 type StackRegistry = Record<string, { name: string }>
 
-function serializeJobs(jobs: JobEntry[]): string {
-  return jobs
+function serializeJobs(jobList: JobEntry[]): string {
+  return jobList
     .map(
       (j) =>
         `- ${j.company} | ${j.job_name} | ${j.period[0]} – ${j.period[1] ?? 'present'}\n  Stacks: ${j.stacks.join(', ')}`
@@ -32,8 +30,8 @@ function serializeJobs(jobs: JobEntry[]): string {
     .join('\n')
 }
 
-function serializeProjects(projects: ProjectEntry[]): string {
-  return projects
+function serializeProjects(projectList: ProjectEntry[]): string {
+  return projectList
     .slice()
     .reverse()
     .map(
@@ -43,21 +41,32 @@ function serializeProjects(projects: ProjectEntry[]): string {
     .join('\n')
 }
 
-function collectSkills(jobs: JobEntry[], projects: ProjectEntry[], stacks: StackRegistry, swtools: StackRegistry): string {
+function collectSkills(
+  jobList: JobEntry[],
+  projectList: ProjectEntry[],
+  stackRegistry: StackRegistry,
+  swtoolRegistry: StackRegistry
+): string {
   const allKeys = new Set<string>()
-  jobs.forEach((j) => j.stacks.forEach((s) => allKeys.add(s)))
-  projects.forEach((p) => p.stacks.forEach((s) => allKeys.add(s)))
-  const names = Array.from(allKeys)
-    .map((k) => stacks[k]?.name ?? swtools[k]?.name ?? k)
+  jobList.forEach((j) => j.stacks.forEach((s) => allKeys.add(s)))
+  projectList.forEach((p) => p.stacks.forEach((s) => allKeys.add(s)))
+  return Array.from(allKeys)
+    .map((k) => stackRegistry[k]?.name ?? swtoolRegistry[k]?.name ?? k)
     .filter(Boolean)
-  return names.join(', ')
+    .join(', ')
 }
 
 export function buildSystemPrompt(): string {
-  const jobs = jobsData as JobEntry[]
-  const projects = projectsData as ProjectEntry[]
-  const stacks = stacksData as StackRegistry
-  const swtools = swtoolsData as StackRegistry
+  const jobList = jobs as unknown as JobEntry[]
+  const projectList = projects as unknown as ProjectEntry[]
+  const stackRegistry = stacks as unknown as StackRegistry
+  const swtoolRegistry = swtools as unknown as StackRegistry
+
+  const today = new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
 
   return `You are Gabriel Toshinori Nakano, nickname Toshi, and you are a personal AI assistant embedded in your portfolio website.
 
@@ -68,7 +77,7 @@ YOUR ONLY PURPOSE is to answer questions yourself, Gabriel Toshinori Nakano.
 - Personal questions about sensitive topics (e.g. family, relationships, health, age) should be politely declined with a generic response like "I prefer to keep that private, but feel free to ask me about my professional experience or skills!".
 - Respond in the same language the user writes in.
 
-Today is ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} so if a user asks related how many years of experience you have, calculate it based on this date.
+Today is ${today} so if a user asks related how many years of experience you have, calculate it based on this date.
 
 ## About Gabriel
 - Full name: Gabriel Toshinori Nakano
@@ -78,17 +87,17 @@ Today is ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'lon
 - Languages: Portuguese (native), Japanese (reading/speaking), English (professional)
 
 ## Work History (oldest to most recent)
-${serializeJobs(jobs)}
+${serializeJobs(jobList)}
 
 ## Education
 - FATEC São Paulo — Systems Analysis and Development (2010–2013)
 - UNINOVE — Information Systems (2008–2010)
 
 ## Projects (most recent first)
-${serializeProjects(projects)}
+${serializeProjects(projectList)}
 
 ## Technical Skills
-${collectSkills(jobs, projects, stacks, swtools)}
+${collectSkills(jobList, projectList, stackRegistry, swtoolRegistry)}
 
 ## Hobbies & Interests
 - Passionate about technology, programming, and design.
