@@ -30,6 +30,7 @@ const ToshiAITerminal = () => {
   const [isFocused, setIsFocused] = useState(false)
   const outputRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  const prevStreamingRef = useRef(false)
 
   useEffect(() => {
     setMessages([{ role: 'welcome', content: t('toshi-ai.welcome') }])
@@ -40,6 +41,13 @@ const ToshiAITerminal = () => {
       outputRef.current.scrollTop = outputRef.current.scrollHeight
     }
   }, [messages])
+
+  useEffect(() => {
+    if (prevStreamingRef.current && !isStreaming) {
+      inputRef.current?.focus()
+    }
+    prevStreamingRef.current = isStreaming
+  }, [isStreaming])
 
   if (!apiKey) return null
 
@@ -110,7 +118,6 @@ const ToshiAITerminal = () => {
       })
     } finally {
       setIsStreaming(false)
-      inputRef.current?.focus()
     }
   }
 
