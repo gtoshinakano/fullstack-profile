@@ -1,0 +1,170 @@
+{
+  "maplestory": {
+    "title": "Servidor Privado MapleBR",
+    "learnings": "Uma boa forma de aprender a programar é testando coisas feitas por outras pessoas",
+    "public": "Amigos",
+    "problem": "Eu precisava praticar o que havia estudado na universidade, então comecei a aprender lendo e executando códigos open source da internet.",
+    "solution": "Criei um servidor privado customizado de MapleStory para fins de teste e aprendizado. Eu costumava programar em Java no backend (hospedado em um Windows Server 2008), PHP e MySQL para criar a página onde as pessoas podiam se cadastrar. Você pode ver minha primeira página se ler os Princípios 3-3-3.",
+    "action": ""
+  },
+  "sigup": {
+    "title": "SIGUP - Sistema para Gerenciamento de Dados de Despesas Públicas",
+    "learnings": "Você pode descobrir como melhorar um sistema observando o trabalho diário dos usuários finais",
+    "public": "Servidores Públicos e Diretores",
+    "problem": "Os dados de despesas públicas eram todos gerenciados por planilhas do Excel, tornando difícil sua manutenção e compartilhamento.",
+    "solution": "Sugeri à equipe construir um banco de dados centralizado para gerenciamento de dados em PHP e MySQL. Pesquisamos, prototipamos e desenvolvemos nossa solução traduzindo planilhas e gráficos para um dashboard centralizado com gráficos (Google Charts API). Os resultados foram uma economia de R$200.000 (aprox. US$50.000 na época) em despesas públicas em 6 anos.",
+    "action": ""
+  },
+  "bingo": {
+    "title": "Tela de Bingo para Eventos de Matsuri",
+    "learnings": "Qualquer coisa pode ser usada por anos se resolver um problema. Mesmo que seja uma página web",
+    "public": "Equipe de Eventos",
+    "problem": "Nós sempre usávamos uma lousa para exibir os números do jogo de bingo em nossos eventos de Matsuri",
+    "solution": "Criei uma SPA simples em HTML e jQuery para exibir os números do bingo em nossos eventos. Ela precisava mostrar números grandes por causa do público mais idoso. Continuamos usando a aplicação em todos os Matsuri que tinham prêmios de bingo. Você também pode testá-la clicando no link abaixo!",
+    "action": "Use grátis"
+  },
+  "mailer": {
+    "title": "Enviador Automático de E-mails de Contas de Despesas Públicas",
+    "learnings": "Todo mundo tem um navegador no bolso, então podemos alcançar qualquer pessoa com JS",
+    "public": "Departamento de Contabilidade",
+    "problem": "As contas de despesas públicas de mais de 50 locais eram enviadas para um prédio centralizado. Precisávamos enviar as contas certas para os lugares certos por e-mail.",
+    "solution": "Criei uma ferramenta simples em NodeJS para ajudar meus colegas a enviarem seus e-mails.",
+    "action": ""
+  },
+  "cashier": {
+    "title": "Gerenciador de Caixa de Evento com Leitor de Código de Barras",
+    "learnings": "Às vezes, a solução precisa fazer apenas uma coisa melhor que as outras.",
+    "public": "Equipe de Eventos",
+    "problem": "Importamos produtos de Hokkaido e precisávamos de uma solução gratuita para gerenciar produtos, estoques e pedidos para nosso evento Bussanten.",
+    "solution": "Usando o Cloud Firestore como backend, foi fácil criar um sistema que registra produtos, pedidos e apenas outras informações necessárias para aquela ocasião. Pesquisei, modelei a estrutura de dados e construí o sistema usando ReactJS e Firebase BaaS.",
+    "action": ""
+  },
+  "noli": {
+    "title": "Dashboard Administrativo para Operações de Startup",
+    "learnings": "Prototipar e criar um MVP ao mesmo tempo me fez pensar: deve haver muitas oportunidades de UI/UX por aí",
+    "public": "Equipe da Startup",
+    "problem": "Tínhamos um backend MVP e um aplicativo mobile em produção, então precisávamos de uma interface administrativa funcional",
+    "solution": "Pesquisei as necessidades, desenhei os rascunhos das telas e comecei a construir as funcionalidades por ordem de prioridade. Criei o sistema de autenticação, interfaces CRUD e um dashboard para rastreamento de caminhões com Google Maps.",
+    "action": ""
+  },
+  "aliber": {
+    "title": "Planilha de Gestão Financeira com Interface Web",
+    "learnings": "Como criar uma aplicação web, fazer o build e hospedá-la gratuitamente?",
+    "public": "Associação dos Expositores da Feira da Liberdade",
+    "problem": "Todos os dados financeiros da associação estavam em uma planilha do Excel. Eles precisavam de uma forma mais fácil de registrar informações e imprimir balanços mensais.",
+    "solution": "Converti a planilha .XLS em uma planilha do Google, servi seus dados via requisição HTTP com Google Apps Script e criei este sistema em ReactJS. Ele se tornou um dashboard completo para controlar receitas e despesas.",
+    "action": ""
+  },
+  "jpn-utils": {
+    "title": "Dashboard Financeiro Pessoal para Meu Período de Intercâmbio no Japão",
+    "learnings": "Você pode criar um hábito se facilitar que o comportamento aconteça com mais frequência",
+    "public": "Eu",
+    "problem": "Gerenciar finanças pessoais diárias durante o programa de intercâmbio em Hokkaido.",
+    "solution": "Durante os 14 dias do período de quarentena, criei uma ferramenta para inserir dados financeiros diários em uma planilha do Google. Era uma planilha do Google servindo dados para uma SPA em ReactJS. Criei o formulário de entrada mais simples e fácil possível para que eu pudesse usá-lo diariamente. Usei aquela interface simples toda vez que comprei algo durante meu programa de intercâmbio, e os resultados foram um controle total do dinheiro, entrada de dados a qualquer hora/lugar e mais aprendizados.",
+    "action": ""
+  },
+  "ros": {
+    "title": "Blog Tutorial para ROS e Controle de Drone",
+    "learnings": "Pesquisar ROS e Internet das Coisas - IoT - no Japão",
+    "public": "Estudantes Universitários de Robot Operating System - ROS",
+    "problem": "Praticar desenvolvimento web e habilidades de explicação enquanto fazia um programa de intercâmbio",
+    "solution": "Criei um tutorial em formato de blog para ROS e controle de drone. Para construí-lo, fui apresentado a ferramentas como NextJS, i18n para internacionalização e GSAP para animação de elementos. Foi um projeto de teste, e aprendi muito sobre como dominar o DOM. Também foi uma prática de escrita em inglês.",
+    "action": "Visite o guia"
+  },
+  "ecoid": {
+    "title": "Site Institucional Ecoid.com.br",
+    "learnings": "Quanto mais limpo, melhor para o usuário",
+    "public": "Donos de Restaurantes que trabalham com delivery de comida",
+    "problem": "O cliente teve a oportunidade de representar as vendas de um fabricante de bowls de papel e precisava de um site para começar a prospectar.",
+    "solution": "Criei uma SPA simples com um design mais limpo. Funcionou bem no começo, mas alguns meses depois o cliente desistiu do negócio. Foi minha primeira vez usando TailwindCSS, e ele tornou a estilização com CSS realmente rápida. Foi quando comecei a usar ferramentas de design e prototipagem como Illustrator e XD.",
+    "action": "Ver"
+  },
+  "ishikari": {
+    "title": "Landing Page Promocional do Evento Ishikari Nabe da Associação de Hokkaido [Página para Mobile]",
+    "learnings": "Uma boa UX faz os usuários permanecerem na sua tela e tomarem ações, qualquer que seja a ação",
+    "public": "Líderes de Eventos da Associação de Hokkaido",
+    "problem": "Foi nosso primeiro evento depois de um ano de pandemia de covid, e precisávamos apresentar um novo prato ao público",
+    "solution": "Fiquei responsável por criar uma página para apresentar nosso evento ao público. Dessa vez, foquei na interatividade da página e em animações SVG. Enviamos a página em grupos de WhatsApp, e aproximadamente 50% de todas as conversões vieram da nossa página, enquanto os outros 50% vieram diretamente do WhatsApp ou de contato pessoal. Aprendi muito sobre chamar a atenção do público, conduzi-lo a um conteúdo educativo sobre o produto e, então, deixá-lo tomar uma ação.",
+    "action": "Ver"
+  },
+  "asebase": {
+    "title": "Banco de Dados ASEBASE de Ex-Estudantes/Estagiários",
+    "learnings": "UI/UX é sobre facilitar a vida do usuário ao preencher formulários",
+    "public": "Ex-Estudantes/Estagiários Brasileiros da Associação ASEBEX no Japão",
+    "problem": "Quando estudantes brasileiros vão ao Japão, eles enfrentam muitos desafios comuns. Pessoas experientes podem ajudá-los dando conselhos",
+    "solution": "Criar uma comunidade digital para estudantes de intercâmbio e estagiários brasileiros no Japão",
+    "action": "Ver código e vídeo"
+  },
+  "gustavo-amaral": {
+    "title": "Landing Page da Coleção de NFTs do Gustavo Amaral",
+    "learnings": "\"Não é necessário entender tudo para conseguir usar tudo\"",
+    "public": "Investidores de Criptomoedas",
+    "problem": "Lançar uma coleção de NFTs de um artista famoso",
+    "solution": "Construímos uma landing page para promover uma coleção de NFTs de um amigo artista. Promovemos a coleção compilando informações sobre o artista e seus trabalhos anteriores. O desafio aqui foi traduzir o estilo do artista para uma página web animada.",
+    "action": "Ver"
+  },
+  "onoda": {
+    "title": "Site Internacionalizado e Design de Logo da Onoda Boeki",
+    "learnings": "Progressão é melhor que perfeição",
+    "public": "Pessoas interessadas em importar produtos do Japão para o Brasil",
+    "problem": "O cliente precisava de um site e de um logo para seu negócio",
+    "solution": "Eu e meu amigo pesquisamos, desenhamos e construímos um site institucional de página única para a empresa, além de seu logo.",
+    "action": "Ver"
+  },
+  "portfolio": {
+    "title": "Este Portfólio e os Princípios 3-3-3 para uma Melhor UX",
+    "learnings": "Continue lendo para me conhecer melhor",
+    "public": "Recrutadores, Desenvolvedores estudando UI/UX e futuros parceiros",
+    "problem": "Expor minhas experiências de forma clara para explicar como posso ajudar em novos projetos e equipes",
+    "solution": "Este portfólio é uma compilação do que eu fiz e o que aprendi para ser um Desenvolvedor de UI/UX. Os Princípios 3-3-3 Para Uma Melhor UX é um guia para você entender, aprender e aplicar os fundamentos em seus próximos trabalhos!",
+    "action": "Esta página"
+  },
+  "axa-requirement": {
+    "title": "Entregáveis de Projeto de Requisitos de Design",
+    "learnings": "Para entender os requisitos do projeto facilitando para a equipe offshore",
+    "public": "Equipe de Desenvolvimento Offshore",
+    "problem": "Analistas de negócios escrevem documentos de requisitos e a equipe técnica no local tem que prepará-los para serem amistosos para os desenvolvedores offshore",
+    "solution": "Em uma casa de software bem estruturada, os analistas de negócios fazem seu trabalho para entender as necessidades do cliente para criar uma boa solução para eles. Fazendo parte da equipe técnica, fiz o meu melhor para criar documentos técnicos que a equipe de desenvolvimento offshore pudesse entender os requisitos para chegar à melhor solução para o cliente. Isso inclui o Design de Banco de Dados, Estratégia de Validação de Dados e Projetos de Fluxo de Dados.",
+    "action": ""
+  },
+  "anki-web": {
+    "title": "Aplicativo de Memorização de Kanji Japonês",
+    "learnings": "Desenvolvi um sistema simples de repetição espaçada",
+    "public": "Pessoas praticando habilidades de memorização de língua japonesa",
+    "problem": "Aprender japonês é difícil pois requer memorizar caracteres especiais conhecidos como Kanji. A repetição espaçada fornece um quadro de estudo para aprender e memorizar de forma incremental.",
+    "solution": "Criei um aplicativo simples que permite registrar novas palavras em cartões de memória, fornece tradução e funcionalidade de \"como ler\". Ele traz gradualmente as palavras à medida que você as pratica todos os dias, e você decide quando finalmente aprendeu uma palavra/frase.",
+    "action": "Ver código fonte"
+  },
+  "nbwf-requirement": {
+    "title": "AXA Life Japão - Novo Fluxo de Trabalho de Negócios",
+    "learnings": "Construí um aplicativo de avaliação de contrato escalável com tecnologias modernas",
+    "public": "Departamento de Contrato e Avaliação Médica",
+    "problem": "Um sistema de 15 anos tornou-se obsoleto e tinha dependências de serviços caros",
+    "solution": "Re-implementação de todo o sistema usando frameworks modernos e serviços de implantação em nuvem",
+    "action": ""
+  },
+  "local-file-uploader": {
+    "title": "Upload de Arquivo em Rede Local",
+    "learnings": "Aplicativo NextJS simples para fazer upload de arquivos de dispositivos móveis para PC",
+    "public": "Qualquer pessoa",
+    "problem": "Às vezes, quando precisamos compartilhar arquivos de nossos smartphones para nossos PCs ou MacBooks, perdemos boas opções para isso, especialmente quando queremos compartilhar arquivos grandes",
+    "solution": "Implementei uma interface web simples com um servidor NodeJS que recebe uploads de arquivos com feedback de conclusão de upload. Basta executar o aplicativo a partir do seu PC e todos os dispositivos conectados na mesma rede podem compartilhar arquivos para o servidor",
+    "action": "Ver código fonte"
+  },
+  "web-template-string": {
+    "title": "Aplicativo Online de String de Modelo",
+    "learnings": "Definir Modelos de Texto e popular seu texto com o uso de variáveis",
+    "public": "Qualquer pessoa",
+    "problem": "Meu primo queria uma solução simples para criar um texto pré-definido para seu trabalho e atualizar o texto com o uso de variáveis quando necessário. Então ele precisava ter algo que substitui variáveis dentro do texto, então ele poderia copiar o texto para economizar tempo em seu trabalho.",
+    "solution": "Implementei uma interface web simples que permite aos usuários criar um modelo de texto e popular o texto dinamicamente fornecendo valores às variáveis. Ele armazena os modelos no armazenamento local e você pode baixar os modelos posteriormente para fins de backup.",
+    "action": "Use grátis"
+  },
+  "underwriting-improvement": {
+    "title": "Melhoria na Subscrição",
+    "learnings": "Economia de tempo ao digitalizar o processo manual de recebimento de documentos",
+    "public": "Departamento de Contratos da AXA",
+    "problem": "Como uma empresa de seguros que recebe milhares de documentos de clientes diariamente, o processo de entrada de todos esses documentos tornou-se um gargalo para um serviço eficiente",
+    "solution": "Implementei um aplicativo usado por agências de seguros filiais para tirar fotos de documentos e enviá-los ao sistema NBWF do departamento de contratos da AXA. O aplicativo processa um Reconhecimento Óptico de Caracteres (OCR) para extrair informações dos documentos e inseri-las em outros sistemas",
+    "action": ""
+  }
+}

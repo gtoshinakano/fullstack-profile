@@ -21,7 +21,7 @@ type IProject = {
   solution: string
   stacks: string[]
   cover?: any
-  action: { label: string; url: string }
+  action: { url: string }
   label: string // Unique Key of project
 }
 
@@ -32,7 +32,7 @@ type anyObj = {
 const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null)
   const container = gsap.utils.selector(containerRef)
-  const { t } = useTranslation()
+  const { t } = useTranslation(['common', 'projects-data'])
 
   useEffect(() => {
     gsap
@@ -105,7 +105,7 @@ const Projects = () => {
             <div className='flex flex-wrap w-full'>
               <div className='pl-5 w-full md:max-w-lg xl:max-w-xl text-xs pt-0.5'>
                 <span className='font-thin italic text-secondary text-xs uppercase mt-1 float-right'>
-                  {item.type}
+                  {t(`project-types.${item.type}`, { defaultValue: item.type })}
                 </span>
                 {item.period.map((period, i) => (
                   <span key={period + i} className=''>
@@ -115,14 +115,14 @@ const Projects = () => {
                 <span className='text-secondary'> | </span>
                 {item.where} {item.country}
                 <h3 className='block font-semibold text-lg mt-1'>
-                  {item.title}
+                  {t(`projects-data:${item.label}.title`, { defaultValue: item.title })}
                 </h3>
                 <small className='mb-3 block tracking-widest  transform -translate-y-1'>
                   {item.subtitle}
                 </small>
                 <p className='tracking-wider text-slate-400 mb-1.5 block'>
                   <i className='uil uil-lightbulb-alt text-secondary'></i>{' '}
-                  {item.learnings}
+                  {t(`projects-data:${item.label}.learnings`, { defaultValue: item.learnings })}
                 </p>
                 <div
                   className={`transition-all duration-300 overflow-hidden ${
@@ -133,19 +133,19 @@ const Projects = () => {
                     <span className='md:font-semibold text-slate-500'>
                       {t('projects.target')}:{' '}
                     </span>
-                    {item.public}
+                    {t(`projects-data:${item.label}.public`, { defaultValue: item.public })}
                   </p>
                   <p className='tracking-wider mb-1.5'>
                     <span className='md:font-semibold text-slate-500'>
                     {t('projects.problem')}:{' '}
                     </span>
-                    {item.problem}
+                    {t(`projects-data:${item.label}.problem`, { defaultValue: item.problem })}
                   </p>
                   <p className='tracking-wider mb-1.5'>
                     <span className='md:font-semibold text-slate-500'>
                     {t('projects.solution')}:{' '}
                     </span>
-                    {item.solution}
+                    {t(`projects-data:${item.label}.solution`, { defaultValue: item.solution })}
                   </p>
                   <div className='flex flex-wrap overflow-hidden '>
                     <i className='uil uil-layer-group text-2xl text-slate-500 my-auto mr-4 hidden md:block'></i>
@@ -190,13 +190,13 @@ const Projects = () => {
                       }`}
                     ></i>
                   </button>
-                  {item.action?.label !== '' && (
+                  {item.action?.url && (
                     <a
                       target='_blank'
                       href={item.action.url}
                       className={`font-extralight hover:underline flex ml-16 rounded-full bg-primary px-2.5 py-0.5`}
                     >
-                      {item.action.label}
+                      {t(`projects-data:${item.label}.action`)}
                       <i className='uil uil-corner-up-right ml-2'></i>
                     </a>
                   )}

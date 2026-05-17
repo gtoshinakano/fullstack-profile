@@ -46,6 +46,7 @@ function getTextContent(node: React.ReactNode): string {
 }
 
 const Introduction = (): ReactElement => {
+  const { t } = useTranslation('common');
   const { i18n } = useTranslation()
   const locale = i18n.language || 'en'
   const content = articles[locale] ?? articles['en']
@@ -188,9 +189,9 @@ const Introduction = (): ReactElement => {
           rel='noopener noreferrer'
           className='hover:underline'
         >
-          Let&apos;s connect
+          {t('lets-connect')}
         </a>
-        <span>Share this page</span>
+        <span>{t('share-this-page')}</span>
       </p>
     </section>
   )
