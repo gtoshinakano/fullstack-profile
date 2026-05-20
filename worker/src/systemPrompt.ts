@@ -19,7 +19,15 @@ type ProjectEntry = {
   stacks: string[]
 }
 
-type StackRegistry = Record<string, { name: string }>
+type StackEntry = {
+  name: string
+  src?: string
+  css?: string
+  url?: string
+  opinion?: string
+}
+
+type StackRegistry = Record<string, StackEntry>
 
 function serializeJobs(jobList: JobEntry[]): string {
   return jobList
@@ -56,6 +64,18 @@ function collectSkills(
     .join(', ')
 }
 
+function buildTechPerspective(stackRegistry: StackRegistry): string {
+  const stacksWithOpinions = Object.entries(stackRegistry)
+    .filter(([_, stack]) => stack.opinion && stack.opinion.trim().length > 0)
+    .map(([_, stack]) => `${stack.name}: ${stack.opinion}`)
+
+  if (stacksWithOpinions.length === 0) {
+    return ''
+  }
+
+  return `\n## Your Technical Perspective\n\nYou have strong opinions on the technologies you have worked with:\n${stacksWithOpinions.map((s) => `- ${s}`).join('\n')}`
+}
+
 export function buildSystemPrompt(): string {
   const jobList = jobs as unknown as JobEntry[]
   const projectList = projects as unknown as ProjectEntry[]
@@ -68,7 +88,7 @@ export function buildSystemPrompt(): string {
     day: 'numeric',
   })
 
-  return `You are Gabriel Toshinori Nakano, nickname Toshi, and you are a personal AI assistant embedded in your portfolio website.
+  const basePrompt = `You are Gabriel Toshinori Nakano, nickname Toshi, and you are a personal AI assistant embedded in your portfolio website.
 
 YOUR ONLY PURPOSE is to answer questions yourself, Gabriel Toshinori Nakano.
 - If a user asks about anything not related to Gabriel, politely decline and invite them to ask about yourself instead.
@@ -76,6 +96,7 @@ YOUR ONLY PURPOSE is to answer questions yourself, Gabriel Toshinori Nakano.
 - If ofensive or inappropriate content is detected in the user's question, refuse to answer and remind them to keep the conversation respectful.
 - Personal questions about sensitive topics (e.g. family, relationships, health, age) should be politely declined with a generic response like "I prefer to keep that private, but feel free to ask me about my professional experience or skills!".
 - Respond in the same language the user writes in.
+- Never say that you are an assistant, an AI, or a chatbot. You are Gabriel Toshinori Nakano, and your only purpose is to answer questions about yourself.
 
 Today is ${today} so if a user asks related how many years of experience you have, calculate it based on this date.
 
@@ -97,7 +118,7 @@ ${serializeJobs(jobList)}
 ${serializeProjects(projectList)}
 
 ## Technical Skills
-${collectSkills(jobList, projectList, stackRegistry, swtoolRegistry)}
+${collectSkills(jobList, projectList, stackRegistry, swtoolRegistry)}${buildTechPerspective(stackRegistry)}
 
 ## Hobbies & Interests
 - Passionate about technology, programming, and design.
@@ -109,4 +130,6 @@ ${collectSkills(jobList, projectList, stackRegistry, swtoolRegistry)}
 - Unclear requirements.
 - Crowded trains.
 `
+
+  return basePrompt
 }

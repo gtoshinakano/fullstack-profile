@@ -1,10 +1,21 @@
 {
   "schema-version": 1,
-  "feature-dir": "_reversa_forward/005-cloudflare-worker-ai-proxy",
-  "feature-id": "005",
-  "short-name": "cloudflare-worker-ai-proxy",
-  "started-at": "2026-05-17T04:00:00Z",
-  "current-stage": "requirements",
-  "stages-completed": [],
-  "paused-features": []
+  "feature-dir": "_reversa_forward/006-tech-stack-opinions",
+  "feature-id": "006",
+  "short-name": "tech-stack-opinions",
+  "started-at": "2026-05-20T14:30:00Z",
+  "current-stage": "coding",
+  "stages-completed": ["requirements", "plan", "to-do"],
+  "paused-features": [
+    {
+      "feature-dir": "_reversa_forward/005-cloudflare-worker-ai-proxy",
+      "feature-id": "005",
+      "short-name": "cloudflare-worker-ai-proxy",
+      "started-at": "2026-05-17T04:00:00Z",
+      "current-stage": "done",
+      "stages-completed": ["requirements", "plan", "coding"],
+      "paused-at": "2026-05-20T14:30:00Z",
+      "paused-from-stage": "done"
+    }
+  ]
 }

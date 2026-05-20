@@ -3,234 +3,309 @@
     "name": "Amazon Web Services",
     "src": "/img/stacks/aws.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "AWS is powerful and feature-rich for building scalable applications. The pricing model requires careful monitoring, but the platform offers unmatched capabilities for modern infrastructure."
   },
   "bootstrap": {
     "name": "Bootstrap",
     "src": "/img/stacks/bootstrap.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Bootstrap is a solid CSS framework that accelerated early web development. I prefer Tailwind for newer projects, but Bootstrap remains reliable for legacy systems."
   },
   "css": {
     "name": "CSS",
     "src": "/img/stacks/css.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "CSS is fundamental to web development. Modern CSS with flexbox and grid has made layout much more enjoyable compared to the older float-based approaches."
   },
   "camunda": {
     "name": "Camunda BPMN Platform",
     "src": "/img/stacks/camunda.jpg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Camunda BPMN is excellent for modeling complex business workflows. It provides a powerful visual tool and execution engine, though the learning curve is notable."
   },
   "drawio": {
     "name": "CSS",
     "src": "/img/stacks/drawio.png",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Draw.io is an invaluable tool for diagramming and architecture design. Simple to use, powerful features, and great for documenting system design decisions."
   },
   "excel": {
     "name": "Microsoft Excel",
     "src": "/img/stacks/excel.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Microsoft Excel remains essential for data analysis and business logic. Its widespread adoption makes it practical, though for complex analysis I often prefer Python."
   },
   "express": {
     "name": "ExpressJS",
     "src": "/img/stacks/express.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Express is my backend framework of choice for Node.js projects. Minimal, flexible, and powerful—perfect for building APIs and server-side logic."
   },
   "fastify": {
     "name": "Fastify Framework",
     "src": "/img/stacks/fastify.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Fastify is a modern, high-performance Node.js framework. I appreciate the architecture-first design, though Express remains my go-to for most projects."
   },
   "firebase": {
     "name": "Firebase Services",
     "src": "/img/stacks/firebase.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Firebase provides excellent real-time capabilities and a generous free tier. Great for rapid prototyping, though it can become costly at scale."
   },
   "git": {
     "name": "Git",
     "src": "/img/stacks/git.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Git is absolutely essential to modern development. The distributed version control model revolutionized how teams collaborate on code."
   },
   "google-analytics": {
     "name": "Google Analytics",
     "src": "/img/stacks/google-analytics.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Google Analytics is invaluable for understanding user behavior on web applications. The free tier covers most needs, though data interpretation requires care."
   },
   "google-apps-script": {
     "name": "Google Apps Script",
     "src": "/img/stacks/google-apps-script.png",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Google Apps Script enables automation of Google Workspace products. Simple scripting language perfect for business logic and integrations, though it has performance limitations."
   },
   "google-charts": {
     "name": "Google Charts API",
     "src": "/img/stacks/google-charts.png",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Google Charts provides a quick way to visualize data with minimal setup. Good for dashboards and reports, though customization options are limited compared to libraries like D3."
   },
   "google-maps": {
     "name": "Google Maps API",
     "src": "/img/stacks/google-maps.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Google Maps API is essential for location-based features. Powerful and reliable, but API costs can add up at scale."
   },
   "google-spreadsheets": {
     "name": "Google Spreadsheets",
     "src": "/img/stacks/google-spreadsheets.png",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Google Sheets is surprisingly powerful for data analysis and collaboration. The API allows programmatic access, making automation easy."
   },
   "gsap": {
     "name": "GreenSock Animation Plugin",
     "src": "/img/stacks/gsap.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "GSAP is the gold standard for JavaScript animations. The API is intuitive, performance is excellent, and it handles complex animation sequences beautifully."
   },
   "heroku": {
     "name": "Heroku",
     "src": "/img/stacks/heroku.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Heroku simplifies deployment and is great for small projects and MVPs. The pricing became less attractive over time, but the developer experience is still excellent."
   },
   "html": {
     "name": "HTML",
     "src": "/img/stacks/html.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "HTML is the foundation of web content. Modern semantic HTML is crucial for accessibility and SEO."
   },
   "i18n": {
     "name": "i18n Translation Lib",
     "src": "/img/stacks/i18n.png",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Internationalization is increasingly important in web development. I use next-i18next for React projects, which handles locale management elegantly."
   },
   "java": {
     "name": "Java",
     "src": "/img/stacks/java.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Java remains relevant for enterprise applications and backend systems. The verbose syntax can be cumbersome, but the ecosystem is mature and reliable."
   },
   "javascript": {
     "name": "Javascript",
     "src": "/img/stacks/javascript.svg",
     "css": "bg-yellow-300",
-    "url": ""
+    "url": "",
+    "opinion": "JavaScript is the lingua franca of the web. The language has evolved dramatically with ES6+, making it far more expressive and powerful."
   },
   "jquery": {
     "name": "JQuery",
     "src": "/img/stacks/jquery.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "jQuery was transformative for web development, but modern frameworks have largely made it obsolete. Still relevant for legacy projects."
   },
   "mysql": {
     "name": "MySQL",
     "src": "/img/stacks/mysql.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "MySQL is reliable and widely adopted for relational databases. PostgreSQL often gets more attention lately, but MySQL remains a solid choice."
   },
   "nextjs": {
     "name": "NextJS",
     "src": "/img/stacks/nextjs.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Next.js combines the best of React with excellent tooling and automatic optimizations. Server-side rendering, API routes, and static generation make it my preferred choice for full-stack web projects."
   },
   "nodejs": {
     "name": "NodeJS",
     "src": "/img/stacks/nodejs.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Node.js and Express form the backbone of my backend work. JavaScript across the stack simplifies development, and the ecosystem is incredibly rich. Requires discipline with async patterns."
   },
   "nodemailer": {
     "name": "NodeMailer",
     "src": "/img/stacks/nodemailer.png",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "Nodemailer is the standard for sending emails from Node.js. Simple API, robust delivery, and excellent documentation."
   },
   "php": {
     "name": "PHP",
     "src": "/img/stacks/php.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "PHP powers much of the web despite its notorious quirks. I used it extensively early in my career; modern PHP has improved significantly."
   },
   "reactjs": {
     "name": "ReactJS",
     "src": "/img/stacks/reactjs.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "React is my go-to for building interactive user interfaces. The component model is intuitive, the ecosystem is vast, and the DX is excellent. Perfect for complex UIs, though there is some overhead for simple projects."
   },
   "react-query": {
     "name": "React Query",
     "src": "/img/stacks/react-query.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "React Query (now TanStack Query) revolutionized data fetching in React. Excellent for managing server state, caching, and synchronization."
   },
   "redux": {
     "name": "Redux",
     "src": "/img/stacks/redux.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Redux solved state management challenges in React, though Context API and modern hooks often handle simpler use cases now."
   },
   "ros": {
     "name": "Robot Operating System",
     "src": "/img/stacks/ros.png",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "ROS (Robot Operating System) is specialized for robotics and complex distributed systems. Powerful but steep learning curve; only necessary for its specific domain."
   },
   "rsuite": {
     "name": "React Suite UI",
     "src": "/img/stacks/rsuite.png",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "rsuite offers a comprehensive component library for React. Good for rapid UI development, though Tailwind + shadcn/ui have become my preferred approach lately."
   },
   "semantic-ui": {
     "name": "Semantic UI",
     "src": "/img/stacks/semantic-ui.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Semantic UI offers semantic HTML components and good theming. I prefer Tailwind for new projects, but Semantic UI remains solid for component-driven development."
   },
   "sonarqube": {
     "name": "SonarQube",
     "src": "/img/stacks/sonarqube.svg",
     "css": "bg-white",
-    "url": ""
+    "url": "",
+    "opinion": "SonarQube is excellent for code quality analysis and detecting bugs early. Essential for maintaining code standards in large teams."
   },
   "styled-components": {
     "name": "Styled Components",
     "src": "/img/stacks/styled-components.png",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "styled-components brings component-scoped CSS to JavaScript. Great for encapsulation, though runtime CSS-in-JS has performance implications for large applications."
   },
   "tailwind": {
     "name": "TailwindCSS",
     "src": "/img/stacks/tailwind.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Tailwind CSS revolutionized how I approach styling. Utility-first approach is fast once you get the mental model, and it scales beautifully across large projects. Highly recommended."
   },
   "typeorm": {
     "name": "TypeORM",
     "src": "/img/stacks/typeorm.png",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "TypeORM brings type safety to database operations in Node.js. The ORM abstraction is powerful, though SQL queries are often more straightforward."
   },
   "ubuntu": {
     "name": "Ubuntu Operating System",
     "src": "/img/stacks/ubuntu.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Ubuntu is my preferred Linux distribution. Stable, well-supported, and has an excellent community. Perfect for development and server environments."
   },
   "vite": {
     "name": "Vite",
     "src": "/img/stacks/vitejs.svg",
     "css": "",
-    "url": ""
+    "url": "",
+    "opinion": "Vite transformed my development workflow with lightning-fast HMR and builds. Modern bundler philosophy, far superior to Webpack for rapid development."
+  },
+  "github": {
+    "opinion": "GitHub is the obvious choice for code hosting. The ecosystem around it—Actions, Pages, Copilot—makes it indispensable."
+  },
+  "figma": {
+    "opinion": "Figma transformed design collaboration. The browser-based approach and real-time collaboration make it superior to desktop design tools."
+  },
+  "illustrator": {
+    "opinion": "Adobe Illustrator is powerful for vector graphics and icon design. The learning curve is steep, but the results are professional-grade."
+  },
+  "jenkins": {
+    "opinion": "Jenkins is a stalwart in CI/CD pipelines. It is flexible and powerful, though setup can be complex. For new projects, I would consider GitHub Actions first."
+  },
+  "postman": {
+    "opinion": "Postman is invaluable for API development and testing. The visual interface and automation capabilities make API work much smoother."
+  },
+  "recharts": {
+    "opinion": "Recharts provides composable React charting components. Great for rapid chart implementation without getting bogged down in D3 details."
+  },
+  "semanticui": {
+    "opinion": "Semantic UI provided a theming approach before Tailwind. Still solid for teams that prefer semantic CSS."
+  },
+  "styledcomponents": {
+    "opinion": "styled-components enables CSS-in-JS with component scoping. Great for encapsulation, though runtime CSS-in-JS has performance trade-offs."
+  },
+  "vitejs": {
+    "opinion": "Vitejs is the successor concept to Vite. Excellent for modern frontend tooling."
+  },
+  "vscode": {
+    "opinion": "VS Code is my editor of choice. Free, extensible, incredibly fast, and the ecosystem is unmatched."
+  },
+  "workbench": {
+    "opinion": "MySQL Workbench is helpful for database design and management, though command-line tools are often more efficient."
+  },
+  "xd": {
+    "opinion": "Adobe XD is a competent design tool with good prototyping capabilities. Figma is my current preference due to superior collaboration features."
   }
 }
